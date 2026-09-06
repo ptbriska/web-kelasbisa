@@ -219,7 +219,7 @@ body {
 }
 
 /* =========================================================
-   2. SECTION GENERAL & CORE DOMAIN CARDS
+   2. SECTION GENERAL & VISUAL EKOSISTEM DOMAIN SKILL
    ========================================================= */
 .geodatis-section {
   padding: 64px 0;
@@ -227,7 +227,7 @@ body {
 
 .section-header {
   text-align: center;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto 48px auto;
 }
 
@@ -235,7 +235,7 @@ body {
   font-size: 2.1rem;
   font-weight: 900;
   color: var(--geo-dark-obsidian);
-  margin: 0 0 10px 0;
+  margin: 10px 0;
   letter-spacing: -0.6px;
 }
 
@@ -245,44 +245,112 @@ body {
   margin: 0;
 }
 
-.core-domain-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
+/* 10 Domain Ilmu Terapan Pills Layout */
+.applied-domain-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 48px;
 }
 
-.domain-card {
+.domain-pill-card {
   background: #FFFFFF;
   border: 1.5px solid var(--geo-border);
-  border-radius: var(--radius-xl);
-  padding: 32px;
+  padding: 10px 18px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-bounce);
 }
 
-.domain-card:hover {
+.domain-pill-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--geo-teal);
+  box-shadow: var(--shadow-hover);
+}
+
+.pill-icon {
+  font-size: 1.1rem;
+}
+
+.pill-text {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--geo-dark-obsidian);
+}
+
+.highlight-disaster {
+  background: var(--geo-teal-light);
+  border-color: var(--geo-teal);
+}
+
+/* 6 Skill & Tools Matrix Grid */
+.skill-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-bounce);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-card:hover {
   transform: translateY(-6px);
   border-color: var(--geo-teal);
   box-shadow: var(--shadow-hover);
 }
 
-.domain-icon {
-  font-size: 2.2rem;
-  margin-bottom: 16px;
+.skill-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--geo-teal-dark);
+  background: var(--geo-teal-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 8px;
 }
 
-.domain-card h3 {
-  font-size: 1.25rem;
-  font-weight: 800;
+.skill-card h3 {
+  font-size: 1.15rem;
+  font-weight: 900;
   color: var(--geo-dark-obsidian);
   margin: 0 0 8px 0;
 }
 
-.domain-card p {
+.skill-card p {
   font-size: 0.88rem;
   color: var(--geo-text-muted);
-  line-height: 1.6;
-  margin: 0;
+  line-height: 1.5;
+  margin: 0 0 18px 0;
+}
+
+.software-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.software-tags span {
+  background: var(--geo-bg);
+  color: var(--geo-dark-obsidian);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--geo-border);
 }
 
 /* =========================================================
