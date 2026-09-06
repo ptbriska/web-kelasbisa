@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Khusus Bimbingan Riset — ARPA x GEODATIS</title>
+
+  <!-- Favicon & Shared Subnav System -->
+  <link rel="icon" href="../../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* =========================================================
+       MODULE 05 PROGRAM KHUSUS — ISOLATED EMBEDDED STYLING
+       Dominan Cerah, Geodatis Teal (#14A096), Cyan (#06B6D4) & Glow CEO Badge
+       ========================================================= */
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+    :root {
+      --geo-teal: #14A096;
+      --geo-teal-dark: #0E726B;
+      --geo-teal-light: #E6F6F5;
+      --geo-teal-glow: rgba(20, 160, 150, 0.3);
+      --kb-cyan: #06B6D4;
+      --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+      --geo-bg: #F8FAFC;
+      --geo-dark-obsidian: #0F172A;
+      --geo-text-main: #1E293B;
+      --geo-text-muted: #64748B;
+      --geo-border: #E2E8F0;
+      --radius-xl: 24px;
+      --radius-lg: 16px;
+      --shadow-hover: 0 16px 36px rgba(20, 160, 150, 0.15);
+    }
+
+    body {
+      background-color: var(--geo-bg);
+      color: var(--geo-text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .geodatis-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HERO SECTION */
+    .khusus-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.15), transparent 45%),
+                  radial-gradient(circle at 10% 80%, rgba(20, 160, 150, 0.12), transparent 50%),
+                  linear-gradient(135deg, #FFFFFF 0%, var(--geo-teal-light) 100%);
+      padding: 64px 0 80px 0;
+      border-bottom: 2px solid rgba(20, 160, 150, 0.2);
+    }
+
+    .hero-wrapper {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .badge-collab {
+      background: var(--geo-dark-obsidian);
+      color: #FFFFFF;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--geo-dark-obsidian);
+      line-height: 1.2;
+      margin: 8px 0;
+      letter-spacing: -0.8px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--geo-teal);
+      margin-bottom: 16px;
+    }
+
+    .hero-desc {
+      font-size: 0.95rem;
+      color: var(--geo-text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    /* CEO CARD BRANDING "BELAJAR DENGAN CEO LANGSUNG" */
+    .ceo-card-modern {
+      background: #FFFFFF;
+      border: 2px solid var(--geo-teal);
+      border-radius: var(--radius-xl);
+      padding: 24px;
+      box-shadow: var(--shadow-hover);
+      text-align: center;
+      position: relative;
+    }
+
+    .ceo-badge-glow {
+      background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.78rem;
+      padding: 6px 16px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 12px var(--kb-cyan-glow);
+    }
+
+    .ceo-img-frame {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 16px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid var(--geo-teal);
+      box-shadow: 0 8px 24px var(--geo-teal-glow);
+    }
+
+    .ceo-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ceo-name {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--geo-dark-obsidian);
+      margin: 0 0 4px 0;
+    }
+
+    .ceo-role {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--geo-teal);
+      margin-bottom: 12px;
+    }
+
+    .ceo-achievement {
+      background: var(--geo-teal-light);
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--geo-teal-dark);
+      margin-bottom: 8px;
+    }
+
+    /* SECTION FOKUS KEAHLIAN (DUAL COLUMN) */
+    .geodatis-section {
+      padding: 60px 0;
+    }
+
+    .fokus-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .fokus-box {
+      background: #FFFFFF;
+      border: 1.5px solid var(--geo-border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .fokus-box h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--geo-dark-obsidian);
+      margin: 0 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .check-list {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin: 0 !important;
+    }
+
+    .check-list li {
+      position: relative !important;
+      padding-left: 28px !important;
+      margin-bottom: 10px !important;
+      font-size: 0.9rem;
+      color: var(--geo-text-main);
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 18px;
+      height: 18px;
+      background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 900;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* APPLIED RESEARCH TAGS */
+    .research-tag-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .research-tag {
+      background: #FFFFFF;
+      border: 1px solid var(--geo-teal);
+      color: var(--geo-teal-dark);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    /* CTA WHATSAPP DIRECT */
+    .cta-khusus-card {
+      background: #FFFFFF;
+      border: 2px solid var(--geo-teal);
+      border-radius: var(--radius-xl);
+      padding: 40px;
+      text-align: center;
+      box-shadow: var(--shadow-hover);
+    }
+
+    .btn-wa-ceo {
+      background: linear-gradient(135deg, #25D366 0%, #059669 100%);
+      color: #FFFFFF !important;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 16px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    @media (max-width: 992px) {
+      .hero-wrapper, .fokus-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body id="geodatisKhususPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GEODATIS (Baris 2) -->
+  <div id="geodatis-subnav-app"></div>
+
+  <!-- HERO SECTION WITH CEO BRANDING -->
+  <section class="khusus-hero">
+    <div class="geodatis-container">
+      <div class="hero-wrapper">
+        
+        <!-- Left: Program Title & Description -->
+        <div>
+          <span class="badge-collab" id="collabTag">ARPA x GEODATIS</span>
+          <h1 class="hero-title" id="progTitle">PROGRAM HANDS-ON BIMBINGAN RISET SKRIPSI / JURNAL</h1>
+          <p class="hero-subtitle" id="progSub">Topik Keilmuan Geospatial Data Science</p>
+          <p class="hero-desc" id="progDesc">
+            Program pendampingan riset kolaboratif dan tingkat lanjut bersama mentor berpengalaman untuk penyelesaian riset dengan teknik pengolahan data geospasial presisi.
+          </p>
+
+          <div style="background: #FFFFFF; padding: 18px; border-radius: var(--radius-lg); border-left: 4px solid var(--geo-teal);">
+            <h4 style="margin: 0 0 8px 0; font-size: 0.88rem; color: var(--geo-dark-obsidian);">📌 Ketentuan Umum Program:</h4>
+            <ul class="check-list" id="ketentuanList">
+              <!-- Rendered via JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: CEO Card "Belajar dengan CEO Langsung" -->
+        <div class="ceo-card-modern">
+          <span class="ceo-badge-glow" id="ceoTagline">⚡ Belajar & Bimbingan Langsung dengan CEO</span>
+          <div class="ceo-img-frame">
+            <img src="poster-bootcamp.jpg" id="ceoFoto" alt="CEO Kelas Bisa" onerror="this.src='../../assets/images/logo-kelasbisa.png'">
+          </div>
+          <h3 class="ceo-name" id="ceoNama">Bagus Primohadi S</h3>
+          <p class="ceo-role" id="ceoJabatan">CEO Kelas Bisa & Lead Mentor</p>
+          <div class="ceo-achievement" id="ceoPrestasi">🏆 Penghargaan Utama Publikasi Riset Taruna STMKG</div>
+          <div class="ceo-achievement" id="ceoExp">🎓 3+ Years Experienced in Geospatial Data Science</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION FOKUS KEAHLIAN & PENDAMPINGAN -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div style="text-align: center; margin-bottom: 40px;">
+        <h2 style="font-size: 2rem; font-weight: 900; color: var(--geo-dark-obsidian);">Keahlian & Fokus Pendampingan Riset</h2>
+        <p style="color: var(--geo-text-muted);">Integrasi metodologi ilmiah ilmiah dan ekosistem data sains geospasial terapan.</p>
+      </div>
+
+      <div class="fokus-grid">
+        <!-- Sisi Kiri: Metodologi Akademik -->
+        <div class="fokus-box">
+          <h3>📘 Metodologi & Akademik</h3>
+          <ul class="check-list" id="metodologiList">
+            <!-- Rendered via JS -->
+          </ul>
+        </div>
+
+        <!-- Sisi Kanan: Teknikal & Data Science -->
+        <div class="fokus-box">
+          <h3>🛠️ Analisis Spasial & Data Science</h3>
+          <ul class="check-list" id="teknikalList">
+            <!-- Rendered via JS -->
+          </ul>
+        </div>
+      </div>
+
+      <!-- Applied Research Fields -->
+      <div style="margin-top: 40px; background: var(--geo-teal-light); padding: 28px; border-radius: var(--radius-xl);">
+        <h3 style="margin: 0 0 8px 0; font-size: 1.1rem; color: var(--geo-dark-obsidian);">🌍 Topik & Bidang Applied Research Riset:</h3>
+        <div class="research-tag-grid" id="researchTagGrid">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CTA WHATSAPP DIRECT -->
+  <section class="geodatis-section" style="padding-top: 0;">
+    <div class="geodatis-container">
+      <div class="cta-khusus-card">
+        <span class="badge-collab">🎓 Bimbingan Exclusive & Limited Slot</span>
+        <h2 style="font-size: 1.8rem; font-weight: 900; color: var(--geo-dark-obsidian); margin: 12px 0 8px 0;">
+          Konsultasikan Judul & Topik Penelitianmu Sekarang
+        </h2>
+        <p style="color: var(--geo-text-muted); max-width: 640px; margin: 0 auto;">
+          Pendampingan bersifat selektif berdasarkan ketersediaan mentor dan kesesuaian topik riset.
+        </p>
+        <a href="#" id="btnWaKhusus" target="_blank" rel="noopener" class="btn-wa-ceo">
+          💬 Ajukan Bimbingan Riset via WhatsApp ➔
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Shared Engine Scripts -->
+  <script src="../../assets/js/components.js"></script>
+  <script src="../script.js"></script>
+
+  <!-- Inline Script Engine Module 05 -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      initKhususModule();
+    });
+
+    async function initKhususModule() {
+      try {
+        let res = await fetch('program-khusus.json');
+        if (!res.ok) res = await fetch('./program-khusus.json');
+        if (!res.ok) throw new Error("Gagal mengambil program-khusus.json");
+        
+        const data = await res.json();
+
+        // Render Program Info
+        if (data.program_info) {
+          document.getElementById('progTitle').innerText = data.program_info.title;
+          document.getElementById('progSub').innerText = data.program_info.subtitle;
+          document.getElementById('progDesc').innerText = data.program_info.deskripsi;
+        }
+
+        // Render Ketentuan
+        if (data.ketentuan_umum) {
+          document.getElementById('ketentuanList').innerHTML = data.ketentuan_umum.map(k => `<li>${k}</li>`).join('');
+        }
+
+        // Render CEO Profile
+        if (data.ceo_profile) {
+          const ceo = data.ceo_profile;
+          document.getElementById('ceoTagline').innerText = `⚡ ${ceo.tagline_branding}`;
+          document.getElementById('ceoFoto').src = ceo.foto_file;
+          document.getElementById('ceoNama').innerText = ceo.nama;
+          document.getElementById('ceoJabatan').innerText = ceo.jabatan;
+          document.getElementById('ceoPrestasi').innerText = `🏆 ${ceo.prestasi}`;
+          document.getElementById('ceoExp').innerText = `🎓 ${ceo.pengalaman}`;
+
+          if (ceo.applied_research_fields) {
+            document.getElementById('researchTagGrid').innerHTML = ceo.applied_research_fields.map(f => `<span class="research-tag">📌 ${f}</span>`).join('');
+          }
+        }
+
+        // Render Keahlian
+        if (data.keahlian_fokus) {
+          if (data.keahlian_fokus.metodologi_akademik) {
+            document.getElementById('metodologiList').innerHTML = data.keahlian_fokus.metodologi_akademik.map(m => `<li>${m}</li>`).join('');
+          }
+          if (data.keahlian_fokus.teknikal_data) {
+            document.getElementById('teknikalList').innerHTML = data.keahlian_fokus.teknikal_data.map(t => `<li>${t}</li>`).join('');
+          }
+        }
+
+        // Render CTA WA Link
+        if (data.whatsapp_cta) {
+          document.getElementById('btnWaKhusus').href = data.whatsapp_cta;
+        }
+
+      } catch (err) {
+        console.error("GEODATIS Program Khusus Error:", err.message);
+      }
+    }
+  </script>
+</body>
+</html>
