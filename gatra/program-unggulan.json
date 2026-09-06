@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ketal-skd",
+    "nama": "Ketal Pembelajaran SKD",
+    "kategori": "Video Class & E-Module",
+    "harga_diskon": "Rp249.000",
+    "harga_normal": "Rp1.000.000",
+    "hemat": "Hemat Rp751.000",
+    "badge": "Paling Hemat",
+    "periode_aktif": "Sekali bayar (periode aktif pertahun)",
+    "deskripsi": "Kurikulum disusun berdasarkan Field Report (FR) ujian terbaru dengan kualitas materi setara bimbel offline harga jutaan.",
+    "fasilitas": [
+      "200+ video pembelajaran",
+      "Total 40+ jam kelas materi SKD",
+      "Total 30+ jam drilling soal",
+      "Modul Lengkap SKD CPNS, Materi dan soal diupdate tiap tahun.",
+      "Bonus 10+ ebook belajar SKD",
+      "Akses materi seumur hidup / hingga seleksi selesai",
+      "Akses grup komunitas diskusi materi",
+      "Konsultasi ke Tutor Pengajar",
+      "Kurikulum disusun berdasarkan Field Report ujian terbaru.",
+      "Sekali bayar (periode aktif pertahun)",
+      "Kualitas materi setara bimbel offline harga jutaan."
+    ],
+    "cta_text": "Ambil Paket Ketal"
+  },
+  {
+    "id": "plasma-tryout",
+    "nama": "Plasma Try Out SKD",
+    "kategori": "CAT CBT Simulation Engine",
+    "harga_diskon": "Rp149.000",
+    "harga_normal": "Rp1.000.000",
+    "hemat": "Hemat Rp851.000",
+    "badge": "Simulasi CAT",
+    "periode_aktif": "Sekali bayar, (periode aktif pertahun)",
+    "deskripsi": "Fokus pada tipe soal paling sering keluar dengan kualitas try out setara tes offline harga jutaan.",
+    "fasilitas": [
+      "40 Paket Try Out SKD",
+      "Sistem Ujian CAT mirip aslinya",
+      "Statistik Peta Kekuatan Peserta untuk Evaluasi Mandiri",
+      "Pembahasan rinci di setiap nomor soal",
+      "Tes Berulang Kali untuk semua paket",
+      "Fitur Bank Soal Salah (untuk latihan ulang soal yang pernah gagal)",
+      "Fokus pada tipe soal paling sering keluar.",
+      "Sekali bayar, (periode aktif pertahun)",
+      "Kualitas try out setara tes offline harga jutaan."
+    ],
+    "cta_text": "Ambil Paket Plasma"
+  },
+  {
+    "id": "bundling-skd",
+    "nama": "Bundling SKD",
+    "kategori": "Best Value Complete Package",
+    "harga_diskon": "Rp299.000",
+    "harga_normal": "Rp2.000.000",
+    "hemat": "Hemat Rp99.000 dari beli terpisah (Diskon Total Rp1.701.000)",
+    "badge": "Paling Populer • Hemat Rp99.000",
+    "periode_aktif": "Sekali bayar (periode aktif pertahun)",
+    "deskripsi": "Solusi paling lengkap mencakup seluruh fasilitas Ketal, Plasma, dan akses Live Class Zoom bulanan.",
+    "fasilitas": [
+      "Semua fasilitas Ketal Pembelajaran SKD",
+      "Semua fasilitas Plasma Try Out SKD",
+      "Live Class / Bedah Soal Zoom bulanan bersama mentor"
+    ],
+    "cta_text": "Daftar Bundling Sekarang"
+  }
+]
