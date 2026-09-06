@@ -19,35 +19,33 @@
   <!-- Sub-Header Internal GEODATIS (Baris 2) -->
   <div id="geodatis-subnav-app"></div>
 
-  <!-- HERO STAGE: RANGKUMAN POSTER (DOMINO STACK CASCADE) -->
+  <!-- HERO STAGE: HEADER & GRID POSTER PARAJALAN -->
   <section class="reguler-hero">
     <div class="geodatis-container">
-      <div class="hero-reguler-grid">
-        
-        <!-- Hero Text -->
-        <div class="hero-text-block">
-          <span class="badge-emerald">📚 Layanan B2C / Individu</span>
-          <h1 class="hero-title" id="pageTitle">Program Reguler GEODATIS</h1>
-          <p class="hero-desc" id="pageSubtitle">
-            Layanan B2C / Individu untuk Penguasaan Skill Geospatial Data & Statistics.
-          </p>
-          <div class="hero-hint">
-            <span class="pulse-dot"></span> Arahkan kursor pada kartu poster domino untuk memajukan, klik untuk memperbesar preview.
-          </div>
+      
+      <!-- Hero Text Block -->
+      <div class="hero-text-block text-center">
+        <span class="badge-emerald">📚 Layanan B2C / Individu</span>
+        <h1 class="hero-title" id="pageTitle">Program Reguler GEODATIS</h1>
+        <p class="hero-desc" id="pageSubtitle">
+          Layanan B2C / Individu untuk Penguasaan Skill Geospatial Data & Statistics.
+        </p>
+        <div class="hero-hint">
+          <span class="pulse-dot"></span> Klik pada poster untuk melihat detail & memperbesar gambar.
         </div>
-
-        <!-- Domino Stage Container (Render via JS dari rangkuman_poster) -->
-        <div class="domino-stage-wrapper">
-          <div class="domino-stack" id="dominoPosterStack">
-            <!-- Rendered via JS -->
-          </div>
-        </div>
-
       </div>
+
+      <!-- Poster Grid Layout (Berjejer Rapi di Bawah Judul) -->
+      <div class="poster-grid-wrapper">
+        <div class="poster-grid" id="dominoPosterStack">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- SECTION 1: DAFTAR PROGRAM (KATALOG CARDS LAYANAN B2C) -->
+  <!-- SECTION 1: DAFTAR PROGRAM (2 KOLOM WIDE CARDS) -->
   <section class="geodatis-section">
     <div class="geodatis-container">
       <div class="section-header">
@@ -55,8 +53,8 @@
         <p>Program pembelajaran terstruktur dari tingkat webinar gratis, short course, hingga private request.</p>
       </div>
 
-      <!-- Grid Cards Render via JS dari daftar_program -->
-      <div class="katalog-grid" id="daftarProgramContainer">
+      <!-- 2 Kolom Grid Cards Render via JS -->
+      <div class="katalog-grid-2col" id="daftarProgramContainer">
         <!-- Rendered via JS -->
       </div>
     </div>
