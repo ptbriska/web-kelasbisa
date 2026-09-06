@@ -1,44 +1,48 @@
 /* =========================================================
-   STYLE MICRO-SITE GATRA ADHIKA — CPNS & KEDINASAN
-   Theme: Official, Bold Crimson, Prestige Gold & Clean EdTech
+   STYLE MICRO-SITE GATRA ADHIKA — FUTURISTIC EDTECH (2026 VIBES)
+   Color Palette: Vibrant Red (#EE0000), Cyan Accent (#06B6D4), Listing Gold (#F59E0B)
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  /* GATRA Color Palette */
-  --gatra-crimson: #991B1B;        /* Primary Crimson Red */
-  --gatra-crimson-dark: #7F1D1D;   /* Dark Crimson / Hero Dark */
-  --gatra-crimson-soft: #FEF2F2;   /* Soft Red Tint Background */
-  --gatra-gold: #D97706;           /* Prestige Gold */
-  --gatra-gold-light: #FEF3C7;      /* Gold Accent Light */
-  --gatra-gold-border: #FDE68A;    /* Soft Gold Border */
-  --kb-cyan: #06B6D4;               /* Kelas Bisa Accent */
-  
-  /* Neutral Slate Palette */
-  --gatra-dark: #0F172A;           /* Deep Charcoal Header/Hero */
-  --gatra-bg: #F8FAFC;             /* Clean App Light Gray BG */
-  --gatra-card: #FFFFFF;           /* Card Base */
-  --gatra-text-main: #1E293B;      /* High-contrast Text */
-  --gatra-text-muted: #64748B;    /* Muted Text */
-  --gatra-border: #E2E8F0;        /* Card & Divider Border */
-  
-  /* System Radius & Elevating Shadows */
+  /* Core Brand Colors */
+  --gatra-red: #EE0000;             /* Electric Red GATRA */
+  --gatra-red-dark: #B30000;        /* Deep Crimson */
+  --gatra-red-glow: rgba(238, 0, 0, 0.35);
+  --gatra-red-soft: #FFF5F5;        /* Soft Tint Red */
+
+  --kb-cyan: #06B6D4;               /* Electric Cyan Kelas Bisa */
+  --kb-cyan-glow: rgba(6, 182, 212, 0.4);
+  --kb-cyan-soft: #ECFEFF;
+
+  --gatra-gold: #F59E0B;           /* Listing Gold */
+  --gatra-gold-glow: rgba(245, 158, 11, 0.35);
+  --gatra-gold-soft: #FFFBEB;
+
+  /* Neutral Modern Palette */
+  --gatra-dark: #0F172A;           /* Deep Obsidian */
+  --gatra-dark-glass: rgba(15, 23, 42, 0.85);
+  --gatra-bg: #F8FAFC;             /* Clean Canvas */
+  --gatra-card: #FFFFFF;
+  --gatra-text-main: #0F172A;
+  --gatra-text-muted: #64748B;
+  --gatra-border: #E2E8F0;
+
+  /* Geometry & Motion */
   --radius-xl: 20px;
-  --radius-lg: 16px;
+  --radius-lg: 14px;
   --radius-md: 10px;
   --radius-sm: 6px;
-  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 10px 25px rgba(153, 27, 27, 0.08);
-  --shadow-hover: 0 16px 36px rgba(153, 27, 27, 0.16);
-  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* BASE STYLING */
 body {
   background-color: var(--gatra-bg);
   color: var(--gatra-text-main);
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -46,24 +50,25 @@ body {
 }
 
 .gatra-container {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
 }
 
 /* =========================================================
-   1. SUB-HEADER NAVBAR INTERNAL GATRA (BARIS 2)
+   1. SUB-HEADER NAVBAR INTERNAL GATRA (GLASSMORPHISM)
    ========================================================= */
 .gatra-subnav {
-  background: rgba(15, 23, 42, 0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 2px solid var(--gatra-gold);
+  background: var(--gatra-dark-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px 0;
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .subnav-wrapper {
@@ -79,21 +84,31 @@ body {
   gap: 10px;
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 1.15rem;
-  letter-spacing: -0.3px;
+  font-size: 1.2rem;
+  letter-spacing: -0.5px;
   text-decoration: none;
 }
 
 .subnav-brand span {
-  color: var(--gatra-gold);
+  color: var(--gatra-red);
+  text-shadow: 0 0 12px var(--gatra-red-glow);
 }
 
 .subnav-menu {
   display: flex;
   gap: 6px;
-  list-style: none;
+  list-style: none !important;
   margin: 0;
-  padding: 0;
+  padding: 0 !important;
+}
+
+.subnav-menu li {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.subnav-menu li::before {
+  display: none !important;
 }
 
 .subnav-menu a {
@@ -103,47 +118,60 @@ body {
   padding: 8px 16px;
   border-radius: var(--radius-md);
   text-decoration: none;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
 }
 
 .subnav-menu a:hover,
 .subnav-menu a.active {
   color: #FFFFFF;
-  background: var(--gatra-crimson);
-  box-shadow: 0 4px 12px rgba(153, 27, 27, 0.4);
+  background: rgba(238, 0, 0, 0.15);
+  border: 1px solid var(--gatra-red);
+  box-shadow: 0 0 15px var(--gatra-red-glow);
 }
 
 .btn-wa-consult {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: linear-gradient(135deg, #25D366 0%, #059669 100%);
   color: #FFFFFF !important;
   font-size: 0.82rem;
   font-weight: 800;
-  padding: 9px 18px;
+  padding: 10px 20px;
   border-radius: 30px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
-  transition: var(--transition-fast);
+  box-shadow: 0 0 16px rgba(37, 211, 102, 0.35);
+  transition: var(--transition-bounce);
 }
 
 .btn-wa-consult:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
 }
 
 /* =========================================================
-   2. HERO & SECTIONS
+   2. HERO SECTION (NEON CYBER AI GRID)
    ========================================================= */
 .gatra-hero {
-  background: radial-gradient(circle at top right, rgba(153, 27, 27, 0.25), transparent 50%),
-              linear-gradient(135deg, var(--gatra-dark) 0%, #180C0C 50%, var(--gatra-crimson-dark) 100%);
+  background: 
+    radial-gradient(circle at top right, rgba(6, 182, 212, 0.15), transparent 40%),
+    radial-gradient(circle at bottom left, rgba(238, 0, 0, 0.2), transparent 50%),
+    linear-gradient(135deg, #0B0F17 0%, #170505 100%);
   color: #FFFFFF;
-  padding: 64px 0;
-  border-bottom: 3px solid var(--gatra-gold);
+  padding: 72px 0;
+  border-bottom: 2px solid rgba(238, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+}
+
+.gatra-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
 }
 
 .gatra-section {
@@ -152,92 +180,166 @@ body {
 
 .section-header {
   text-align: center;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto 48px auto;
 }
 
 .section-header h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 900;
   color: var(--gatra-dark);
   margin: 0 0 12px 0;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.8px;
 }
 
 .section-header p {
   color: var(--gatra-text-muted);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   margin: 0;
 }
 
 /* =========================================================
-   3. CARDS & UI COMPONENTS
+   3. INTERACTIVE NEON CARDS (INTERAKSI & SHIMMER)
    ========================================================= */
 .gatra-card {
   background: var(--gatra-card);
   border: 1.5px solid var(--gatra-border);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-fast);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+  transition: var(--transition-bounce);
   position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer Light Effect */
+.gatra-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(238, 0, 0, 0.06), transparent);
+  transition: 0.8s ease;
+}
+
+.gatra-card:hover::after {
+  left: 150%;
 }
 
 .gatra-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-hover);
-  border-color: rgba(153, 27, 27, 0.3);
+  transform: translateY(-8px) scale(1.015);
+  border-color: var(--gatra-red);
+  box-shadow: 
+    0 20px 40px rgba(238, 0, 0, 0.12),
+    0 0 25px var(--gatra-red-glow);
 }
 
-/* BADGES */
+/* =========================================================
+   4. FIX BULLET LIST SYSTEM (CYAN & GOLD ICON BADGES)
+   ========================================================= */
+
+/* Paksa override list-style global */
+.gatra-card ul,
+.gatra-section ul:not(.subnav-menu) {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-top: 14px !important;
+  margin-bottom: 22px !important;
+}
+
+.gatra-card ul li,
+.gatra-section ul:not(.subnav-menu) li {
+  position: relative !important;
+  padding-left: 30px !important;
+  margin-bottom: 10px !important;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--gatra-text-main);
+  list-style: none !important;
+}
+
+/* Glowing Checkmark Bullet Icon (Cyan Kelas Bisa Accent) */
+.gatra-card ul li::before,
+.gatra-section ul:not(.subnav-menu) li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(135deg, var(--kb-cyan) 0%, #0284C7 100%);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px var(--kb-cyan-glow);
+  font-family: sans-serif;
+}
+
+/* Alternative Gold Bullet List untuk Fitur Highlights */
+.gatra-card ul.list-gold li::before {
+  background: linear-gradient(135deg, var(--gatra-gold) 0%, #D97706 100%);
+  box-shadow: 0 0 10px var(--gatra-gold-glow);
+}
+
+/* =========================================================
+   5. BADGES & NEON BUTTONS
+   ========================================================= */
 .badge-gold {
-  background: var(--gatra-gold-light);
-  color: #92400E;
+  background: var(--gatra-gold-soft);
+  color: #B45309;
   font-size: 0.75rem;
   font-weight: 800;
-  padding: 5px 12px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--gatra-gold-border);
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid #FDE68A;
   display: inline-block;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.15);
 }
 
-.badge-crimson {
-  background: var(--gatra-crimson-soft);
-  color: var(--gatra-crimson-dark);
+.badge-cyan {
+  background: var(--kb-cyan-soft);
+  color: #0369A1;
   font-size: 0.75rem;
   font-weight: 800;
-  padding: 5px 12px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(153, 27, 27, 0.2);
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid #BAE6FD;
   display: inline-block;
+  box-shadow: 0 0 10px var(--kb-cyan-glow);
 }
 
-/* BUTTONS */
+/* Button Primary Gradient + Glow Hover */
 .btn-gatra-primary {
-  background: linear-gradient(135deg, var(--gatra-crimson) 0%, var(--gatra-crimson-dark) 100%);
+  background: linear-gradient(135deg, var(--gatra-red) 0%, var(--gatra-red-dark) 100%);
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 0.9rem;
-  padding: 12px 24px;
+  font-size: 0.92rem;
+  padding: 12px 26px;
   border-radius: var(--radius-md);
   text-decoration: none;
   display: inline-block;
   text-align: center;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 14px rgba(153, 27, 27, 0.3);
-  transition: var(--transition-fast);
+  box-shadow: 0 6px 20px var(--gatra-red-glow);
+  transition: var(--transition-bounce);
 }
 
 .btn-gatra-primary:hover {
-  background: linear-gradient(135deg, #B91C1C 0%, var(--gatra-crimson) 100%);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(153, 27, 27, 0.45);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(238, 0, 0, 0.5);
+  background: linear-gradient(135deg, #FF1A1A 0%, var(--gatra-red) 100%);
 }
 
 /* =========================================================
-   4. TABLE ALUMNI CUSTOM STYLING
+   6. TABLE ALUMNI CUSTOM STYLING (NEON HOVER ROWS)
    ========================================================= */
 table {
   width: 100%;
@@ -250,24 +352,26 @@ th {
   color: #FFFFFF;
   font-weight: 800;
   font-size: 0.85rem;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
-  padding: 16px 20px;
+  padding: 18px 20px;
+  border-bottom: 2px solid var(--gatra-red);
 }
 
 td {
   padding: 16px 20px;
   border-bottom: 1px solid var(--gatra-border);
   background: #FFFFFF;
-  transition: var(--transition-fast);
+  transition: var(--transition-smooth);
 }
 
 tr:hover td {
-  background: var(--gatra-crimson-soft);
+  background: var(--gatra-red-soft);
+  border-bottom-color: rgba(238, 0, 0, 0.2);
 }
 
 /* =========================================================
-   5. RESPONSIVE BREAKPOINTS
+   7. RESPONSIVE BREAKPOINTS
    ========================================================= */
 @media (max-width: 992px) {
   .subnav-wrapper {
