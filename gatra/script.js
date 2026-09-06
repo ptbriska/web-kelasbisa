@@ -55,14 +55,18 @@ function injectGatraSubHeader() {
   `;
 }
 
-// FETCH DATA GENERIC
+// FETCH DATA GENERIC WITH RELATIVE FALLBACK
 async function fetchGatraData(endpoint) {
   try {
-    const res = await fetch(endpoint);
+    let res = await fetch(endpoint);
+    if (!res.ok) {
+      // Retry with explicit relative path if first attempt fails
+      res = await fetch(`./${endpoint}`);
+    }
     if (!res.ok) throw new Error(`Gagal membaca ${endpoint}`);
     return await res.json();
   } catch (err) {
-    console.error("GATRA Data Error:", err.message);
+    console.error("GATRA Data Fetch Error:", err.message);
     return null;
   }
 }
@@ -71,7 +75,6 @@ async function fetchGatraData(endpoint) {
    HANDLER 1: BERANDA PAGE
    ========================================== */
 async function initBerandaPage() {
-  // Render Sneakpeek Promo
   const promoData = await fetchGatraData('program-unggulan.json');
   if (promoData) {
     const grid = document.getElementById('indexPromoPreviewGrid');
@@ -91,7 +94,6 @@ async function initBerandaPage() {
     }
   }
 
-  // Render Sneakpeek Program Reguler
   const regulerData = await fetchGatraData('program-reguler.json');
   if (regulerData && regulerData.program_akademik) {
     const grid = document.getElementById('indexProgramPreviewGrid');
@@ -110,7 +112,6 @@ async function initBerandaPage() {
     }
   }
 
-  // Render Testimoni Brief
   const summaryData = await fetchGatraData('alumni/summary.json');
   if (summaryData && summaryData.alumni_highlight_beranda) {
     const grid = document.getElementById('indexAlumniPreviewGrid');
@@ -176,7 +177,6 @@ async function initProgramRegulerPage() {
   const data = await fetchGatraData('program-reguler.json');
   if (!data) return;
 
-  // Render Cards Program Akademik
   const grid = document.getElementById('regulerCardsGrid');
   if (grid && data.program_akademik) {
     grid.innerHTML = data.program_akademik.map(item => `
@@ -216,10 +216,9 @@ async function initProgramRegulerPage() {
     `).join('');
   }
 
-  // Render Pendaftaran Fee
   const pendaftaranContainer = document.getElementById('pendaftaranFeeContainer');
   if (pendaftaranContainer && data.program_akademik) {
-    const items = data.program_akademik.slice(2, 5); // Ambil sampel skema pendaftaran
+    const items = data.program_akademik.slice(2, 5);
     pendaftaranContainer.innerHTML = items.map(item => `
       <div style="background: var(--gatra-bg); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--gatra-border);">
         <span style="font-size: 0.75rem; font-weight: 800; color: var(--gatra-gold);">${item.nama}</span>
@@ -231,7 +230,6 @@ async function initProgramRegulerPage() {
     `).join('');
   }
 
-  // Render Binsik
   const binsikContainer = document.getElementById('binsikPackagesContainer');
   if (binsikContainer && data.program_tambahan_binsik) {
     binsikContainer.innerHTML = data.program_tambahan_binsik.map(b => `
@@ -243,7 +241,6 @@ async function initProgramRegulerPage() {
     `).join('');
   }
 
-  // Render Jadwal Kelas
   const jadwalContainer = document.getElementById('jadwalKelasContainer');
   if (jadwalContainer && data.opsi_waktu_dan_lokasi) {
     jadwalContainer.innerHTML = data.opsi_waktu_dan_lokasi.jadwal_kelas.map(j => `
@@ -257,7 +254,7 @@ async function initProgramRegulerPage() {
 }
 
 /* ==========================================
-   HANDLER 4: ALUMNI DASHBOARD & TABLE PAGE
+   HANDLER 4: ALUMNI DASHBOARD & TABLE PAGE (FIXED)
    ========================================== */
 let currentAlumniData = [];
 let currentPage = 1;
@@ -265,7 +262,10 @@ const rowsPerPage = 10;
 
 async function initAlumniPage() {
   const summary = await fetchGatraData('alumni/summary.json');
-  if (!summary) return;
+  if (!summary) {
+    console.error("Gagal memuat alumni/summary.json");
+    return;
+  }
 
   // Render Stat Metrics
   const statsGrid = document.getElementById('alumniStatsGrid');
@@ -274,52 +274,56 @@ async function initAlumniPage() {
     statsGrid.innerHTML = `
       <div style="background: rgba(255,255,255,0.1); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid var(--gatra-gold);">
         <div style="font-size: 0.78rem; color: #94A3B8;">Total Alumni Lolos ASN</div>
-        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.total_lulus_asn}</div>
+        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.total_lulus_asn || '0'}</div>
       </div>
       <div style="background: rgba(255,255,255,0.1); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid var(--kb-cyan);">
         <div style="font-size: 0.78rem; color: #94A3B8;">Persentase Kelulusan</div>
-        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.persentase_kelulusan}</div>
+        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.persentase_kelulusan || '0%'}</div>
       </div>
       <div style="background: rgba(255,255,255,0.1); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid #25D366;">
         <div style="font-size: 0.78rem; color: #94A3B8;">Skor SKD Tertinggi</div>
-        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.skor_skd_tertinggi}</div>
+        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.skor_skd_tertinggi || '-'}</div>
       </div>
       <div style="background: rgba(255,255,255,0.1); padding: 16px; border-radius: var(--radius-md); border-left: 4px solid var(--gatra-gold);">
         <div style="font-size: 0.78rem; color: #94A3B8;">Alumni Kedinasan/Taruna</div>
-        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.total_alumni_taruna}</div>
+        <div style="font-size: 1.6rem; font-weight: 900; color: #FFF;">${s.total_alumni_taruna || '0'}</div>
       </div>
     `;
   }
 
-  // Render Tabs Tahun
+  // Render Year Tabs
   const tabsContainer = document.getElementById('tahunFilterTabs');
-  if (tabsContainer && summary.tahun_tersedia) {
+  if (tabsContainer && summary.tahun_tersedia && summary.tahun_tersedia.length > 0) {
     tabsContainer.innerHTML = summary.tahun_tersedia.map((year, idx) => `
-      <button class="year-tab-btn ${idx === 0 ? 'active' : ''}" data-year="${year}" onclick="loadAlumniYear('${year}', this)" style="padding: 8px 16px; border-radius: var(--radius-md); border: 1px solid var(--gatra-border); background: ${idx === 0 ? 'var(--gatra-crimson)' : '#FFF'}; color: ${idx === 0 ? '#FFF' : 'var(--gatra-dark)'}; font-weight: 700; cursor: pointer;">
+      <button class="year-tab-btn" data-year="${year}" onclick="loadAlumniYear('${year}', this)" 
+        style="padding: 8px 16px; border-radius: var(--radius-md); border: 1px solid var(--gatra-border); 
+        background: ${idx === 0 ? 'var(--gatra-crimson)' : '#FFF'}; 
+        color: ${idx === 0 ? '#FFF' : 'var(--gatra-dark)'}; font-weight: 700; cursor: pointer;">
         Angkatan ${year}
       </button>
     `).join('');
 
-    // Load Default Year
+    // Load First Available Year
     loadAlumniYear(summary.tahun_tersedia[0]);
   }
 
-  // Live Search Event
+  // Live Search Filter (Undefined-safe)
   const searchInput = document.getElementById('alumniSearchInput');
   if (searchInput) {
     searchInput.addEventListener('input', function (e) {
-      const keyword = e.target.value.toLowerCase();
-      const filtered = currentAlumniData.filter(item => 
-        item.nama.toLowerCase().includes(keyword) ||
-        item.instansi_lulus.toLowerCase().includes(keyword) ||
-        item.asal_sekolah.toLowerCase().includes(keyword)
-      );
+      const keyword = e.target.value.toLowerCase().trim();
+      const filtered = currentAlumniData.filter(item => {
+        const nama = (item.nama || '').toLowerCase();
+        const instansi = (item.instansi_lulus || '').toLowerCase();
+        const sekolah = (item.asal_sekolah || '').toLowerCase();
+        return nama.includes(keyword) || instansi.includes(keyword) || sekolah.includes(keyword);
+      });
       renderAlumniTable(filtered, 1);
     });
   }
 }
 
-// FETCH & RENDER DATA ALUMNI PER TAHUN
+// LOAD ALUMNI YEAR JSON
 async function loadAlumniYear(year, btnElement) {
   if (btnElement) {
     document.querySelectorAll('.year-tab-btn').forEach(b => {
@@ -331,13 +335,16 @@ async function loadAlumniYear(year, btnElement) {
   }
 
   const data = await fetchGatraData(`alumni/${year}.json`);
-  if (data) {
+  if (data && Array.isArray(data)) {
     currentAlumniData = data;
     renderAlumniTable(currentAlumniData, 1);
+  } else {
+    console.error(`Gagal memuat data alumni tahun ${year}`);
+    renderAlumniTable([], 1);
   }
 }
 
-// RENDER TABLE DINAMIS WITH PAGINATION
+// RENDER ALUMNI TABLE
 function renderAlumniTable(dataList, page = 1) {
   currentPage = page;
   const tbody = document.getElementById('alumniTableBody');
@@ -346,8 +353,8 @@ function renderAlumniTable(dataList, page = 1) {
 
   if (!tbody) return;
 
-  if (dataList.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 24px; color: var(--gatra-text-muted);">Data alumni tidak ditemukan.</td></tr>`;
+  if (!dataList || dataList.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="6" style="text-align: center; padding: 32px; color: var(--gatra-text-muted);">Belum ada data alumni untuk angkatan ini.</td></tr>`;
     if (info) info.innerText = 'Menampilkan 0 data';
     if (controls) controls.innerHTML = '';
     return;
@@ -361,17 +368,19 @@ function renderAlumniTable(dataList, page = 1) {
     <tr style="border-bottom: 1px solid var(--gatra-border);">
       <td style="padding: 12px 20px;">
         <div style="display: flex; align-items: center; gap: 10px;">
-          <img src="${item.foto}" alt="${item.nama}" style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover;" onerror="this.src='../assets/images/logo-kelasbisa.png'">
-          <strong style="color: var(--gatra-dark);">${item.nama}</strong>
+          <img src="${item.foto || 'image/alumni/default.jpg'}" alt="${item.nama}" 
+            style="width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 1px solid var(--gatra-gold);" 
+            onerror="this.src='../assets/images/logo-kelasbisa.png'">
+          <strong style="color: var(--gatra-dark);">${item.nama || '-'}</strong>
         </div>
       </td>
-      <td style="padding: 12px 20px;"><span class="badge-gold">${item.jenis_program || 'CPNS/Kedinasan'}</span></td>
+      <td style="padding: 12px 20px;"><span class="badge-gold">${item.jenis_program || 'Sekolah Kedinasan'}</span></td>
       <td style="padding: 12px 20px;">
-        <strong style="color: var(--gatra-crimson);">${item.instansi_lulus}</strong><br>
-        <small style="color: var(--gatra-text-muted);">${item.formasi}</small>
+        <strong style="color: var(--gatra-crimson);">${item.instansi_lulus || '-'}</strong><br>
+        <small style="color: var(--gatra-text-muted);">${item.formasi || '-'}</small>
       </td>
-      <td style="padding: 12px 20px; text-align: center; font-weight: 900; color: var(--gatra-dark);">${item.skor_skd}</td>
-      <td style="padding: 12px 20px; color: var(--gatra-text-muted);">${item.asal_sekolah}</td>
+      <td style="padding: 12px 20px; text-align: center; font-weight: 900; color: var(--gatra-dark);">${item.skor_skd || '-'}</td>
+      <td style="padding: 12px 20px; color: var(--gatra-text-muted);">${item.asal_sekolah || '-'}</td>
       <td style="padding: 12px 20px; font-size: 0.8rem; font-style: italic; color: var(--gatra-text-main); max-width: 240px;">"${item.testimoni || '-'}"</td>
     </tr>
   `).join('');
@@ -380,12 +389,14 @@ function renderAlumniTable(dataList, page = 1) {
     info.innerText = `Menampilkan ${startIdx + 1} - ${Math.min(endIdx, dataList.length)} dari ${dataList.length} alumni`;
   }
 
-  // Render Pagination Buttons
   const totalPages = Math.ceil(dataList.length / rowsPerPage);
   if (controls && totalPages > 1) {
     let btns = '';
     for (let i = 1; i <= totalPages; i++) {
-      btns += `<button onclick="renderAlumniTable(currentAlumniData, ${i})" style="padding: 4px 10px; border-radius: 4px; border: 1px solid var(--gatra-border); background: ${i === page ? 'var(--gatra-crimson)' : '#FFF'}; color: ${i === page ? '#FFF' : 'var(--gatra-dark)'}; cursor: pointer;">${i}</button>`;
+      btns += `<button onclick="renderAlumniTable(currentAlumniData, ${i})" 
+        style="padding: 4px 10px; border-radius: 4px; border: 1px solid var(--gatra-border); 
+        background: ${i === page ? 'var(--gatra-crimson)' : '#FFF'}; 
+        color: ${i === page ? '#FFF' : 'var(--gatra-dark)'}; cursor: pointer; font-weight: 700;">${i}</button>`;
     }
     controls.innerHTML = btns;
   } else if (controls) {
@@ -400,7 +411,6 @@ async function initTutorPage() {
   const data = await fetchGatraData('tutor.json');
   if (!data) return;
 
-  // Render Tutor Cards
   const grid = document.getElementById('tutorCardsGrid');
   if (grid && data.daftar_tutor) {
     grid.innerHTML = data.daftar_tutor.map(t => `
@@ -419,7 +429,6 @@ async function initTutorPage() {
     `).join('');
   }
 
-  // Render Cabang List
   const cabangContainer = document.getElementById('cabangListContainer');
   if (cabangContainer && data.kantor_cabang) {
     cabangContainer.innerHTML = data.kantor_cabang.map(c => `
