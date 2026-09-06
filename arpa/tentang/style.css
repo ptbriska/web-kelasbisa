@@ -1,0 +1,420 @@
+/* =========================================================
+   ARPA MODULE — TENTANG PAGE STYLING
+   Theme: Slate Obsidian ARPA (#0F172A, #334155) & Cyan Glow Kelas Bisa (#06B6D4)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ARPA Slate & Obsidian Palette */
+  --arpa-obsidian: #0F172A;
+  --arpa-slate-dark: #1E293B;
+  --arpa-slate-main: #334155;
+  --arpa-slate-muted: #64748B;
+  --arpa-slate-light: #F8FAFC;
+  --arpa-border: #E2E8F0;
+
+  /* Kelas Bisa Cyan Accents */
+  --kb-cyan: #06B6D4;
+  --kb-cyan-dark: #0284C7;
+  --kb-cyan-light: #ECFEFF;
+  --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+
+  /* Hybrid Gradient */
+  --arpa-hybrid-gradient: linear-gradient(135deg, var(--arpa-slate-dark) 0%, #0284C7 100%);
+  --cyan-teal-gradient: linear-gradient(135deg, #14A096 0%, #06B6D4 100%);
+
+  /* Radius & Shadows */
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 16px 36px rgba(6, 182, 212, 0.18);
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* BASE RESET */
+body {
+  background-color: var(--arpa-slate-light);
+  color: #1E293B;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.arpa-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* BADGES */
+.badge-slate {
+  background: var(--kb-cyan-light);
+  color: var(--kb-cyan-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  display: inline-block;
+  box-shadow: 0 0 12px var(--kb-cyan-glow);
+}
+
+/* HERO SECTION */
+.arpa-hero {
+  background: radial-gradient(circle at 85% 15%, rgba(6, 182, 212, 0.12), transparent 45%),
+              radial-gradient(circle at 15% 85%, rgba(51, 65, 85, 0.08), transparent 50%),
+              linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+  padding: 72px 0 80px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--arpa-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 12px 0 0 0;
+  letter-spacing: -1.5px;
+}
+
+.accent-text {
+  background: linear-gradient(135deg, var(--arpa-slate-main) 0%, var(--kb-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-tagline {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--kb-cyan-dark);
+  margin: 4px 0 16px 0;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--arpa-slate-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.hero-meta-badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #FFFFFF;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--kb-cyan);
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.hero-meta-badge span {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--arpa-obsidian);
+}
+
+.hero-meta-badge small {
+  font-size: 0.75rem;
+  color: var(--arpa-slate-muted);
+}
+
+/* SECTION GENERAL */
+.arpa-section {
+  padding: 64px 0;
+}
+
+.light-slate-bg {
+  background: #F1F5F9;
+  border-top: 1px solid var(--arpa-border);
+  border-bottom: 1px solid var(--arpa-border);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 10px 0 8px 0;
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  color: var(--arpa-slate-muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+/* 1. TARGET PENGGUNA GRID */
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.target-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.target-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--arpa-hybrid-gradient);
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.target-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.target-card:hover::before {
+  opacity: 1;
+}
+
+.target-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.target-card h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 0 0 12px 0;
+}
+
+.target-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--kb-cyan-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.target-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+.target-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.86rem;
+  color: var(--arpa-slate-main);
+  margin-bottom: 6px;
+}
+
+.target-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--kb-cyan);
+  font-weight: 900;
+}
+
+/* 2. EKOSISTEM RISET GRID (PBCC, PBLS, SKA-IAM) */
+.ekosistem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.ekosistem-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.ekosistem-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.eko-kode {
+  background: var(--arpa-obsidian);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.15);
+}
+
+.ekosistem-card h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 0 0 4px 0;
+}
+
+.eko-peran {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--kb-cyan-dark);
+  margin-bottom: 16px;
+}
+
+.eko-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+.eko-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 0.88rem;
+  color: var(--arpa-slate-main);
+  margin-bottom: 8px;
+}
+
+.eko-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background: var(--cyan-teal-gradient);
+  color: #FFFFFF;
+  font-size: 0.65rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motto-box {
+  background: linear-gradient(135deg, var(--arpa-obsidian) 0%, var(--arpa-slate-dark) 100%);
+  color: #FFFFFF;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
+  border-left: 5px solid var(--kb-cyan);
+}
+
+.motto-box p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* 3. PROGRAM SPESIAL CARDS */
+.special-program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.special-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.special-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.special-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--kb-cyan-dark);
+  background: var(--kb-cyan-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 12px;
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.special-card h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 0;
+}
+
+.special-sub {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--arpa-slate-muted);
+  margin: 2px 0 14px 0;
+}
+
+.special-desc {
+  font-size: 0.9rem;
+  color: var(--arpa-slate-main);
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.special-freq {
+  font-size: 0.82rem;
+  color: var(--arpa-slate-muted);
+  background: var(--arpa-slate-light);
+  padding: 8px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--arpa-border);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .ekosistem-grid,
+  .special-program-grid {
+    grid-template-columns: 1fr;
+  }
+}
