@@ -1,0 +1,86 @@
+{
+  "page_meta": {
+    "title": "Program Mitra GEODATIS",
+    "subtitle": "Layanan B2B / B2G untuk Lembaga, Instansi Pemerintah, Corporate, dan Akademisi",
+    "whatsapp_cs": "082268118842"
+  },
+  "daftar_program": [
+    {
+      "id": "mitra-01",
+      "kode": "Consul+",
+      "nama": "Consul+ (Exclusive Training / Privat)",
+      "badge": "Flexible Duration | EXTRA",
+      "format": "Plato (Online) / Platipus (Terpusat)",
+      "deskripsi": "Program yang diadakan khusus jika ada yang request ke GEODATIS untuk tutorial analisa dan pengolahan data dari lembaga atau instansi.",
+      "fitur": [
+        "Sesi Privat Khusus Lembaga / Instansi",
+        "Materi & Dataset Disesuaikan Kasus Riil Instansi",
+        "Pilihan Format Online (Plato) atau Terpusat (Platipus)"
+      ]
+    },
+    {
+      "id": "mitra-02",
+      "kode": "Corporate",
+      "nama": "Corporate Training",
+      "badge": "B2B Professional",
+      "format": "In-House / Online / Hybrid",
+      "deskripsi": "Membantu perusahaan membangun kompetensi teknis dan analitik berbasis geospasial untuk mendukung workflow, efisiensi, dan pengambilan keputusan berbasis data.",
+      "fitur": [
+        "Pengembangan Workflow Geospasial Perusahaan",
+        "Peningkatan Efisiensi & Analisis Data Bisnis",
+        "Sertifikasi Kompetensi Tim Industri"
+      ]
+    },
+    {
+      "id": "mitra-03",
+      "kode": "Government",
+      "nama": "Government Training",
+      "badge": "B2G Public Sector",
+      "format": "In-House / Terpusat",
+      "deskripsi": "Mendukung penguatan kapasitas SDM institusi dan pemerintah melalui pembelajaran geospasial terapan untuk transformasi kompetensi dan pengembangan sistem berbasis data spasial.",
+      "fitur": [
+        "Penguatan Kapasitas SDM Aparatur & Analis",
+        "Transformasi Kompetensi Data Spasial Publik",
+        "Dukungan Kebijakan Berbasis Peta & Statistik"
+      ]
+    }
+  ],
+  "mitra_kerja_sama": [
+    {
+      "id": "logo-01",
+      "nama_instansi": "Instansi Mitra 1",
+      "logo_file": "logo-mitra-1.png"
+    },
+    {
+      "id": "logo-02",
+      "nama_instansi": "Instansi Mitra 2",
+      "logo_file": "logo-mitra-1.png"
+    },
+    {
+      "id": "logo-03",
+      "nama_instansi": "Instansi Mitra 3",
+      "logo_file": "logo-mitra-1.png"
+    },
+    {
+      "id": "logo-04",
+      "nama_instansi": "Instansi Mitra 4",
+      "logo_file": "logo-mitra-1.png"
+    }
+  ],
+  "dokumentasi_pelatihan": [
+    {
+      "id": "doku-01",
+      "judul_kegiatan": "Pelatihan Geospasial In-House",
+      "kategori": "Exclusive Training",
+      "foto_file": "kegiatan-mitra.jpg",
+      "deskripsi": "Suasana pendampingan praktik langsung pengolahan data spasial bersama tim instansi."
+    },
+    {
+      "id": "doku-02",
+      "judul_kegiatan": "Workshop Analisis Data Instansi",
+      "kategori": "Corporate Training",
+      "foto_file": "kegiatan-mitra.jpg",
+      "deskripsi": "Sesi diskusi dan problem solving kasus spasial sektor publik & bisnis."
+    }
+  ]
+}
