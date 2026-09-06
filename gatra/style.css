@@ -1,0 +1,285 @@
+/* =========================================================
+   STYLE MICRO-SITE GATRA ADHIKA — CPNS & KEDINASAN
+   Theme: Official, Bold Crimson, Prestige Gold & Clean EdTech
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* GATRA Color Palette */
+  --gatra-crimson: #991B1B;        /* Primary Crimson Red */
+  --gatra-crimson-dark: #7F1D1D;   /* Dark Crimson / Hero Dark */
+  --gatra-crimson-soft: #FEF2F2;   /* Soft Red Tint Background */
+  --gatra-gold: #D97706;           /* Prestige Gold */
+  --gatra-gold-light: #FEF3C7;      /* Gold Accent Light */
+  --gatra-gold-border: #FDE68A;    /* Soft Gold Border */
+  --kb-cyan: #06B6D4;               /* Kelas Bisa Accent */
+  
+  /* Neutral Slate Palette */
+  --gatra-dark: #0F172A;           /* Deep Charcoal Header/Hero */
+  --gatra-bg: #F8FAFC;             /* Clean App Light Gray BG */
+  --gatra-card: #FFFFFF;           /* Card Base */
+  --gatra-text-main: #1E293B;      /* High-contrast Text */
+  --gatra-text-muted: #64748B;    /* Muted Text */
+  --gatra-border: #E2E8F0;        /* Card & Divider Border */
+  
+  /* System Radius & Elevating Shadows */
+  --radius-xl: 20px;
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 10px 25px rgba(153, 27, 27, 0.08);
+  --shadow-hover: 0 16px 36px rgba(153, 27, 27, 0.16);
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* BASE STYLING */
+body {
+  background-color: var(--gatra-bg);
+  color: var(--gatra-text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gatra-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   1. SUB-HEADER NAVBAR INTERNAL GATRA (BARIS 2)
+   ========================================================= */
+.gatra-subnav {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--gatra-gold);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.subnav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.subnav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.subnav-brand span {
+  color: var(--gatra-gold);
+}
+
+.subnav-menu {
+  display: flex;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.subnav-menu a {
+  color: #94A3B8;
+  font-size: 0.88rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.subnav-menu a:hover,
+.subnav-menu a.active {
+  color: #FFFFFF;
+  background: var(--gatra-crimson);
+  box-shadow: 0 4px 12px rgba(153, 27, 27, 0.4);
+}
+
+.btn-wa-consult {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF !important;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 9px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+  transition: var(--transition-fast);
+}
+
+.btn-wa-consult:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.45);
+}
+
+/* =========================================================
+   2. HERO & SECTIONS
+   ========================================================= */
+.gatra-hero {
+  background: radial-gradient(circle at top right, rgba(153, 27, 27, 0.25), transparent 50%),
+              linear-gradient(135deg, var(--gatra-dark) 0%, #180C0C 50%, var(--gatra-crimson-dark) 100%);
+  color: #FFFFFF;
+  padding: 64px 0;
+  border-bottom: 3px solid var(--gatra-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.gatra-section {
+  padding: 64px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--gatra-dark);
+  margin: 0 0 12px 0;
+  letter-spacing: -0.5px;
+}
+
+.section-header p {
+  color: var(--gatra-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* =========================================================
+   3. CARDS & UI COMPONENTS
+   ========================================================= */
+.gatra-card {
+  background: var(--gatra-card);
+  border: 1.5px solid var(--gatra-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+  position: relative;
+}
+
+.gatra-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(153, 27, 27, 0.3);
+}
+
+/* BADGES */
+.badge-gold {
+  background: var(--gatra-gold-light);
+  color: #92400E;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gatra-gold-border);
+  display: inline-block;
+  letter-spacing: 0.2px;
+}
+
+.badge-crimson {
+  background: var(--gatra-crimson-soft);
+  color: var(--gatra-crimson-dark);
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(153, 27, 27, 0.2);
+  display: inline-block;
+}
+
+/* BUTTONS */
+.btn-gatra-primary {
+  background: linear-gradient(135deg, var(--gatra-crimson) 0%, var(--gatra-crimson-dark) 100%);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(153, 27, 27, 0.3);
+  transition: var(--transition-fast);
+}
+
+.btn-gatra-primary:hover {
+  background: linear-gradient(135deg, #B91C1C 0%, var(--gatra-crimson) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(153, 27, 27, 0.45);
+}
+
+/* =========================================================
+   4. TABLE ALUMNI CUSTOM STYLING
+   ========================================================= */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  background: var(--gatra-dark);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  padding: 16px 20px;
+}
+
+td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gatra-border);
+  background: #FFFFFF;
+  transition: var(--transition-fast);
+}
+
+tr:hover td {
+  background: var(--gatra-crimson-soft);
+}
+
+/* =========================================================
+   5. RESPONSIVE BREAKPOINTS
+   ========================================================= */
+@media (max-width: 992px) {
+  .subnav-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .subnav-menu {
+    overflow-x: auto;
+    padding-bottom: 6px;
+    justify-content: flex-start;
+  }
+  .subnav-menu a {
+    white-space: nowrap;
+  }
+}
