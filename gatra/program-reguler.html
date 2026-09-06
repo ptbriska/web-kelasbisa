@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Program Reguler Bimbel Offline & Hybrid — GATRA ADHIKA</title>
+
+  <!-- Global & Local CSS -->
+  <link rel="icon" href="../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="gatraProgramRegulerPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GATRA (Baris 2) -->
+  <div id="gatra-subnav-app"></div>
+
+  <!-- HERO SECTION -->
+  <section class="gatra-hero" style="padding: 40px 0;">
+    <div class="gatra-container">
+      <span class="badge-gold">🏛️ Platinum & Plato Class Series</span>
+      <h1 style="font-size: 2.2rem; font-weight: 900; margin: 12px 0 8px 0;">
+        Program Reguler Akademik & Binsik GATRA
+      </h1>
+      <p style="color: #94A3B8; max-width: 720px; font-size: 0.95rem; margin: 0;">
+        Bimbingan tatap muka intensif CPNS, PPPK, dan Sekolah Kedinasan di Campus Racing Center Makassar. Lengkap dengan opsi kelas sore/malam, latihan fisik Binsik, serta buku modul cetak[cite: 4].
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <section class="gatra-section">
+    <div class="gatra-container">
+      
+      <!-- GRID BATCH AKADEMIK DARI JSON -->
+      <div class="section-header">
+        <h2>Pilihan Seri Batch Akademik</h2>
+        <p>Disusun bertahap dari level pemula dasar hingga persiapan ujian SKB instansi[cite: 4].</p>
+      </div>
+
+      <div id="regulerCardsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px;">
+        <!-- Container diisi otomatis via JS dari program-reguler.json -->
+      </div>
+
+      <!-- SECTION BIAYA PENDAFTARAN & STARTER PACK -->
+      <div style="margin-top: 60px; background: #FFF; border: 1.5px solid var(--gatra-border); border-radius: var(--radius-lg); padding: 32px; box-shadow: var(--shadow-sm);">
+        <h3 style="color: var(--gatra-dark); font-size: 1.3rem; margin: 0 0 8px 0;">🎒 Biaya Pendaftaran & Fasilitas Starter Pack</h3>
+        <p style="color: var(--gatra-text-muted); font-size: 0.9rem; margin-0 0 24px 0;">Biaya pendaftaran kelas offline mencakup perlengkapan bimbingan dan atribut resmi peserta GATRA[cite: 4].</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;" id="pendaftaranFeeContainer">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- SECTION PROGRAM TAMBAHAN BINSIK -->
+      <div style="margin-top: 40px; background: linear-gradient(135deg, var(--gatra-dark) 0%, #1E1B18 100%); color: #FFF; border-radius: var(--radius-lg); padding: 32px; border-left: 6px solid var(--gatra-gold);">
+        <h3 style="color: var(--gatra-gold); font-size: 1.3rem; margin: 0 0 8px 0;">🏃‍♂️ Program Binsik (Pembinaan Fisik & Kesamaptaan)</h3>
+        <p style="color: #94A3B8; font-size: 0.9rem; margin: 0 0 20px 0;">Latihan fisik kesamaptaan rutin setiap pagi pukul 07.00 - 09.00 WITA di lapangan/zona binsik[cite: 4].</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;" id="binsikPackagesContainer">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- JADWAL & LOKASI BELAJAR -->
+      <div style="margin-top: 40px; background: var(--gatra-crimson-soft); border-radius: var(--radius-lg); padding: 32px; border: 1px solid rgba(153, 27, 27, 0.2);">
+        <h3 style="color: var(--gatra-crimson-dark); margin: 0 0 16px 0;">📍 Lokasi Belajar & Pilihan Jadwal Kelas</h3>
+        <p style="font-size: 0.9rem; margin-bottom: 20px;"><strong>Lokasi Utama:</strong> Jl. Racing Center, Makassar, Sulawesi Selatan[cite: 4]</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;" id="jadwalKelasContainer">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
