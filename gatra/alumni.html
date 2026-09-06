@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Prestasi & Testimoni Alumni — GATRA ADHIKA</title>
+
+  <!-- Global & Local CSS -->
+  <link rel="icon" href="../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="gatraAlumniPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GATRA (Baris 2) -->
+  <div id="gatra-subnav-app"></div>
+
+  <!-- HERO & DASHBOARD STATISTIK GLOBAL -->
+  <section class="gatra-hero" style="padding: 40px 0;">
+    <div class="gatra-container">
+      <span class="badge-gold">🏆 Hall of Fame & Social Proof</span>
+      <h1 style="font-size: 2.2rem; font-weight: 900; margin: 12px 0 8px 0;">
+        Rekap Kelulusan Alumni GATRA ADHIKA
+      </h1>
+      <p style="color: #94A3B8; max-width: 680px; font-size: 0.95rem; margin-bottom: 32px;">
+        Statistik resmi peserta bimbingan GATRA yang berhasil menembus Passing Grade SKD BKN dan diterima di berbagai Instansi CPNS serta Sekolah Kedinasan.
+      </p>
+
+      <!-- METRIC CARDS DASHBOARD -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;" id="alumniStatsGrid">
+        <!-- Rendered via JS dari summary.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ALUMNI TABLE & FILTER SECTION -->
+  <section class="gatra-section">
+    <div class="gatra-container">
+      
+      <!-- TOOLBAR FILTER ANGKATAN & PENCARIAN -->
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 28px; background: #FFF; padding: 20px; border-radius: var(--radius-lg); border: 1.5px solid var(--gatra-border); box-shadow: var(--shadow-sm);">
+        
+        <!-- Filter Year Tabs -->
+        <div style="display: flex; gap: 8px;" id="tahunFilterTabs">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Live Search Bar -->
+        <div style="flex-grow: 1; max-width: 360px;">
+          <input type="text" id="alumniSearchInput" placeholder="🔍 Cari nama, instansi, atau sekolah..." style="width: 100%; padding: 10px 16px; border-radius: var(--radius-md); border: 1.5px solid var(--gatra-border); font-family: inherit; font-size: 0.88rem; box-sizing: border-box; outline: none;">
+        </div>
+      </div>
+
+      <!-- TABLE CONTAINER -->
+      <div style="background: #FFF; border-radius: var(--radius-lg); border: 1.5px solid var(--gatra-border); overflow: hidden; box-shadow: var(--shadow-sm);">
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
+            <thead>
+              <tr style="background: var(--gatra-dark); color: #FFF; font-weight: 700;">
+                <th style="padding: 16px 20px;">Peserta</th>
+                <th style="padding: 16px 20px;">Program</th>
+                <th style="padding: 16px 20px;">Instansi Lulus / Formasi</th>
+                <th style="padding: 16px 20px; text-align: center;">Skor SKD</th>
+                <th style="padding: 16px 20px;">Asal Sekolah</th>
+                <th style="padding: 16px 20px;">Testimoni</th>
+              </tr>
+            </thead>
+            <tbody id="alumniTableBody">
+              <!-- Rendered via JS dinamis berdasarkan tahun pilihan -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- PAGINATION & ROW INFO -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: var(--gatra-bg); border-top: 1px solid var(--gatra-border);">
+          <span style="font-size: 0.82rem; color: var(--gatra-text-muted);" id="paginationInfo">Menampilkan data alumni</span>
+          <div style="display: flex; gap: 6px;" id="paginationControls">
+            <!-- Buttons rendered via JS -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/components.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
