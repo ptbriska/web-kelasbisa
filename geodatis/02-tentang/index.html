@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang GEODATIS — Applied Geoscience & Scientific Data Learning Ecosystem</title>
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" href="../../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="geodatisTentangPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GEODATIS (Baris 2) -->
+  <div id="geodatis-subnav-app"></div>
+
+  <!-- HERO SECTION WITH CYBER GRID & GLOW EFFECT -->
+  <section class="geodatis-hero">
+    <div class="geodatis-container">
+      <div class="hero-wrapper">
+        <div>
+          <span class="badge-emerald" id="brandTagline">⚡ CLARITY FROM COMPLEXITY</span>
+          <h1 class="hero-title" id="brandNama">
+            GEODATIS
+          </h1>
+          <p class="hero-subtitle" id="brandFokus">
+            Geospatial Data & Statistics
+          </p>
+          <p class="hero-deskripsi" id="brandDeskripsi">
+            Memuat deskripsi platform...
+          </p>
+          <div class="hero-meta">
+            <span class="badge-dark" id="brandEkosistem">Applied Geoscience & Scientific Data Learning Ecosystem</span>
+            <span class="badge-accent" id="brandPowered">Powered by Briska Laboratory & Research Center</span>
+          </div>
+        </div>
+        <div class="hero-visual-card">
+          <div class="glow-orb"></div>
+          <div class="visual-content">
+            <div class="stat-badge">
+              <span class="stat-num">6</span>
+              <span class="stat-label">Pilar Metode Pembelajaran (PBCC, PBLS, CBCC, CBLS)</span>
+            </div>
+            <div class="stat-badge">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Domain Ilmu Terapan & Pemodelan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION SISTEM PEMBELAJARAN (PBCC, PBLS, CBCC, CBLS) -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div class="section-header">
+        <h2 id="sistemJudul">GEODATIS Tidak Dibangun Seperti Kursus Biasa</h2>
+        <p id="sistemSub">Kelas Bisa membangun sistem pembelajaran berbasis kompetensi dan outcome.</p>
+      </div>
+
+      <!-- Filter Category Tabs -->
+      <div class="tab-controls" id="pilarFilterTabs">
+        <button class="tab-btn active" onclick="filterPilar('ALL', this)">Semua Pilar (6)</button>
+        <button class="tab-btn" onclick="filterPilar('Performance', this)">Performance-Based (PBLS/PBCC)</button>
+        <button class="tab-btn" onclick="filterPilar('Cognitive', this)">Cognitive-Based (CBLS/CBCC)</button>
+      </div>
+
+      <!-- Pilar Cards Grid -->
+      <div class="pilar-grid" id="pilarContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TARGET PENGGUNA -->
+  <section class="geodatis-section dark-accent-bg">
+    <div class="geodatis-container">
+      <div class="section-header light-text">
+        <h2 id="targetJudul">Dirancang Untuk Berbagai Latar Belakang Pengguna</h2>
+        <p id="targetKet">Sesuai dengan Bidang Keilmuan & Industri masing-masing. GEODATIS hadir untuk dunia akademik, industri, dan riset.</p>
+      </div>
+
+      <div class="target-grid" id="targetContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DOMAIN KEILMUAN & SKILL (WITH LIVE SEARCH FILTER) -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div class="section-header">
+        <h2>Domain Ilmu Terapan & Domain Skill GEODATIS</h2>
+        <p>Integrasi komprehensif antara terapan sektor riil dan ekosistem software modern.</p>
+      </div>
+
+      <div class="domain-wrapper">
+        <!-- Left Column: Domain Ilmu Terapan -->
+        <div class="domain-col">
+          <div class="col-header">
+            <h3>🌍 10 Domain Ilmu Terapan</h3>
+            <p>Penerapan riset spasial & statistik di berbagai sektor</p>
+          </div>
+          <ul class="domain-list" id="domainIlmuList">
+            <!-- Rendered via JS -->
+          </ul>
+        </div>
+
+        <!-- Right Column: Domain Skill & Software Tools -->
+        <div class="domain-col">
+          <div class="col-header">
+            <h3>🛠️ Domain Skill & Software Tools</h3>
+            <p>Eksplorasi stack teknologi non-coding hingga Python AI</p>
+          </div>
+
+          <!-- Mini Search Box -->
+          <div class="search-box">
+            <input type="text" id="toolSearchInput" placeholder="🔍 Cari software/skill (misal: QGIS, Python, Minitab)...">
+          </div>
+
+          <div class="skill-grid" id="domainSkillGrid">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION KONTAK & KANTOR -->
+  <section class="geodatis-section light-accent-bg">
+    <div class="geodatis-container">
+      <div class="contact-card-modern" id="kontakCard">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/components.js"></script>
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
