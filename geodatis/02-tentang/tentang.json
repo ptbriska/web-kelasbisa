@@ -1,0 +1,154 @@
+{
+  "brand": {
+    "nama": "GEODATIS",
+    "tagline": "CLARITY FROM COMPLEXITY",
+    "fokus_utama": "Geospatial Data & Statistics",
+    "deskripsi": "Platform pembelajaran Geospatial Data & Statistics yang berfokus meningkatkan skill untuk mengubah kompleksitas data geospasial menjadi insight yang jelas, terstruktur, dan dapat digunakan untuk pengambilan keputusan riset dan industri.",
+    "ekosistem": "Applied Geoscience & Scientific Data Learning Ecosystem",
+    "powered_by": "Briska Laboratory & Research Center"
+  },
+  "sistem_pembelajaran": {
+    "judul_pendekatan": "GEODATIS Tidak Dibangun Seperti Kursus Biasa",
+    "deskripsi_pendekatan": "Kelas Bisa membangun sistem pembelajaran berbasis kompetensi dan outcome.",
+    "pilar_metode": [
+      {
+        "kode": "PBCC",
+        "nama": "Performance-Based Competency Curriculum",
+        "tipe": "Kurikulum",
+        "fokus": [
+          "Kemampuan teknis",
+          "Kemampuan project execution",
+          "Skill software profesional",
+          "Kesiapan kerja applied geospatial"
+        ]
+      },
+      {
+        "kode": "PBLS",
+        "nama": "Performance-Based Learning System",
+        "tipe": "Sistem Belajar",
+        "fokus": [
+          "Praktik software langsung",
+          "Simulasi project nyata",
+          "Studi kasus profesional",
+          "Project-based geospatial learning"
+        ]
+      },
+      {
+        "kode": "SKA-IAM",
+        "nama": "Skill Knowledge Attitude Integrated Assessment Model",
+        "tipe": "Asesmen Kinerja",
+        "fokus": [
+          "Observasi praktik kerja atau simulasi",
+          "Tugas berbasis proyek atau output nyata"
+        ]
+      },
+      {
+        "kode": "CBCC",
+        "nama": "Cognitive-Based Competency Curriculum",
+        "tipe": "Kurikulum",
+        "fokus": [
+          "Konsep keilmuan",
+          "Analisis data",
+          "Pemahaman sistematis dan kompetensi penarikan kesimpulan"
+        ]
+      },
+      {
+        "kode": "CBLS",
+        "nama": "Cognitive-Based Learning System",
+        "tipe": "Sistem Belajar",
+        "fokus": [
+          "Diskusi analisis spasial",
+          "Latihan interpretasi data",
+          "Latihan problem solving",
+          "Conceptual exploration"
+        ]
+      },
+      {
+        "kode": "CIAM",
+        "nama": "Cognitive Integrated Assessment Model",
+        "tipe": "Asesmen Kognitif",
+        "fokus": [
+          "Tes tertulis atau lisan berbasis konsep",
+          "Tugas analisis dan pemecahan masalah"
+        ]
+      }
+    ]
+  },
+  "target_pengguna": {
+    "sub_judul": "Dirancang Untuk Berbagai Latar Belakang Pengguna",
+    "keterangan": "Sesuai dengan bidang keilmuan dan industri masing-masing. GEODATIS hadir untuk dunia akademik, industri, dan riset.",
+    "daftar_target": [
+      {
+        "kategori": "Profesional GIS, Remote Sensing & Spatial Analyst",
+        "deskripsi": "Praktisi lapangan yang butuh efisiensi dan peningkatan skill geospasial tingkat lanjut."
+      },
+      {
+        "kategori": "Data Scientist yang tidak bisa Coding",
+        "deskripsi": "Pengolah data yang ingin mengeksekusi analisis statistik dan machine learning tanpa baris kode."
+      },
+      {
+        "kategori": "Mahasiswa, Dosen, Akademisi & Peneliti",
+        "deskripsi": "Sektor akademis yang membutuhkan metodologi pengolahan data geospasial presisi untuk publikasi ilmiah."
+      },
+      {
+        "kategori": "ASN, Instansi Pemerintah & Pengambil Kebijakan Publik",
+        "deskripsi": "Aparatur pemerintah yang memerlukan pemetaan visual dan statistik data untuk tata kelola wilayah."
+      },
+      {
+        "kategori": "Industri, Engineer & Konsultan",
+        "deskripsi": "Tenaga ahli yang mengeksekusi project perencanaan, infrastruktur, dan lingkungan."
+      },
+      {
+        "kategori": "Data Science, AI & Machine Learning Enthusiast",
+        "deskripsi": "Peminat teknologi data yang ingin mengeksplorasi spasial dan computer vision."
+      }
+    ]
+  },
+  "domain_keilmuan": {
+    "domain_ilmu_terapan": [
+      "Economic, Business, Industrial & Logistics",
+      "Urban, Infrastructure, Smart City & Mobility",
+      "Social, Demographic & Governance Policy",
+      "Public Health & Epidemiology",
+      "Agriculture, Veterinary & Livestock",
+      "Water, Energy & Natural Resource",
+      "Marine, Coastal & Fisheries",
+      "Atmosphere & Climate",
+      "Environmental & Forestry",
+      "Disaster Risk & Resilience"
+    ],
+    "domain_skill_geodatis": [
+      {
+        "kategori": "GIS Spatial Analysis & Mapping",
+        "tools": ["QGIS", "PyGIS", "SAGA"]
+      },
+      {
+        "kategori": "Statistical Analysis Non Coding",
+        "tools": ["Minitab", "PSPP", "JAMOVI"]
+      },
+      {
+        "kategori": "Machine Learning Non-Coding",
+        "tools": ["Orange", "JASP"]
+      },
+      {
+        "kategori": "Data Analyst & Data Science Via Python",
+        "tools": ["Statistics", "ML/DL", "Computer Vision"]
+      },
+      {
+        "kategori": "Cloud Remote Sensing",
+        "tools": ["Google Earth Engine via Python"]
+      },
+      {
+        "kategori": "Environment & Hydro Modelling",
+        "tools": ["HEC-RAS", "DELFT3D", "WRF", "dan software pemodelan lainnya"]
+      }
+    ]
+  },
+  "kontak_dan_lokasi": {
+    "alamat_kantor": "Campus Racing Center, Jl. Racing Center, Makassar, Sulawesi Selatan",
+    "whatsapp_cs": "+6282268118842",
+    "email": "info@geodatis.kelasbisa.com",
+    "jam_operasional": "Senin - Sabtu: 08.00 - 17.00 WITA",
+    "gmaps_url": "https://maps.google.com/?q=Makassar"
+  }
+}
