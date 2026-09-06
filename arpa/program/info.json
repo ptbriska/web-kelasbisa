@@ -4,7 +4,7 @@
       "id": "jurnal-sinta",
       "nama_kategori": "ARPA – Jurnal Sinta",
       "deskripsi": "Pendampingan penulisan karya ilmiah, penyusunan paper, dan strategi publikasi ke Jurnal Terakreditasi Sinta.",
-      "tier_list": ["KETAL", "PLATO", "PLATIPUS", "EXTRA (PLATO / PLATIPUS)"][cite: 5],
+      "tier_list": ["KETAL", "PLATO", "PLATIPUS", "EXTRA (PLATO / PLATIPUS)"],
       "fitur_penulisan_dan_teknik": [
         {
           "fitur": "Materi Dasar Metodologi Penelitian (Kuantitatif, Kualitatif, Mix Method)",
