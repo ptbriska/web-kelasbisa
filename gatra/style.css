@@ -387,3 +387,25 @@ tr:hover td {
     white-space: nowrap;
   }
 }
+
+/* =========================================================
+   FIX TUTOR CARD ALIGNMENT & CENTERED PHOTO
+   ========================================================= */
+.tutor-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 28px 20px !important;
+}
+
+.tutor-photo {
+  width: 105px !important;
+  height: 105px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 3px solid var(--gatra-gold) !important;
+  margin: 0 auto 16px auto !important;
+  display: block !important;
+  box-shadow: 0 0 15px var(--gatra-gold-glow) !important;
+}
