@@ -1,0 +1,45 @@
+{
+  "page_meta": {
+    "title": "Tim Tentor & Mentor Expert GEODATIS",
+    "subtitle": "Praktisi & Akademisi Berpengalaman di Bidang Geospatial Data Science & Statistics",
+    "briska_career_url": "https://career.briska.co.id"
+  },
+  "daftar_tentor": [
+    {
+      "id": "tentor-01",
+      "nama": "Bagus Primohadi S",
+      "panggilan": "Kak Bimo",
+      "peran": "Lead Mentor & CEO Kelas Bisa",
+      "foto_file": "mentor-1.jpg",
+      "badge_spesialisasi": "Geospatial Data Science & Disaster Risk",
+      "pendidikan_instansi": "STMKG / Briska Research Center",
+      "pengalaman_singkat": "3+ Tahun berpengalaman mengampu riset terapan geospasial, pemodelan bencana, dan analisis data sains publikasi ilmiah.",
+      "keahlian_utama": [
+        "Spatial Analysis & GIS Modelling",
+        "Disaster Risk & Environmental Resilience",
+        "Machine Learning Non-Coding & Statistics",
+        "Academic Writing & Publication Support"
+      ]
+    },
+    {
+      "id": "tentor-02",
+      "nama": "Tim Research Specialist GEODATIS",
+      "panggilan": "Tim Specialist",
+      "peran": "Associate Mentor & Instructor",
+      "foto_file": "mentor-2.jpg",
+      "badge_spesialisasi": "Remote Sensing & Hydrology",
+      "pendidikan_instansi": "Briska Laboratory & Research Center",
+      "pengalaman_singkat": "Tim praktisi berpengalaman dalam pemrosesan citra satelit tingkat lanjut, pemodelan hidrologi, dan analisis spasial sektor riil.",
+      "keahlian_utama": [
+        "Google Earth Engine & PyGIS",
+        "Hydrological Modelling (HEC-RAS / SWAT)",
+        "Remote Sensing & Satellite Image Processing",
+        "Industrial & Regional Planning Analysis"
+      ]
+    }
+  ],
+  "pendaftaran_mentor": {
+    "judul": "Tertarik Bergabung Menjadi Tentor GEODATIS?",
+    "deskripsi": "Kami selalu terbuka untuk berkolaborasi dengan akademisi, peneliti, dan praktisi data geospasial yang ingin berbagi wawasan melalui ekosistem Briska Group."
+  }
+}
