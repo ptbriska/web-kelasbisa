@@ -1,0 +1,140 @@
+{
+  "page_meta": {
+    "title": "Bank Geodataset & Spatial Repository",
+    "subtitle": "Katalog Dataset Geospasial Siap Olah untuk Riset, Skripsi, dan Proyek Industri",
+    "gdrive_base_url": "https://drive.google.com/drive/folders/",
+    "whatsapp_cs_url": "https://wa.me/6282268118842"
+  },
+  "dataset_list": [
+    {
+      "id": "ds-01",
+      "nama_dataset": "Geodatabase Indeks Kerentanan Banjir Bandang & Tanah Longsor",
+      "sektor": "Disaster Risk & Resilience",
+      "format": "Vector (SHP)",
+      "wilayah": "Nasional",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "180 MB",
+      "downloads_count": 1420,
+      "cover_file": "cover-data-1.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-02",
+      "nama_dataset": "Peta Histori Tutupan Lahan & Deforestasi High-Resolution",
+      "sektor": "Environmental & Forestry",
+      "format": "Raster (GeoTIFF)",
+      "wilayah": "Provinsi / Pulau",
+      "akses": "Member Exclusive",
+      "token_akses": "GEO2026",
+      "ukuran": "1.2 GB",
+      "downloads_count": 890,
+      "cover_file": "cover-data-2.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-03",
+      "nama_dataset": "Dataset DEMNAS & SRTM High Resolution Pesisir & DAS",
+      "sektor": "Water, Energy & Natural Resource",
+      "format": "Raster (GeoTIFF)",
+      "wilayah": "Kawasan Pesisir / DAS",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "512 MB",
+      "downloads_count": 2100,
+      "cover_file": "cover-data-1.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-04",
+      "nama_dataset": "Anomali Suhu Muka Laut & Curah Hujan Spasial (CHIRPS)",
+      "sektor": "Atmosphere & Climate",
+      "format": "Raster (GeoTIFF)",
+      "wilayah": "Nasional",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "430 MB",
+      "downloads_count": 670,
+      "cover_file": "cover-data-2.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-05",
+      "nama_dataset": "Peta Point of Interest (POI) Kawasan Industri & Logistik",
+      "sektor": "Economic, Business, Industrial & Logistics",
+      "format": "Tabular Spasial (CSV)",
+      "wilayah": "Perkotaan",
+      "akses": "Member Exclusive",
+      "token_akses": "BIZGEO26",
+      "ukuran": "115 MB",
+      "downloads_count": 520,
+      "cover_file": "cover-data-1.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-06",
+      "nama_dataset": "Geodatabase Tata Ruang RTRW & Jaringan Transportasi Perkotaan",
+      "sektor": "Urban, Infrastructure, Smart City & Mobility",
+      "format": "Vector (SHP)",
+      "wilayah": "Perkotaan",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "340 MB",
+      "downloads_count": 1850,
+      "cover_file": "cover-data-2.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-07",
+      "nama_dataset": "Peta Kepadatan Penduduk & Indeks Pembangunan Manusia Spasial",
+      "sektor": "Social, Demographic & Governance Policy",
+      "format": "Vector (SHP)",
+      "wilayah": "Nasional",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "95 MB",
+      "downloads_count": 1120,
+      "cover_file": "cover-data-1.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-08",
+      "nama_dataset": "Spatiotemporal Sebaran Fasilitas Kesehatan & Kerentanan Epidemiologi",
+      "sektor": "Public Health & Epidemiology",
+      "format": "Vector (SHP)",
+      "wilayah": "Provinsi / Pulau",
+      "akses": "Member Exclusive",
+      "token_akses": "HEALTH26",
+      "ukuran": "160 MB",
+      "downloads_count": 310,
+      "cover_file": "cover-data-2.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-09",
+      "nama_dataset": "Peta Kesesuaian Lahan Pertanian & Sektor Peternakan",
+      "sektor": "Agriculture, Veterinary & Livestock",
+      "format": "Raster (GeoTIFF)",
+      "wilayah": "Provinsi / Pulau",
+      "akses": "Open Access",
+      "token_akses": "",
+      "ukuran": "280 MB",
+      "downloads_count": 780,
+      "cover_file": "cover-data-1.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    },
+    {
+      "id": "ds-10",
+      "nama_dataset": "Peta Zonasi Tangkap Ikan & Konservasi Terumbu Karang",
+      "sektor": "Marine, Coastal & Fisheries",
+      "format": "Vector (SHP)",
+      "wilayah": "Kawasan Pesisir / DAS",
+      "akses": "Member Exclusive",
+      "token_akses": "OCEAN2026",
+      "ukuran": "410 MB",
+      "downloads_count": 940,
+      "cover_file": "cover-data-2.jpg",
+      "link_download": "https://drive.google.com/drive/folders/1YAJ0GyrEUE3q39wccHptyTa137c6b-Wa?usp=sharing"
+    }
+  ]
+}
