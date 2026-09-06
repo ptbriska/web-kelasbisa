@@ -1,0 +1,45 @@
+{
+  "program_info": {
+    "title": "PROGRAM HANDS-ON BIMBINGAN RISET SKRIPSI / JURNAL",
+    "subtitle": "Topik Keilmuan Geospatial Data Science",
+    "kolaborasi": "ARPA x GEODATIS",
+    "supported_by": "Kelas Bisa",
+    "powered_by": "Briska Laboratory & Research Center",
+    "deskripsi": "Program ARPA (INTENSIVE) dan Program GEODATIS (CONSUL) berkolaborasi untuk memungkinkan peserta memperoleh pendampingan kolaboratif dan tingkat lanjut bersama mentor dengan bidang keahlian terapan dan scientific skill yang relevan sesuai topik penelitian. Peserta diberikan 'Hands-On' secara langsung dalam penyelesaian risetnya dengan teknik pengolahan dan analisa data menggunakan Domain Skill GEODATIS."
+  },
+  "ketentuan_umum": [
+    "Pendampingan bersifat selective",
+    "Penyesuaian topik penelitian dan bidang expertise mentor",
+    "Disesuaikan dengan availability mentor terkait"
+  ],
+  "keahlian_fokus": {
+    "metodologi_akademik": [
+      "Research Methodology",
+      "Academic Writing",
+      "Publication Strategy"
+    ],
+    "teknikal_data": [
+      "Spatial Analysis",
+      "Data Science",
+      "Environmental Modelling"
+    ]
+  },
+  "ceo_profile": {
+    "nama": "Bagus Primohadi S",
+    "panggilan": "Kak Bimo",
+    "jabatan": "CEO Kelas Bisa & Lead Mentor",
+    "foto_file": "poster-bootcamp.jpg",
+    "tagline_branding": "Belajar & Bimbingan Langsung dengan CEO",
+    "prestasi": "Penghargaan Utama Publikasi Riset Taruna STMKG",
+    "pengalaman": "3+ Years Experienced in Geospatial Data Science",
+    "applied_research_fields": [
+      "Disaster Risk & Resilience",
+      "Environmental & Forestry",
+      "Water, Energy & Natural Resource",
+      "Atmosphere & Climate",
+      "Economic, Business, Industrial & Logistics",
+      "Marine, Coastal & Fisheries"
+    ]
+  },
+  "whatsapp_cta": "https://wa.me/6282268118842?text=Halo%20Kak%20Bimo%20%26%20Admin%20GEODATIS,%20saya%20tertarik%20mengikuti%20Program%20Khusus%20Bimbingan%20Riset%20ARPA%20x%20GEODATIS"
+}
