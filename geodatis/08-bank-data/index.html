@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Data & Analytical Tools — GEODATIS</title>
+
+  <!-- Favicon & Styles -->
+  <link rel="icon" href="../../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="geodatisBankDataPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GEODATIS (Baris 2) Injected by script.js -->
+  <div id="geodatis-subnav-app"></div>
+
+  <!-- HERO BANNER SECTION -->
+  <section class="bankdata-hero">
+    <div class="geodatis-container">
+      <div class="hero-content">
+        <span class="badge-emerald">🗄️ Center of Spatial Resources</span>
+        <h1 class="hero-title">Bank Data & Software GEODATIS</h1>
+        <p class="hero-desc">
+          Pusat unduhan perangkat lunak analisis geospasial serta repository geodatabase siap olah untuk riset, skripsi, dan proyek profesional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: SOFTWARE & ANALYTICAL TOOLS -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div class="section-header align-left">
+        <h2>🛠️ Software & Analytical Tools</h2>
+        <p>Aplikasi resmi dan installer perangkat lunak pendukung ekosistem pembelajaran GEODATIS.</p>
+      </div>
+
+      <div class="tools-grid" id="toolsContainer">
+        <!-- Rendered via JS dari tools.json -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: GEODATABASE MARKETPLACE (TOKOPEDIA-STYLE) -->
+  <section class="geodatis-section light-accent-bg" id="catalog-section">
+    <div class="geodatis-container">
+      <div class="section-header align-left">
+        <h2>🗺️ Catalogue Bank Geodataset</h2>
+        <p>Jelajahi puluhan dataset geospasial berdasarkan domain keilmuan, wilayah, dan format file.</p>
+      </div>
+
+      <!-- TOKOPEDIA-STYLE LAYOUT (LEFT FILTER + RIGHT GRID) -->
+      <div class="tokopedia-layout">
+        
+        <!-- SISI KIRI: PANEL FILTER -->
+        <aside class="filter-panel">
+          <div class="filter-header">
+            <h3>🔍 Filter Dataset</h3>
+            <button class="btn-reset" onclick="resetFilters()">Reset</button>
+          </div>
+
+          <!-- Filter Domain Keilmuan (10 Bidang GEODATIS) -->
+          <div class="filter-group">
+            <label class="filter-label">Domain Keilmuan</label>
+            <select id="filterDomain" onchange="applyFilters()">
+              <option value="ALL">Semua Domain Keilmuan</option>
+              <option value="Disaster Risk & Resilience">Disaster Risk & Resilience</option>
+              <option value="Environmental & Forestry">Environmental & Forestry</option>
+              <option value="Water, Energy & Natural Resource">Water, Energy & Natural Resource</option>
+              <option value="Atmosphere & Climate">Atmosphere & Climate</option>
+              <option value="Economic, Business, Industrial & Logistics">Economic, Business & Logistics</option>
+              <option value="Urban, Infrastructure, Smart City & Mobility">Urban & Infrastructure</option>
+              <option value="Social, Demographic & Governance Policy">Social & Demography</option>
+              <option value="Public Health & Epidemiology">Public Health & Epidemiology</option>
+              <option value="Agriculture, Veterinary & Livestock">Agriculture & Livestock</option>
+              <option value="Marine, Coastal & Fisheries">Marine, Coastal & Fisheries</option>
+            </select>
+          </div>
+
+          <!-- Filter Format Data -->
+          <div class="filter-group">
+            <label class="filter-label">Format File</label>
+            <select id="filterFormat" onchange="applyFilters()">
+              <option value="ALL">Semua Format File</option>
+              <option value="Vector (SHP)">Vector (SHP)</option>
+              <option value="Raster (GeoTIFF)">Raster (GeoTIFF)</option>
+              <option value="Tabular Spasial (CSV)">Tabular Spasial (CSV)</option>
+            </select>
+          </div>
+
+          <!-- Filter Wilayah -->
+          <div class="filter-group">
+            <label class="filter-label">Cakupan Wilayah</label>
+            <select id="filterWilayah" onchange="applyFilters()">
+              <option value="ALL">Semua Wilayah</option>
+              <option value="Nasional">Nasional</option>
+              <option value="Provinsi / Pulau">Provinsi / Pulau</option>
+              <option value="Perkotaan">Perkotaan</option>
+              <option value="Kawasan Pesisir / DAS">Kawasan Pesisir / DAS</option>
+            </select>
+          </div>
+
+          <!-- Filter Tipe Akses -->
+          <div class="filter-group">
+            <label class="filter-label">Tipe Akses</label>
+            <select id="filterAkses" onchange="applyFilters()">
+              <option value="ALL">Semua Akses</option>
+              <option value="Open Access">Open Access (Gratis)</option>
+              <option value="Member Exclusive">Member Exclusive</option>
+            </select>
+          </div>
+        </aside>
+
+        <!-- SISI KANAN: GRID CARD DATASET (4 HORIZONTAL) -->
+        <main class="catalog-main">
+          <div class="dataset-grid" id="datasetContainer">
+            <!-- Rendered via JS dari geodatabase.json -->
+          </div>
+        </main>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL INPUT TOKEN UNTUK DATASET MEMBER EXCLUSIVE -->
+  <div class="token-modal-overlay" id="tokenModal" onclick="closeTokenModal(event)">
+    <div class="token-modal-card">
+      <h3>🔐 Masukkan Token Akses Data</h3>
+      <p>Dataset ini khusus untuk Member/Alumni. Masukkan token akses yang kamu dapatkan saat mendaftar/membeli paket data.</p>
+      <input type="text" id="inputTokenVal" placeholder="Masukkan Token di sini (misal: GEO2026)" class="token-input-field">
+      <div id="tokenErrorMsg" class="token-error">Token tidak sesuai, silakan cek kembali atau hubungi CS!</div>
+      <div class="token-actions">
+        <button class="btn-cancel" onclick="forceCloseTokenModal()">Batal</button>
+        <button class="btn-submit-token" onclick="validateAndSubmitToken()">Submit Token & Download ➔</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Shared Engine & Module Scripts -->
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
