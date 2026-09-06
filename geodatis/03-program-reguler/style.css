@@ -1,0 +1,565 @@
+/* =========================================================
+   GEODATIS MODULE 03 PROGRAM REGULER — ISOLATED STYLING
+   Theme: Bright Modern Tech, Geodatis Teal (#14A096) & Kelas Bisa Cyan (#06B6D4)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* GEODATIS Brand Palette */
+  --geo-teal: #14A096;               /* Primary Geodatis Teal */
+  --geo-teal-dark: #0E726B;          /* Deep Teal */
+  --geo-teal-light: #E6F6F5;         /* Light Teal Tint Background */
+  --geo-teal-glow: rgba(20, 160, 150, 0.3);
+
+  /* Kelas Bisa Cyan Accent */
+  --kb-cyan: #06B6D4;                /* Electric Cyan Accent */
+  --kb-cyan-dark: #0284C7;
+  --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+  --kb-cyan-soft: #ECFEFF;
+
+  /* Bright Background Palette */
+  --geo-bg: #F8FAFC;                /* Clean Canvas Light Background */
+  --geo-card-bg: #FFFFFF;           /* Crisp White Card Base */
+  --geo-dark-obsidian: #0F172A;     /* Deep Slate Text/Header */
+  --geo-text-main: #1E293B;         /* High-Contrast Body Text */
+  --geo-text-muted: #64748B;       /* Muted Subtitles */
+  --geo-border: #E2E8F0;           /* Soft Border Divider */
+
+  /* Radius & Transitions */
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 16px 32px rgba(20, 160, 150, 0.12);
+  --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* BASE RESET & CONTAINER */
+body {
+  background-color: var(--geo-bg);
+  color: var(--geo-text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.geodatis-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* BADGES */
+.badge-emerald {
+  background: var(--geo-teal-light);
+  color: var(--geo-teal-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(20, 160, 150, 0.3);
+  display: inline-block;
+  box-shadow: 0 0 10px var(--geo-teal-glow);
+}
+
+.badge-dark {
+  background: var(--geo-dark-obsidian);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.badge-accent {
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px var(--kb-cyan-glow);
+  display: inline-block;
+}
+
+/* =========================================================
+   1. HERO STAGE (DOMINO STACK CASCADE SHOWCASE)
+   ========================================================= */
+.reguler-hero {
+  background: radial-gradient(circle at 85% 15%, rgba(6, 182, 212, 0.15), transparent 40%),
+              radial-gradient(circle at 15% 85%, rgba(20, 160, 150, 0.12), transparent 50%),
+              linear-gradient(135deg, #FFFFFF 0%, var(--geo-teal-light) 100%);
+  padding: 64px 0 80px 0;
+  border-bottom: 2px solid rgba(20, 160, 150, 0.15);
+  overflow: hidden;
+}
+
+.hero-reguler-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.18;
+  margin: 12px 0 10px 0;
+  letter-spacing: -0.8px;
+  color: var(--geo-dark-obsidian);
+}
+
+.hero-desc {
+  font-size: 0.98rem;
+  color: var(--geo-text-muted);
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.hero-hint {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+  color: var(--geo-teal-dark);
+  background: #FFFFFF;
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(20, 160, 150, 0.3);
+  width: fit-content;
+  box-shadow: var(--shadow-sm);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--kb-cyan);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--kb-cyan);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(6, 182, 212, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(6, 182, 212, 0); }
+}
+
+/* DOMINO STACK STAGE SYSTEM */
+.domino-stage-wrapper {
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.domino-stack {
+  position: relative;
+  width: 270px;
+  height: 360px;
+}
+
+.domino-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: #FFFFFF;
+  border: 2px solid var(--geo-teal);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform-origin: center bottom;
+}
+
+.domino-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.domino-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.25) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px;
+  color: #FFFFFF;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.domino-overlay h4 {
+  margin: 6px 0 0 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+/* DOMINO ROTATION OFFSETS */
+.domino-card:nth-child(1) {
+  transform: translateX(-40px) translateY(12px) rotate(-10deg);
+  z-index: 1;
+}
+
+.domino-card:nth-child(2) {
+  transform: translateX(-20px) translateY(6px) rotate(-5deg);
+  z-index: 2;
+}
+
+.domino-card:nth-child(3) {
+  transform: translateX(0px) translateY(0px) rotate(0deg);
+  z-index: 3;
+}
+
+.domino-card:nth-child(4) {
+  transform: translateX(20px) translateY(-6px) rotate(5deg);
+  z-index: 4;
+}
+
+.domino-card:nth-child(5) {
+  transform: translateX(40px) translateY(-12px) rotate(10deg);
+  z-index: 5;
+}
+
+/* HOVER INTERACTION: BRING TO FRONT & STAND UP */
+.domino-card:hover {
+  transform: translateX(0) translateY(-24px) rotate(0deg) scale(1.08) !important;
+  z-index: 99 !important;
+  border-color: var(--kb-cyan) !important;
+  box-shadow: 
+    0 25px 50px rgba(6, 182, 212, 0.3),
+    0 0 25px var(--kb-cyan-glow) !important;
+}
+
+.domino-card:hover .domino-overlay {
+  opacity: 1;
+}
+
+/* =========================================================
+   2. SECTION GENERAL & KATALOG PROGRAM CARDS
+   ========================================================= */
+.geodatis-section {
+  padding: 64px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 10px 0;
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  color: var(--geo-text-muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+.katalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.katalog-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-bounce);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.katalog-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--geo-teal);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.prog-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 10px 0;
+}
+
+.prog-freq {
+  font-size: 0.85rem;
+  color: var(--geo-teal-dark);
+  background: var(--geo-teal-light);
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+}
+
+.prog-desc {
+  font-size: 0.88rem;
+  color: var(--geo-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =========================================================
+   3. RANGKUMAN FASILITAS GRID
+   ========================================================= */
+.light-accent-bg {
+  background: var(--geo-teal-light);
+  border-top: 1px solid rgba(20, 160, 150, 0.15);
+  border-bottom: 1px solid rgba(20, 160, 150, 0.15);
+}
+
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.fasilitas-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-bounce);
+}
+
+.fasilitas-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--geo-teal);
+}
+
+.fasilitas-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF;
+  font-size: 0.85rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px var(--geo-teal-glow);
+}
+
+.fasilitas-body h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--geo-dark-obsidian);
+}
+
+.fasilitas-body p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--geo-text-muted);
+  line-height: 1.5;
+}
+
+/* =========================================================
+   4. STANDALONE CTA KATALOG EVENT ACTIVE
+   ========================================================= */
+.cta-event-section {
+  padding: 60px 0;
+}
+
+.cta-event-card {
+  background: #FFFFFF;
+  border: 2px solid var(--geo-teal);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  box-shadow: 0 16px 36px rgba(20, 160, 150, 0.12);
+}
+
+.cta-event-info h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  margin: 12px 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.cta-event-info p {
+  font-size: 0.95rem;
+  color: var(--geo-text-muted);
+  margin: 0;
+  max-width: 620px;
+}
+
+.btn-event-katalog {
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF !important;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 16px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  white-space: nowrap;
+  box-shadow: 0 6px 20px var(--geo-teal-glow);
+  transition: var(--transition-bounce);
+}
+
+.btn-event-katalog:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(6, 182, 212, 0.4);
+}
+
+/* =========================================================
+   5. LIGHTBOX / POPUP MODAL STYLING (PURE PREVIEW ONLY)
+   ========================================================= */
+.poster-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.poster-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.poster-modal-content {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  max-width: 780px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.poster-modal-overlay.active .poster-modal-content {
+  transform: scale(1);
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--geo-dark-obsidian);
+  color: #FFFFFF;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+}
+
+.btn-close-modal:hover {
+  background: #EF4444;
+  transform: scale(1.1);
+}
+
+.modal-body-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+.modal-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-info-wrapper {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-info-wrapper h3 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  margin: 12px 0 8px 0;
+}
+
+.modal-desc {
+  font-size: 0.9rem;
+  color: var(--geo-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .hero-reguler-grid,
+  .cta-event-card,
+  .modal-body-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cta-event-card {
+    flex-direction: column;
+  }
+
+  .hero-hint {
+    margin: 0 auto;
+  }
+
+  .domino-stage-wrapper {
+    height: 350px;
+  }
+}
