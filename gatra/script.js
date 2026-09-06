@@ -405,7 +405,7 @@ function renderAlumniTable(dataList, page = 1) {
 }
 
 /* ==========================================
-   HANDLER 5: TUTOR PAGE
+   HANDLER 5: TUTOR PAGE (CENTERED FIX)
    ========================================== */
 async function initTutorPage() {
   const data = await fetchGatraData('tutor.json');
@@ -414,21 +414,22 @@ async function initTutorPage() {
   const grid = document.getElementById('tutorCardsGrid');
   if (grid && data.daftar_tutor) {
     grid.innerHTML = data.daftar_tutor.map(t => `
-      <div class="gatra-card" style="text-align: center; padding: 24px 16px;">
-        <img src="${t.foto}" alt="${t.nama}" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gatra-gold); margin-bottom: 12px;" onerror="this.src='../assets/images/logo-kelasbisa.png'">
-        <h3 style="margin: 0 0 4px 0; font-size: 1.1rem; color: var(--gatra-dark);">${t.nama}</h3>
-        <div style="font-size: 0.8rem; font-weight: 800; color: var(--gatra-crimson); margin-bottom: 6px;">${t.role}</div>
-        <span class="badge-gold" style="font-size: 0.7rem;">${t.status_kredensial}</span>
+      <div class="gatra-card tutor-card">
+        <img src="${t.foto}" alt="${t.nama}" class="tutor-photo" onerror="this.src='../assets/images/logo-kelasbisa.png'">
+        <h3 style="margin: 0 0 4px 0; font-size: 1.15rem; color: var(--gatra-dark); font-weight: 800;">${t.nama}</h3>
+        <div style="font-size: 0.82rem; font-weight: 800; color: var(--gatra-red); margin-bottom: 8px;">${t.role}</div>
+        <span class="badge-gold" style="font-size: 0.72rem; margin-bottom: 12px;">${t.status_kredensial}</span>
         
-        <p style="font-size: 0.8rem; font-style: italic; color: var(--gatra-text-muted); margin: 16px 0 12px 0;">"${t.quote}"</p>
+        <p style="font-size: 0.82rem; font-style: italic; color: var(--gatra-text-muted); margin: 0 0 16px 0; line-height: 1.5;">"${t.quote}"</p>
         
-        <div style="display: flex; flex-wrap: wrap; gap: 4px; justify-content: center;">
-          ${t.bidang_keahlian.map(k => `<span style="font-size: 0.7rem; background: var(--gatra-bg); padding: 2px 8px; border-radius: 4px; border: 1px solid var(--gatra-border);">${k}</span>`).join('')}
+        <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-top: auto;">
+          ${t.bidang_keahlian.map(k => `<span style="font-size: 0.72rem; background: var(--gatra-bg); padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--gatra-border); color: var(--gatra-text-main); font-weight: 600;">${k}</span>`).join('')}
         </div>
       </div>
     `).join('');
   }
 
+  // Render Cabang List
   const cabangContainer = document.getElementById('cabangListContainer');
   if (cabangContainer && data.kantor_cabang) {
     cabangContainer.innerHTML = data.kantor_cabang.map(c => `
@@ -441,7 +442,7 @@ async function initTutorPage() {
           ${c.fasilitas_cabang.map(f => `<li>${f}</li>`).join('')}
         </ul>
 
-        <a href="${c.gmaps_url}" target="_blank" style="font-size: 0.82rem; color: var(--gatra-crimson); font-weight: 800; text-decoration: none;">Buka di Google Maps ➔</a>
+        <a href="${c.gmaps_url}" target="_blank" style="font-size: 0.82rem; color: var(--gatra-red); font-weight: 800; text-decoration: none;">Buka di Google Maps ➔</a>
       </div>
     `).join('');
   }
