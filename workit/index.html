@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WORKIT — Skill Kerja, Career Acceleration & B2B Professional | Kelas Bisa</title>
+
+  <link rel="icon" href="../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/global.css">
+
+  <style>
+    /* =========================================================
+       STYLE WORKIT COMING SOON — YELLOW ENERGY & BLUE CYAN ACCENT
+       ========================================================= */
+
+    :root {
+      --workit-yellow: #EAB308;        /* Vivid Career Yellow */
+      --workit-yellow-dark: #CA8A04;   /* Deep Gold/Amber */
+      --workit-yellow-light: #FEF9C3;  /* Soft Warm Tint */
+      --kb-cyan: #06B6D4;               /* Micro Color Kelas Bisa Cyan */
+      --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+      --dark-bg: #0F172A;              /* Slate Dark Navy */
+      --dark-card: #1E293B;            /* Deep Card Slate */
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border-slate: rgba(255, 255, 255, 0.1);
+      --radius-lg: 20px;
+      --radius-md: 12px;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .workit-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    /* 1. HERO TEASER SECTION */
+    .workit-hero {
+      position: relative;
+      padding: 80px 0 60px 0;
+      background: radial-gradient(circle at 80% 20%, rgba(234, 179, 8, 0.12) 0%, transparent 40%),
+                  radial-gradient(circle at 20% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%),
+                  var(--dark-bg);
+      border-bottom: 2px solid var(--border-slate);
+    }
+
+    .hero-wrapper {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(234, 179, 8, 0.15);
+      border: 1px solid var(--workit-yellow);
+      color: var(--workit-yellow);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .status-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: var(--kb-cyan);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--kb-cyan);
+      animation: pulseGlow 1.8s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0.6; }
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      margin: 0 0 16px 0;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-title span.yellow-text {
+      color: var(--workit-yellow);
+    }
+
+    .hero-title span.cyan-text {
+      color: var(--kb-cyan);
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0 0 28px 0;
+      max-width: 620px;
+    }
+
+    .notice-box {
+      background: rgba(254, 249, 195, 0.05);
+      border-left: 4px solid var(--workit-yellow);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 20px;
+      margin-bottom: 32px;
+      font-size: 0.88rem;
+      color: #E2E8F0;
+      line-height: 1.6;
+    }
+
+    .notice-box strong {
+      color: var(--workit-yellow);
+    }
+
+    /* WAITLIST FORM */
+    .waitlist-form {
+      display: flex;
+      gap: 10px;
+      max-width: 500px;
+    }
+
+    .waitlist-input {
+      flex: 1;
+      background: var(--dark-card);
+      border: 1px solid var(--border-slate);
+      color: #FFFFFF;
+      padding: 12px 18px;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      outline: none;
+      transition: all 0.25s ease;
+    }
+
+    .waitlist-input:focus {
+      border-color: var(--kb-cyan);
+      box-shadow: 0 0 0 3px var(--kb-cyan-glow);
+    }
+
+    .btn-waitlist {
+      background: linear-gradient(135deg, var(--workit-yellow) 0%, var(--workit-yellow-dark) 100%);
+      color: #0F172A;
+      font-weight: 900;
+      border: none;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .btn-waitlist:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(234, 179, 8, 0.35);
+    }
+
+    .hero-preview-card {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+      border: 1px solid var(--border-slate);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .preview-badge {
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      background: var(--kb-cyan);
+      color: #0F172A;
+      font-size: 0.72rem;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .preview-stat {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-slate);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      font-size: 0.88rem;
+    }
+
+    /* 2. SPILL LAYANAN & FITUR UNGGULAN */
+    .spill-section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0 0 10px 0;
+      color: #FFFFFF;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .spill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .spill-card {
+      background: var(--dark-card);
+      border: 1px solid var(--border-slate);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .spill-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--workit-yellow), var(--kb-cyan));
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
+    }
+
+    .spill-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(234, 179, 8, 0.4);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .spill-card:hover::before {
+      opacity: 1;
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      color: #FFFFFF;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0 0 16px 0;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pill-item {
+      font-size: 0.72rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-slate);
+      color: var(--kb-cyan);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    /* RESPONSIF MOBILE */
+    @media (max-width: 992px) {
+      .hero-wrapper { grid-template-columns: 1fr; }
+      .hero-title { font-size: 2.1rem; }
+      .waitlist-form { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <div id="app-header"></div>
+
+  <!-- HERO SECTION TEASER WORKIT -->
+  <section class="workit-hero">
+    <div class="workit-container hero-wrapper">
+      
+      <!-- SISI KIRI: TEKS DEKLARASI & WAITLIST -->
+      <div class="hero-left">
+        <span class="status-badge">⚡ Dapur Pengembangan • Coming Soon 2026</span>
+        <h1 class="hero-title">
+          Kuasai Skill Kerja Masa Depan Bersama <span class="yellow-text">WORKIT</span> <span class="cyan-text">.</span>
+        </h1>
+        
+        <p class="hero-desc">
+          Platform akselerasi karir, profesionalisme industri, dan kecerdasan bisnis terkini. Kami merancang kurikulum praktikal yang langsung relevan dengan kebutuhan perusahaan global.
+        </p>
+
+        <!-- PEMBERITAHUAN BELUM OPERASIONAL -->
+        <div class="notice-box">
+          <strong>Mohon Maaf:</strong> Layanan operasional penuh untuk modul WORKIT saat ini masih dalam tahap finalisasi kurikulum & kesiapan instruktur praktisi. Namun, kamu sudah bisa melihat bocoran ekosistem yang akan hadir!
+        </div>
+
+        <!-- FORM EARLY ACCESS / WAITLIST -->
+        <form class="waitlist-form" onsubmit="handleWaitlist(event)">
+          <input type="email" id="userEmail" placeholder="Masukkan email kamu..." required class="waitlist-input">
+          <button type="submit" class="btn-waitlist">Dapatkan Akses Awal ➔</button>
+        </form>
+        <span id="waitlistMsg" style="display: block; font-size: 0.8rem; margin-top: 8px; color: var(--kb-cyan);"></span>
+      </div>
+
+      <!-- SISI KANAN: CARD PREVIEW STATS -->
+      <div class="hero-right">
+        <div class="hero-preview-card">
+          <span class="preview-badge">SNEAK PEEK</span>
+          <h3 style="margin: 0 0 16px 0; font-size: 1.2rem; color: var(--workit-yellow);">🎯 Ekosistem Karir WORKIT</h3>
+          
+          <div class="preview-stat">
+            <span style="color: var(--text-muted);">Sektor Pelatihan:</span>
+            <strong style="color: #FFF;">HR, Finance, Marketing, Tech</strong>
+          </div>
+          <div class="preview-stat">
+            <span style="color: var(--text-muted);">Format Belajar:</span>
+            <strong style="color: var(--kb-cyan);">Bootcamp, LMS Video & Mentoring</strong>
+          </div>
+          <div class="preview-stat">
+            <span style="color: var(--text-muted);">Target Peserta:</span>
+            <strong style="color: #FFF;">Fresh Grad & Professional Staff</strong>
+          </div>
+          <div class="preview-stat" style="border-bottom: none; margin-bottom: 0;">
+            <span style="color: var(--text-muted);">Kemitraan B2B:</span>
+            <strong style="color: var(--workit-yellow);">In-House Corporate Training</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPILL LAYANAN UNGGULAN WORKIT -->
+  <section class="spill-section">
+    <div class="workit-container">
+      <div class="section-title">
+        <h2>Bocoran Layanan Unggulan WORKIT</h2>
+        <p>Inilah yang sedang kami persiapkan khusus untuk memanjakan karir dan skill profesionalmu.</p>
+      </div>
+
+      <div class="spill-grid">
+        
+        <!-- Spill 1: HR & Human Capital -->
+        <div class="spill-card">
+          <span class="card-icon">👥</span>
+          <h3 class="card-title">HR & Human Capital</h3>
+          <p class="card-desc">Mastery dalam rekrutmen modern, undang-undang ketenagakerjaan, payroll management, hingga KPI performance matrix.</p>
+          <div class="pill-list">
+            <span class="pill-item">Payroll System</span>
+            <span class="pill-item">Talent Acquisition</span>
+            <span class="pill-item">Labor Law</span>
+          </div>
+        </div>
+
+        <!-- Spill 2: Digital Marketing & Growth -->
+        <div class="spill-card">
+          <span class="card-icon">📈</span>
+          <h3 class="card-title">Digital Marketing & Performance</h3>
+          <p class="card-desc">Strategi kampanye digital berbasis data: Meta Ads, Google Ads, SEO Specialist, hingga CRM Automation.</p>
+          <div class="pill-list">
+            <span class="pill-item">SEO Specialist</span>
+            <span class="pill-item">Performance Ads</span>
+            <span class="pill-item">Copywriting</span>
+          </div>
+        </div>
+
+        <!-- Spill 3: Finance & Corporate Accounting -->
+        <div class="spill-card">
+          <span class="card-icon">💼</span>
+          <h3 class="card-title">Finance & Business Analytics</h3>
+          <p class="card-desc">Pengelolaan keuangan bisnis, pemodelan keuangan (Financial Modeling), perpajakan, dan laporan analisis keuangan.</p>
+          <div class="pill-list">
+            <span class="pill-item">Financial Modeling</span>
+            <span class="pill-item">Taxation (Brevet A/B)</span>
+            <span class="pill-item">Excel Mastery</span>
+          </div>
+        </div>
+
+        <!-- Spill 4: Career Accelerator Program -->
+        <div class="spill-card">
+          <span class="card-icon">🚀</span>
+          <h3 class="card-title">Career Readiness & Mentoring</h3>
+          <p class="card-desc">Pendampingan pembuatan CV ATS-friendly, optimasi profil LinkedIn, hingga simulasi interview kerja bersama HRD senior.</p>
+          <div class="pill-list">
+            <span class="pill-item">CV Review</span>
+            <span class="pill-item">LinkedIn Optimization</span>
+            <span class="pill-item">Mock Interview</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER GLOBAL -->
+  <div id="app-footer"></div>
+
+  <!-- SCRIPT -->
+  <script src="../assets/js/components.js"></script>
+  <script>
+    // SIMULASI WAITLIST LOCALSTORAGE
+    function handleWaitlist(event) {
+      event.preventDefault();
+      const emailInput = document.getElementById('userEmail');
+      const msg = document.getElementById('waitlistMsg');
+
+      if (emailInput && emailInput.value) {
+        let waitlist = JSON.parse(localStorage.getItem('workit_waitlist') || '[]');
+        waitlist.push({ email: emailInput.value, date: new Date().toISOString() });
+        localStorage.setItem('workit_waitlist', JSON.stringify(waitlist));
+
+        msg.innerText = "🎉 Terima kasih! Kamu telah terdaftar dalam antrean prioritas WORKIT.";
+        emailInput.value = "";
+      }
+    }
+  </script>
+</body>
+</html>
