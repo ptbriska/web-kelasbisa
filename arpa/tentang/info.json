@@ -1,0 +1,122 @@
+{
+  "brand_identity": {
+    "nama": "ARPA",
+    "kepanjangan": "Article Research & Publication Assistance",
+    "tagline": "Riset Tuntas, Publikasi Berkualitas",
+    "deskripsi": "ARPA adalah platform pelatihan riset dan publikasi ilmiah yang membantu siswa, mahasiswa, dan akademisi muda membangun kompetensi penelitian, academic writing, publikasi ilmiah, dan karya ilmiah kompetitif berbasis mentoring dan praktik terstruktur.",
+    "ecosystem_tagline": "Strategic Learning Ecosystem for Research & Scientific Publication",
+    "powered_by": "Briska Laboratory & Research Center",
+    "parent_company": "PT Brimo Swarnindo Karyavara & Kelas Bisa Juara & Lulus"
+  },
+  "program_spesial": [
+    {
+      "id": "nalar",
+      "kode": "NALAR",
+      "nama": "Ngobrol Akademik Literasi Riset",
+      "tipe": "Program Gratis Bulanan",
+      "frekuensi": "Sekali per bulan (Awal Bulan)",
+      "deskripsi": "Program Gratis yang diadakan sekali perbulan di awal bulan, membahas kajian bedah jurnal dan tutorial singkat terkait dunia riset."
+    },
+    {
+      "id": "sintera",
+      "kode": "SINTERA",
+      "nama": "Scientific Teen Research Academy",
+      "tipe": "Akademi Riset Siswa",
+      "frekuensi": "Program Bimbingan Intensif",
+      "deskripsi": "Program Pelatihan dan Bimbingan Riset untuk Siswa SMP dan SMA agar bisa publish artikel Ilmiah di Jurnal Sinta."
+    }
+  ],
+  "target_pengguna": [
+    {
+      "id": "mahasiswa",
+      "kategori": "MAHASISWA",
+      "icon": "🎓",
+      "fokus_kebutuhan": [
+        "Proposal penelitian",
+        "Seminar hasil Skripsi",
+        "KTI Mahasiswa",
+        "Jurnal ilmiah",
+        "Proposal Riset S2/S3"
+      ]
+    },
+    {
+      "id": "siswa",
+      "kategori": "SISWA SMP/SMA",
+      "icon": "🎒",
+      "fokus_kebutuhan": [
+        "OPSI (Olimpiade Riset Puspresnas)",
+        "LKTI",
+        "Program Sinta for HighSchool Student"
+      ]
+    },
+    {
+      "id": "akademisi",
+      "kategori": "AKADEMISI",
+      "icon": "🔬",
+      "fokus_kebutuhan": [
+        "academic writing",
+        "research skill",
+        "publication preparation",
+        "scientific communication"
+      ]
+    },
+    {
+      "id": "guru_dosen",
+      "kategori": "GURU & DOSEN",
+      "icon": "🏫",
+      "fokus_kebutuhan": [
+        "pembinaan tim riset",
+        "mentoring kompetisi",
+        "penguatan budaya ilmiah sekolah"
+      ]
+    }
+  ],
+  "learning_system_meta": {
+    "headline": "ARPA From Students to Academic Achievers",
+    "sub_headline": "Sistem pembelajaran berbasis performance untuk menghasilkan riset dan publikasi yang terukur.",
+    "framework_name": "Performance-Based Learning System",
+    "motto": "membangun kompetensi riset yang aplikatif dan relevan dengan kebutuhan akademik nyata."
+  },
+  "ekosistem_riset": [
+    {
+      "id": "pbcc",
+      "kode": "PBCC",
+      "nama": "Performance-Based Competency Curriculum",
+      "peran": "Fokus Kurikulum Kompetensi",
+      "item_fokus": [
+        "research methodology",
+        "academic writing",
+        "scientific publication",
+        "SLR Idea Creation",
+        "presentation skill"
+      ]
+    },
+    {
+      "id": "pbls",
+      "kode": "PBLS",
+      "nama": "Performance-Based Learning System",
+      "peran": "Metode Belajar Terapan",
+      "item_fokus": [
+        "praktik langsung",
+        "drafting karya ilmiah",
+        "mentoring intensif",
+        "revisi bertahap",
+        "simulasi presentasi",
+        "project-based learning"
+      ]
+    },
+    {
+      "id": "ska_iam",
+      "kode": "SKA-IAM",
+      "nama": "Skill Knowledge Attitude Integrated Assessment Model",
+      "peran": "Instrumen Evaluasi & Asesmen",
+      "item_fokus": [
+        "kualitas eksplorasi ide riset",
+        "kualitas penulisan",
+        "progress revisi",
+        "Etika & Komunikasi presentasi",
+        "kesiapan submit/publikasi"
+      ]
+    }
+  ]
+}
