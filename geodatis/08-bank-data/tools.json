@@ -1,0 +1,85 @@
+{
+  "page_meta": {
+    "title": "Software & Analytical Tools Ecosystem",
+    "subtitle": "Kumpulan Perangkat Lunak GIS, Remote Sensing, Modeling & Statistik Non-Coding Resmi"
+  },
+  "tools_list": [
+    {
+      "id": "tool-01",
+      "nama": "QGIS (Quantum GIS)",
+      "kategori": "GIS Spatial Analysis & Mapping",
+      "deskripsi": "Software GIS open-source utama untuk pemetaan, analisis keruangan, dan pemrosesan data vektor/raster.",
+      "link_download": "https://qgis.org/en/site/forusers/download.html"
+    },
+    {
+      "id": "tool-02",
+      "nama": "SAGA GIS",
+      "kategori": "GIS Spatial Analysis & Mapping",
+      "deskripsi": "System for Automated Geoscientific Analyses dengan keunggulan modul analisis spasial & geospasial terapan.",
+      "link_download": "https://sourceforge.net/projects/saga-gis/files/"
+    },
+    {
+      "id": "tool-03",
+      "nama": "JAMOVI",
+      "kategori": "Statistical Analysis Non Coding",
+      "deskripsi": "Perangkat statistik modern berbasis R GUI yang sangat cepat untuk uji hipotesis, regresi, dan ANOVA.",
+      "link_download": "https://www.jamovi.org/download.html"
+    },
+    {
+      "id": "tool-04",
+      "nama": "JASP",
+      "kategori": "Statistical Analysis Non Coding",
+      "deskripsi": "Software analisis statistik gratis dan user-friendly yang mendukung statistik Klasik dan Bayesian.",
+      "link_download": "https://jasp-stats.org/download/"
+    },
+    {
+      "id": "tool-05",
+      "nama": "PSPP (GNU PSPP)",
+      "kategori": "Statistical Analysis Non Coding",
+      "deskripsi": "Alternatif open-source untuk IBM SPSS yang andal mengolah data statistik kuantitatif dan survei.",
+      "link_download": "https://www.gnu.org/software/pspp/get.html"
+    },
+    {
+      "id": "tool-06",
+      "nama": "Orange Data Mining",
+      "kategori": "Machine Learning Non-Coding",
+      "deskripsi": "Visual programming untuk machine learning, data mining, dan klasterisasi data tanpa perlu koding.",
+      "link_download": "https://orangedatamining.com/download/"
+    },
+    {
+      "id": "tool-07",
+      "nama": "Anaconda / Python Ecosystem",
+      "kategori": "Data Analyst & Data Science via Python",
+      "deskripsi": "Distribusi Python lengkap terintegrasi Jupyter Notebook, Spyder, Pandas, GeoPandas, & PyGIS.",
+      "link_download": "https://www.anaconda.com/download"
+    },
+    {
+      "id": "tool-08",
+      "nama": "Google Earth Engine (GEE CLI / API)",
+      "kategori": "Google Earth Engine via Python",
+      "deskripsi": "Platform komputasi awan skala planet untuk analisis data citra satelit dan penginderaan jauh.",
+      "link_download": "https://earthengine.google.com/"
+    },
+    {
+      "id": "tool-09",
+      "nama": "HEC-RAS",
+      "kategori": "Environment & Hydro Modelling",
+      "deskripsi": "Software standar untuk simulasi aliran sungai 1D/2D, pemodelan genangan banjir, dan analisis hidrolika.",
+      "link_download": "https://www.hec.usace.army.mil/software/hec-ras/download.aspx"
+    },
+    {
+      "id": "tool-10",
+      "nama": "Delft3D Flexible Mesh",
+      "kategori": "Environment & Hydro Modelling",
+      "deskripsi": "Suite pemodelan 2D/3D untuk mensimulasikan gelombang, arus, hidrodinamika pesisir, dan pasang surut.",
+      "link_download": "https://www.deltares.nl/en/software-solutions/delft3d-flexible-mesh-suite"
+    },
+    {
+      "id": "tool-11",
+      "nama": "WRF Model (Weather Research & Forecasting)",
+      "kategori": "Environment & Hydro Modelling",
+      "deskripsi": "Sistem prediksi cuaca dan pemodelan atmosfer numerik tingkat lanjut untuk studi iklim.",
+      "link_download": "https://www me.mmm.ucar.edu/wrf/users/download/get_sources.html"
+    }
+  ]
+}
