@@ -1,0 +1,61 @@
+{
+  "nama_acara": "Pilar Olympiad Challenge Indonesia (EPS 001)",
+  "tanggal_waktu": "Senin, 14 September 2026 | 07.00 – 22.00 WITA",
+  "platform": "CBT (Computer Based Test) via regis.briska.co.id",
+  "kode_event": "PLR-POCI-001",
+  "deskripsi_singkat": "Uji kemampuan akademikmu di tingkat nasional dengan sistem CBT yang dilengkapi Rapor Analisa Statistik Peserta.",
+  "kategori_peserta": [
+    {
+      "tingkat": "SMA/MA/Sederajat",
+      "bidang": [
+        {"mapel": "Kimia", "pdf": "Silabus-Kimia-IChO-SMA.pdf"},
+        {"mapel": "Biologi", "pdf": "Silabus-Biologi-IBO-SMA.pdf"},
+        {"mapel": "Informatika", "pdf": "Silabus-Informatika-IOI-SMA.pdf"},
+        {"mapel": "Fisika", "pdf": "Silabus-Fisika-IPhO-SMA.pdf"},
+        {"mapel": "Kebumian", "pdf": "Silabus-Kebumian-IESO-SMA.pdf"},
+        {"mapel": "Astronomi", "pdf": "Silabus-Astronomi-IOAA-SMA.pdf"},
+        {"mapel": "Geografi", "pdf": "Silabus-Geografi-IGeO-SMA.pdf"},
+        {"mapel": "Ekonomi", "pdf": "Silabus-Ekonomi-IEO-SMA.pdf"},
+        {"mapel": "AI", "pdf": "Silabus-AI-IOAI-SMA.pdf"},
+        {"mapel": "Matematika", "pdf": "Silabus-Matematika-SMA.pdf"},
+        {"mapel": "Nuklir", "pdf": "Silabus-Nuklir-INSO-SMA.pdf"},
+        {"mapel": "Linguistik", "pdf": "Silabus-Linguistik-IOL-SMA.pdf"},
+        {"mapel": "Sejarah", "pdf": "Silabus-Sejarah-IHO-SMA.pdf"}
+      ]
+    },
+    {
+      "tingkat": "SMP/Sederajat",
+      "bidang": [
+        {"mapel": "IPA", "pdf": "Silabus-IPA-SMP.pdf"},
+        {"mapel": "IPS", "pdf": "Silabus-IPS-SMP.pdf"},
+        {"mapel": "Matematika", "pdf": "Silabus-Matematika-SMP.pdf"}
+      ]
+    },
+    {
+      "tingkat": "Mahasiswa S1",
+      "bidang": [
+        {"mapel": "Metodologi & Statistik Penelitian", "pdf": "Silabus-Metode-Penelitian-Mahasiswa.pdf"}
+      ]
+    }
+  ],
+  "syarat_pendaftaran": [
+    "Like postingan event di Instagram Kelas Bisa.",
+    "Share poster ke Story IG & 5 grup WhatsApp/Telegram.",
+    "Komen & tag 10 teman di kolom komentar.",
+    "Follow Instagram @kelasbisa & @pilar.juara."
+  ],
+  "jadwal": {
+    "pendaftaran": "1 – 13 September 2026",
+    "pengerjaan": "14 September 2026 (07.00 – 22.00 WITA)"
+  },
+  "fasilitas": [
+    "Rekap skor & jawaban benar/salah secara instan.",
+    "Akses kunci jawaban & pembahasan lengkap (S&K berlaku).",
+    "Rapor Analisa Statistik Peserta (Analisa kekuatan materi, kecepatan menjawab, dan akurasi)."
+  ],
+  "kontak": {
+    "website": "kelasbisa.com/poci",
+    "wa": "0857 11000 363",
+    "ig": "@kelasbisa | @pilar.juara"
+  }
+}
