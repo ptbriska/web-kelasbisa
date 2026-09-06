@@ -1,0 +1,46 @@
+[
+  {
+    "id": "alm-2025-001",
+    "nama": "Bana Rahmat",
+    "jenis_program": "Sekolah Kedinasan",
+    "instansi_lulus": "PKN STAN",
+    "formasi": "D-IV Akuntansi Sektor Publik",
+    "skor_skd": "462",
+    "asal_sekolah": "SMAN 1 Makassar",
+    "foto": "image/alumni/2025/bana.jpg",
+    "testimoni": "Materi GATRA sangat presisi dengan kisi-kisi asli. Trik pengerjaan TIU Gatraboost terbukti memangkas waktu pengerjaan saat ujian!"
+  },
+  {
+    "id": "alm-2025-002",
+    "nama": "Banu Prasetyo",
+    "jenis_program": "Sekolah Kedinasan",
+    "instansi_lulus": "IPDN",
+    "formasi": "Calon Praja IPDN",
+    "skor_skd": "458",
+    "asal_sekolah": "SMAN 2 Makassar",
+    "foto": "image/alumni/2025/banu.jpg",
+    "testimoni": "Selain bimbingan akademik SKD yang mantap, latihan Binsik fisiknya betul-betul membentuk kedisiplinan dan ketahanan tes fisik saya."
+  },
+  {
+    "id": "alm-2025-003",
+    "nama": "Bimo Setiawan",
+    "jenis_program": "CPNS",
+    "instansi_lulus": "Poltekip Kemenkumham",
+    "formasi": "Taruna Poltekip",
+    "skor_skd": "449",
+    "asal_sekolah": "SMAN 5 Makassar",
+    "foto": "image/alumni/2025/bimo.jpg",
+    "testimoni": "Fasilitas Try Out CBT CAT GATRA persis sama dengan layar CAT BKN asli. Begitu ujian nyata, tidak ada lagi rasa canggung."
+  },
+  {
+    "id": "alm-2025-004",
+    "nama": "Andi Nurul Fitri",
+    "jenis_program": "Sekolah Kedinasan",
+    "instansi_lulus": "Politeknik Statistika STIS",
+    "formasi": "D-IV Komputasi Statistik",
+    "skor_skd": "468",
+    "asal_sekolah": "SMAN 17 Makassar",
+    "foto": "image/alumni/2025/bana.jpg",
+    "testimoni": "Tentor di GATRA sangat sabar mengajar materi TIU & TWK dari nol sampai saya benar-benar paham konsep dasarnya."
+  }
+]
