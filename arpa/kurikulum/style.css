@@ -1,0 +1,208 @@
+/* =========================================================
+   ARPA MODULE — KURIKULUM SCOPUS RESEARCH PAPER STYLING
+   Theme: Academic Paper Journal (Times New Roman & Scopus Blue Accent)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap');
+
+:root {
+  /* Paper Palette */
+  --paper-bg: #FFFFFF;
+  --paper-border: #D1D5DB;
+  --paper-text-dark: #111827;
+  --paper-text-muted: #374151;
+  
+  /* Journal Accents */
+  --scopus-blue: #1D4ED8;
+  --scopus-blue-dark: #1E40AF;
+  --scopus-gray: #6B7280;
+  
+  /* Typography */
+  --font-serif: 'Times New Roman', Times, serif, Georgia;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s ease;
+}
+
+/* BASE SHEET WRAPPER */
+body#arpaKurikulumPage {
+  background-color: #E5E7EB;
+  color: var(--paper-text-dark);
+  font-family: var(--font-serif);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.paper-wrapper {
+  max-width: 900px;
+  margin: 40px auto 80px auto;
+  padding: 0 16px;
+}
+
+/* SCOPUS PAPER SHEET CONTAINER */
+.scopus-paper-sheet {
+  background: var(--paper-bg);
+  padding: 60px 64px;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--paper-border);
+  position: relative;
+}
+
+/* 1. PAPER HEADER */
+.paper-header {
+  text-align: center;
+  margin-bottom: 32px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 24px;
+}
+
+.paper-title {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 12px 0;
+  line-height: 1.25;
+}
+
+.paper-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--paper-text-muted);
+  margin: 0 0 8px 0;
+}
+
+.paper-authors {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-style: italic;
+  color: #1F2937;
+  margin: 0 0 16px 0;
+}
+
+.paper-meta-dates {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--scopus-gray);
+}
+
+.paper-meta-dates span em {
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* 2. ABSTRACT BOX */
+.paper-abstract-box {
+  max-width: 760px;
+  margin: 0 auto 36px auto;
+  text-align: justify;
+  padding: 0 16px;
+}
+
+.abstract-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--scopus-blue);
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.abstract-text {
+  font-family: var(--font-serif);
+  font-size: 0.98rem;
+  color: #1F2937;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 3. DYNAMIC CONTENT SECTIONS */
+.paper-section {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--scopus-blue);
+  margin: 24px 0 10px 0;
+  border-bottom: 1px dashed #CBD5E1;
+  padding-bottom: 4px;
+}
+
+.section-intro-text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--paper-text-dark);
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+/* SUBSECTIONS (1.1, 1.2, 2.1, ETC) */
+.subsection-block {
+  margin-bottom: 18px;
+  padding-left: 8px;
+}
+
+.subsection-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--scopus-blue-dark);
+  margin: 14px 0 6px 0;
+}
+
+.subsection-desc {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--paper-text-muted);
+  margin: 0 0 8px 0;
+}
+
+/* BULLET LISTS ALA PAPER SCOPUS */
+.paper-bullet-list {
+  font-family: var(--font-serif);
+  list-style-type: disc !important;
+  padding-left: 28px !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.paper-bullet-list li {
+  font-size: 1rem;
+  color: var(--paper-text-dark);
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.conclusion-text {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--paper-text-dark);
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE LAYOUT FOR MOBILE/TABLET */
+@media (max-width: 768px) {
+  .scopus-paper-sheet {
+    padding: 32px 20px;
+  }
+  
+  .paper-title {
+    font-size: 1.7rem;
+  }
+  
+  .paper-meta-dates {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
