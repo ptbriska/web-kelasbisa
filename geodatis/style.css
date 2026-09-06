@@ -487,37 +487,41 @@ body {
   top: 0;
   z-index: 998;
   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  width: 100%;
 }
 
 .subnav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
+  padding: 10px 24px;
+  gap: 16px;
 }
 
 .subnav-brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
+  flex-shrink: 0; /* Mencegah brand tertekan */
 }
 
 .subnav-brand .brand-text {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 900;
   color: var(--geo-dark-obsidian);
   letter-spacing: -0.5px;
 }
 
 .subnav-brand .brand-badge {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   color: var(--geo-teal-dark);
   background: var(--geo-teal-light);
-  padding: 3px 10px;
+  padding: 2px 8px;
   border-radius: 20px;
   border: 1px solid rgba(20, 160, 150, 0.3);
+  white-space: nowrap;
 }
 
 .subnav-menu {
@@ -525,27 +529,30 @@ body {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  gap: 8px;
-  flex-wrap: wrap;
+  gap: 4px; /* Dikurangi agar semua item muat sejajar */
+  align-items: center;
+  flex-wrap: nowrap; /* Memaksa menu tetap 1 baris */
 }
 
 .subnav-menu li {
   padding-left: 0 !important;
   margin-bottom: 0 !important;
+  white-space: nowrap;
 }
 
 .subnav-menu li::before {
-  display: none !important; /* Mencegah centang checklist di area navbar */
+  display: none !important;
 }
 
 .subnav-menu a {
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--geo-text-muted);
-  padding: 8px 16px;
+  padding: 6px 12px; /* Dikecilkan sedikit agar presisi */
   border-radius: 20px;
   transition: var(--transition-smooth);
+  display: inline-block;
 }
 
 .subnav-menu a:hover,
@@ -555,24 +562,15 @@ body {
   box-shadow: 0 4px 12px var(--geo-teal-glow);
 }
 
-/* RESPONSIVE BREAKPOINTS */
-@media (max-width: 992px) {
-  .hero-grid,
-  .ceo-banner-card,
+/* RESPONSIVE SUBNAV UNTUK LAYAR KECIL */
+@media (max-width: 1100px) {
   .subnav-container {
-    grid-template-columns: 1fr;
     flex-direction: column;
-    text-align: center;
+    padding: 8px 16px;
+    gap: 8px;
   }
-
-  .hero-actions,
-  .hero-meta-badge,
   .subnav-menu {
-    margin: 0 auto 20px auto;
+    flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .hero-main-title {
-    font-size: 2.5rem;
   }
 }
