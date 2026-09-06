@@ -1,0 +1,62 @@
+{
+  "kantor_cabang": [
+    {
+      "id": "makassar-racing",
+      "nama_cabang": "GATRA Main Campus (Racing Center)",
+      "alamat": "Jl. Racing Center, Makassar, Sulawesi Selatan",
+      "tipe": "Pusat Bimbingan Offline & Binsik",
+      "fasilitas_cabang": [
+        "Ruang Kelas Ber-AC & Free Hotspot Area",
+        "Zona Latihan Binsik / Kesamaptaan",
+        "Layanan Konsultasi Akademik Direct"
+      ],
+      "gmaps_url": "https://maps.google.com"
+    }
+  ],
+  "daftar_tutor": [
+    {
+      "id": "tutor-1",
+      "nama": "Bagus Primohadi, S.Tr",
+      "role": "Master Mentor All Role",
+      "status_kredensial": "Alumni STMKG / ASN BMKG",
+      "alumni_instansi": "STMKG Angkatan 2019",
+      "bidang_keahlian": ["TKP HOTS", "SKB STMKG", "Psikotes"],
+      "foto": "images/tutor/bimo.jpg",
+      "cabang_id": "makassar-racing",
+      "quote": "Lolos SKD itu bukan cuma soal pintar, tapi tentang penguasaan strategi pengerjaan soal dan ketenangan mental."
+    },
+    {
+      "id": "tutor-2",
+      "nama": "Ahmad Dani, S.Tr.Stat",
+      "role": "Specialist TIU & Gatraboost Tricks",
+      "status_kredensial": "Alumni STIS / ASN BPS Makassar",
+      "alumni_instansi": "Politeknik Statistika STIS 2019",
+      "bidang_keahlian": ["TIU Berhitung Cepat", "Wawancara", "SKB STIS"],
+      "foto": "images/tutor/dani.jpg",
+      "cabang_id": "makassar-racing",
+      "quote": "TIU punya pola yang konsisten tiap tahun. Kuasai rumus cepat Gatraboost, pangkas waktu pengerjaan hingga 50%."
+    },
+    {
+      "id": "tutor-3",
+      "nama": "Risfansyah, S.Tr",
+      "role": "Mentor TWK & Pelatih Wawancara",
+      "status_kredensial": "Alumni POLTEKIM / ASN Imigrasi Makassar",
+      "alumni_instansi": "POLTEKIM Angkatan 2019",
+      "bidang_keahlian": ["TWK", "Psikotes Taruna", "SKB Poltekim"],
+      "foto": "images/tutor/risfansyah.jpg",
+      "cabang_id": "makassar-racing",
+      "quote": "Soal TWK membutuhkan trik menghapal cepat."
+    },
+    {
+      "id": "tutor-4",
+      "nama": "Coach Falah",
+      "role": "Head Coach Binsik & Kesamaptaan",
+      "status_kredensial": "Alumni STMKG / ASN BMKG / PT Gym",
+      "alumni_instansi": "STMKG Angkatan 2019",
+      "bidang_keahlian": ["Lari 12 Menit", "Push Up & Pull Up", "Shuttle Run"],
+      "foto": "images/tutor/falah.jpg",
+      "cabang_id": "makassar-racing",
+      "quote": "Fisik ideal untuk tes Kesamaptaan tidak dibentuk dalam semalam. Disiplin latihan pagi adalah kunci skor maksimal."
+    }
+  ]
+}
