@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Reguler — GEODATIS</title>
+
+  <!-- Favicon & Isolated Styles -->
+  <link rel="icon" href="../../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="geodatisRegulerPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GEODATIS (Baris 2) -->
+  <div id="geodatis-subnav-app"></div>
+
+  <!-- HERO STAGE: RANGKUMAN POSTER (DOMINO STACK CASCADE) -->
+  <section class="reguler-hero">
+    <div class="geodatis-container">
+      <div class="hero-reguler-grid">
+        
+        <!-- Hero Text -->
+        <div class="hero-text-block">
+          <span class="badge-emerald">📚 Layanan B2C / Individu</span>
+          <h1 class="hero-title" id="pageTitle">Program Reguler GEODATIS</h1>
+          <p class="hero-desc" id="pageSubtitle">
+            Layanan B2C / Individu untuk Penguasaan Skill Geospatial Data & Statistics.
+          </p>
+          <div class="hero-hint">
+            <span class="pulse-dot"></span> Arahkan kursor pada kartu poster domino untuk memajukan, klik untuk memperbesar preview.
+          </div>
+        </div>
+
+        <!-- Domino Stage Container (Render via JS dari rangkuman_poster) -->
+        <div class="domino-stage-wrapper">
+          <div class="domino-stack" id="dominoPosterStack">
+            <!-- Rendered via JS -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1: DAFTAR PROGRAM (KATALOG CARDS LAYANAN B2C) -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div class="section-header">
+        <h2>Pilihan Program B2C & Bimbingan</h2>
+        <p>Program pembelajaran terstruktur dari tingkat webinar gratis, short course, hingga private request.</p>
+      </div>
+
+      <!-- Grid Cards Render via JS dari daftar_program -->
+      <div class="katalog-grid" id="daftarProgramContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: RANGKUMAN FASILITAS & EKOSISTEM -->
+  <section class="geodatis-section light-accent-bg">
+    <div class="geodatis-container">
+      <div class="section-header">
+        <h2 id="fasilitasJudul">Fasilitas & Ekosistem Pembelajaran B2C</h2>
+        <p id="fasilitasSub">Benefit lengkap yang disesuaikan dengan tipe program yang kamu ambil di GEODATIS.</p>
+      </div>
+
+      <!-- Grid Render via JS dari rangkuman_fasilitas -->
+      <div class="fasilitas-grid" id="rangkumanFasilitasContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: STANDALONE CTA KATALOG EVENT ACTIVE -->
+  <section class="geodatis-section cta-event-section">
+    <div class="geodatis-container">
+      <div class="cta-event-card">
+        <div class="cta-event-info">
+          <span class="badge-accent">🎟️ Event & Batch Aktif</span>
+          <h2>Lihat Program yang Sedang Buka Registrasi</h2>
+          <p>Cek seluruh jadwal webinar, short course, dan bootcamp GEODATIS yang aktif dibuka saat ini.</p>
+        </div>
+        <div class="cta-event-action">
+          <a href="https://kelasbisa.com/events/" target="_blank" rel="noopener" id="btnKatalogEvent" class="btn-event-katalog">
+            Buka Katalog Event Aktif ➔
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX / POPUP MODAL POSTER (PURE PREVIEW ONLY) -->
+  <div class="poster-modal-overlay" id="posterModal" onclick="closePosterModal(event)">
+    <div class="poster-modal-content">
+      <button class="btn-close-modal" onclick="forceClosePosterModal()">&times;</button>
+      <div class="modal-body-grid">
+        <div class="modal-img-wrapper">
+          <img src="" id="modalPosterImg" alt="Poster Preview">
+        </div>
+        <div class="modal-info-wrapper">
+          <span class="badge-emerald" id="modalPosterCat">Kategori</span>
+          <h3 id="modalPosterTitle">Judul Poster</h3>
+          <p class="modal-desc" id="modalPosterCaption">Caption poster preview.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/components.js"></script>
+  <script src="../script.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
