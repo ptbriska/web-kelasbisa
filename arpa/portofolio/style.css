@@ -1,0 +1,407 @@
+/* =========================================================
+   ARPA MODULE — PORTOFOLIO & SHOWCASE STYLING
+   Theme: Slate Obsidian ARPA (#0F172A, #334155) & Cyan Gloss Kelas Bisa (#06B6D4)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ARPA Slate Palette */
+  --arpa-obsidian: #0F172A;
+  --arpa-slate-dark: #1E293B;
+  --arpa-slate-main: #334155;
+  --arpa-slate-muted: #64748B;
+  --arpa-slate-light: #F8FAFC;
+  --arpa-border: #E2E8F0;
+
+  /* Kelas Bisa Cyan Accents */
+  --kb-cyan: #06B6D4;
+  --kb-cyan-dark: #0284C7;
+  --kb-cyan-light: #ECFEFF;
+  --kb-cyan-glow: rgba(6, 182, 212, 0.25);
+
+  /* Radius & Shadows */
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 16px 36px rgba(6, 182, 212, 0.16);
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* BASE RESET */
+body#arpaPortofolioPage {
+  background-color: var(--arpa-slate-light);
+  color: #1E293B;
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.arpa-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* 1. HERO SECTION */
+.arpa-hero {
+  background: radial-gradient(circle at 50% 0%, rgba(6, 182, 212, 0.12), transparent 60%),
+              linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+  padding: 64px 0 56px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--arpa-border);
+}
+
+.hero-content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 12px 0 0 0;
+  letter-spacing: -1.5px;
+}
+
+.accent-text {
+  background: linear-gradient(135deg, var(--arpa-slate-main) 0%, var(--kb-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--arpa-slate-muted);
+  margin: 6px 0 28px 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 2. DASHBOARD STATISTIK GRID */
+.arpa-section {
+  padding: 64px 0;
+}
+
+.light-slate-bg {
+  background: #F1F5F9;
+  border-top: 1px solid var(--arpa-border);
+  border-bottom: 1px solid var(--arpa-border);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  color: var(--arpa-slate-muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  border-top: 4px solid var(--arpa-obsidian);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-top-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--kb-cyan-dark);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-category {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--arpa-obsidian);
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--arpa-slate-muted);
+}
+
+/* 3. ALUMNI & JUDUL RISET GRID */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 28px;
+}
+
+.alumni-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.alumni-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.alumni-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.alumni-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--kb-cyan);
+  box-shadow: 0 4px 10px rgba(6, 182, 212, 0.2);
+}
+
+.alumni-info h3 {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--arpa-obsidian);
+  margin: 0 0 2px 0;
+}
+
+.alumni-instansi {
+  font-size: 0.84rem;
+  color: var(--arpa-slate-muted);
+  margin: 0 0 6px 0;
+}
+
+.alumni-program-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  background: var(--kb-cyan-light);
+  color: var(--kb-cyan-dark);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  display: inline-block;
+}
+
+.alumni-body {
+  border-top: 1px dashed var(--arpa-border);
+  padding-top: 16px;
+}
+
+.alumni-paper-title {
+  background: var(--arpa-slate-light);
+  border-left: 3px solid var(--arpa-slate-main);
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.alumni-paper-title strong {
+  font-size: 0.75rem;
+  color: var(--arpa-slate-muted);
+  text-transform: uppercase;
+  display: block;
+}
+
+.alumni-paper-title p {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--arpa-obsidian);
+  margin: 2px 0 0 0;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.alumni-quote {
+  font-size: 0.9rem;
+  color: var(--arpa-slate-main);
+  line-height: 1.6;
+}
+
+/* 4. DOKUMENTASI GALERI GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.gallery-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--kb-cyan);
+  box-shadow: var(--shadow-hover);
+}
+
+.gallery-img-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--arpa-slate-dark);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.gallery-info {
+  padding: 20px;
+}
+
+.gallery-info h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--arpa-obsidian);
+  margin: 0 0 6px 0;
+}
+
+.gallery-info p {
+  font-size: 0.84rem;
+  color: var(--arpa-slate-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 5. CTA FOOTER BOX */
+.porto-cta-box {
+  background: linear-gradient(135deg, var(--arpa-obsidian) 0%, var(--arpa-slate-dark) 100%);
+  border-radius: var(--radius-xl);
+  padding: 44px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  border-left: 6px solid var(--kb-cyan);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.2);
+}
+
+.cta-content h3 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0 0 8px 0;
+}
+
+.cta-content p {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON STYLES */
+.btn-primary-slate {
+  background: var(--kb-cyan);
+  color: #FFFFFF !important;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px var(--kb-cyan-glow);
+  transition: var(--transition-smooth);
+}
+
+.btn-primary-slate:hover {
+  background: var(--kb-cyan-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-slate {
+  background: #FFFFFF;
+  color: var(--arpa-obsidian) !important;
+  border: 1.5px solid var(--arpa-border);
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary-slate:hover {
+  background: var(--arpa-slate-light);
+  border-color: var(--kb-cyan);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+  .porto-cta-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-buttons {
+    justify-content: center;
+  }
+}
