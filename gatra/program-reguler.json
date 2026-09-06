@@ -1,0 +1,256 @@
+{
+  "program_akademik": [
+    {
+      "id": "gatra-prime-1",
+      "nama": "GATRA PRIME 1",
+      "kategori": "SKD Basic 1",
+      "sesi_produk": "SKD SEKDIN & SKD CPNS",
+      "periode": "Okt–Des (3 Bulan)",
+      "durasi": "12 Minggu",
+      "intensitas": "Senin, Selasa, Rabu, Sabtu (Kelas Fisik 08.00-10.00 WITA)",
+      "total_jam": "72 jam",
+      "harga_full": "Rp899.000",
+      "cicilan": {
+        "skema": "Rp349.000 / bulan (diangsur 3x)",
+        "total": "Rp1.047.000",
+        "hemat_full": "Hemat Rp148.000"
+      },
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp250.000",
+        "fasilitas_pendaftaran": [
+          "Jersey Gatra",
+          "ID Card & Lanyard",
+          "Totebag",
+          "Diagnostic Test",
+          "Buku Cetak SKD"
+        ]
+      },
+      "value_utama": [
+        "Cocok untuk pemula benar-benar mulai dari nol.",
+        "Porsi materi dasar sangat besar (70%).",
+        "Pondasi kuat TIU–TWK–TKP.",
+        "TO hanya pengenalan (20%).",
+        "Ada spill awal untuk Batch Taruna (10%)."
+      ]
+    },
+    {
+      "id": "gatra-prime-2",
+      "nama": "GATRA Prime 2",
+      "kategori": "SKD Basic 2",
+      "sesi_produk": "SKD SEKDIN & SKD CPNS",
+      "periode": "Jan–Mar (3 Bulan)",
+      "durasi": "12 Minggu",
+      "intensitas": "Senin, Selasa, Rabu, Sabtu (Kelas Fisik 08.00-10.00 WITA)",
+      "total_jam": "72 jam",
+      "harga_full": "Rp899.000",
+      "cicilan": {
+        "skema": "Rp349.000 / bulan (diangsur 3x)",
+        "total": "Rp1.047.000",
+        "hemat_full": "Hemat Rp148.000"
+      },
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp250.000",
+        "fasilitas_pendaftaran": [
+          "Jersey Gatra",
+          "ID Card & Lanyard",
+          "Totebag",
+          "Diagnostic Test",
+          "Buku Cetak SKD"
+        ]
+      },
+      "value_utama": [
+        "Cocok untuk siswa yang sudah paham dasar.",
+        "Porsi latihan soal dan TO lebih dominan (50%).",
+        "Materi dasar tetap ada (40%) sebagai penguatan.",
+        "Spill Taruna tetap ada (10%).",
+        "Peserta mulai belajar ritme SKD sebenarnya."
+      ]
+    },
+    {
+      "id": "gatra-satset",
+      "nama": "Gatra Satset",
+      "kategori": "SKD Fast Intensive",
+      "sesi_produk": "SKD SEKDIN & SKD CPNS",
+      "periode": "Apr–Mei (2 Bulan)",
+      "durasi": "8 Minggu",
+      "intensitas": "Senin, Selasa, Rabu, Kamis, Sabtu, Minggu (Kelas Fisik 08.00-10.00 WITA)",
+      "total_jam": "80 jam",
+      "harga_full": "Rp999.000",
+      "cicilan": {
+        "skema": "Rp549.000 / bulan (diangsur 2x)",
+        "total": "Rp1.098.000",
+        "hemat_full": "Hemat Rp99.000"
+      },
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp250.000",
+        "fasilitas_pendaftaran": [
+          "Jersey Gatra",
+          "ID Card & Lanyard",
+          "Totebag",
+          "Diagnostic Test",
+          "Buku Cetak SKD"
+        ]
+      },
+      "value_utama": [
+        "Dirancang khusus untuk siswa yang telat info / mepet / suka menunda.",
+        "Gabungan A1 + A2 versi padat.",
+        "Porsi materi dasar 45% dan latihan soal 45% → seimbang.",
+        "Ritme cepat, intens, dikejar waktu.",
+        "Paling 'worth' untuk siswa yang harus mengejar ketertinggalan dalam waktu singkat."
+      ]
+    },
+    {
+      "id": "gatra-drill",
+      "nama": "Gatra Drill",
+      "kategori": "SKD Super Drill",
+      "sesi_produk": "SKD SEKDIN & SKD CPNS",
+      "periode": "Juni (1 bulan)",
+      "durasi": "4 Minggu",
+      "intensitas": "Senin, Selasa, Rabu, Kamis, Sabtu (Kelas Fisik 08.00-10.00 WITA)",
+      "total_jam": "32 jam",
+      "harga_full": "Rp349.000",
+      "cicilan": null,
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp120.000",
+        "fasilitas_pendaftaran": [
+          "ID Card & Lanyard",
+          "Totebag",
+          "Diagnostic Test",
+          "Ebook Modul SKD"
+        ]
+      },
+      "value_utama": [
+        "Full drilling — fokus 75% latihan soal & pembahasan.",
+        "Materi hanya review singkat (15%).",
+        "Porsi latihan tinggi menjelang SKD Juli.",
+        "Harga paling terjangkau, cocok untuk booster akhir."
+      ]
+    },
+    {
+      "id": "gatra-taruna",
+      "nama": "Gatra Taruna",
+      "kategori": "Taruna Fullpack",
+      "sesi_produk": "SKB SEKDIN",
+      "periode": "Jul–Sep (2 Bulan / 1 Bulan jika Jadwal SKB Mepet)",
+      "durasi": "8 Minggu atau 4 minggu",
+      "intensitas": "Susunan 2 Bulan: Senin, Selasa, Rabu | Susunan 1 Bulan: Senin s.d. Minggu (08.00-10.00 WITA)",
+      "total_jam": "48 jam",
+      "harga_full": "Rp1.100.000",
+      "cicilan": null,
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp350.000",
+        "fasilitas_pendaftaran": [
+          "Jersey Gatra",
+          "ID Card & Lanyard Premium",
+          "Totebag",
+          "Diagnostic Test",
+          "Buku Cetak SKD & SKB"
+        ]
+      },
+      "value_utama": [
+        "Persiapan SKB Taruna lengkap: Wawancara, Psikotest, Kesamaptaan, Akademik dasar.",
+        "Termasuk 'Spill' dari A1–A4 (yang sudah belajar dasar SKD sebelumnya).",
+        "Menyesuaikan kebutuhan 6 kementerian/instansi Taruna.",
+        "Paling premium dari seluruh batch.",
+        "Disediakan Khusus per Instansi (Tersedia STMKG, STAN, STIS, Poltekim, Poltekip, STTD)."
+      ]
+    },
+    {
+      "id": "bc-catur",
+      "nama": "BC CATUR (CALON APARATUR)",
+      "kategori": "Bootcamp SKD",
+      "sesi_produk": "SKD SEKDIN & SKD CPNS",
+      "periode": "Anytime (menyesuaikan jadwal BKN)",
+      "durasi": "5 hari",
+      "intensitas": "1 hari 8 Jam (Jam 08.00-18.00 WITA)",
+      "total_jam": "40 Jam",
+      "harga_full": "Rp499.000",
+      "cicilan": null,
+      "biaya_pendaftaran_offline": {
+        "biaya": "Rp120.000",
+        "fasilitas_pendaftaran": [
+          "ID Card & Lanyard",
+          "Totebag",
+          "Diagnostic Test",
+          "Ebook Modul SKD"
+        ]
+      },
+      "value_utama": [
+        "Dirancang khusus untuk siswa yang super telat info / mepet / suka menunda.",
+        "Versi paling padat.",
+        "Porsi materi dasar 60% dan latihan soal 40%.",
+        "Ritme cepat, intens, dikejar waktu.",
+        "Paling 'worth' untuk siswa yang harus mengejar ketertinggalan dalam waktu singkat."
+      ]
+    }
+  ],
+  "program_tambahan_binsik": [
+    {
+      "nama_paket": "Bundling Binsik",
+      "harga": "Rp200.000/bulan",
+      "keterangan": "Akses Kelas Binsik Pagi (07.00–09.00 WITA) 4x seminggu."
+    },
+    {
+      "nama_paket": "Standalone",
+      "harga": "Rp300.000/bulan",
+      "keterangan": "Siswa luar yang hanya ingin ikut Binsik tanpa ikut kelas akademik Gatra."
+    }
+  ],
+  "opsi_waktu_dan_lokasi": {
+    "lokasi_utama": "Jl. Racing Center, Makassar, Sulawesi Selatan",
+    "jadwal_kelas": [
+      {
+        "komponen": "Kelas Materi Sore",
+        "waktu": "16.00-17.30 WITA",
+        "lokasi": "Gedung Bimbel (Jl. Racing Center)",
+        "keterangan": "Cocok untuk siswa SMA & gap year"
+      },
+      {
+        "komponen": "Kelas Materi Malam",
+        "waktu": "19.30-21.00 WITA",
+        "lokasi": "Gedung Bimbel (Jl. Racing Center)",
+        "keterangan": "Cocok untuk pekerja & mahasiswa/CPNS"
+      },
+      {
+        "komponen": "Kelas Binsik",
+        "waktu": "07.00-09.00 WITA",
+        "lokasi": "Lapangan / Zona Binsik",
+        "keterangan": "Persiapan fisik/kesamaptaan Sekdin"
+      }
+    ]
+  },
+  "alasan_memilih_gatra": [
+    "Belajar Terarah, Tanpa Bingung, Materi lengkap, ribuan soal HOTS sesuai kisi-kisi, dan kurikulum terstruktur. Tinggal ikuti alurnya.",
+    "Fleksibel: Mandiri atau Live Class, Belajar lewat video kapan saja, atau ikut kelas pendalaman via Zoom. Blended learning yang sesuai ritme kamu.",
+    "Sistem Gatraboost: Tips dan Trik Cara Cepat, Lulus bukan cuma paham materi, tapi juga cepat menjawab. Kuasai trik yang bikin beda.",
+    "Akses Kapan Saja, Semua video materi dan rekaman Zoom bisa ditonton ulang. Ga ada yang ketinggalan.",
+    "Cocok untuk Kelas 12 SMA, GAP YEAR dan semua kalangan pejuang CPNS",
+    "Lingkungan Kompetitif"
+  ],
+  "fasilitas_dan_layanan": {
+    "online_hybrid": [
+      "Program bimbingan lengkap CPNS",
+      "Konsultasi & pendampingan",
+      "Pembelajaran terstruktur & sistematis",
+      "Pengajar ASN & Alumni Sekdin",
+      "Video conference via Zoom + Record Belajar",
+      "Modul dikirim ke alamat rumah (Free Ongkir Khusus Sulawesi)",
+      "Sistem Try Out CBT berkala berbasis CAT aslinya dengan fitur pembahasan lengkap, report statistika analisa kekuatan peserta",
+      "Rapor Belajar",
+      "Tes Skrining Peta Kekuatan Awal dan Sesudah Belajar"
+    ],
+    "offline": [
+      "Program bimbingan lengkap CPNS",
+      "Konsultasi & pendampingan",
+      "Ruang belajar luas & nyaman (AC & Free hotspot area)",
+      "Pengajar ASN & Alumni Sekdin",
+      "Pembelajaran terstruktur & sistematis",
+      "Modul Khusus Gatra",
+      "Jadwal Kelas Sesuai Program dan Pasti menyesuaikan kebutuhanmu",
+      "Sistem Try Out CBT berkala berbasis CAT aslinya dengan fitur pembahasan lengkap, report statistika analisa kekuatan peserta",
+      "Zona Latihan Binsik persiapan tes Fisik Jasmani",
+      "Rapor Belajar",
+      "Tes Skrining Peta Kekuatan Awal dan Sesudah Belajar"
+    ]
+  }
+}
