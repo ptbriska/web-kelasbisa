@@ -1,0 +1,535 @@
+/* =========================================================
+   GEODATIS MODULE 02 TENTANG — STYLING
+   Theme: Bright Modern Tech, Geodatis Teal (#14A096) & Kelas Bisa Cyan (#06B6D4)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* GEODATIS Brand Palette */
+  --geo-teal: #14A096;               /* Primary Geodatis Teal */
+  --geo-teal-dark: #0E726B;          /* Deep Teal */
+  --geo-teal-light: #E6F6F5;         /* Light Teal Tint Background */
+  --geo-teal-glow: rgba(20, 160, 150, 0.3);
+
+  /* Kelas Bisa Cyan Accent */
+  --kb-cyan: #06B6D4;                /* Electric Cyan Accent */
+  --kb-cyan-dark: #0284C7;
+  --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+  --kb-cyan-soft: #ECFEFF;
+
+  /* Bright Background Palette */
+  --geo-bg: #F8FAFC;                /* Clean Canvas Light Background */
+  --geo-card-bg: #FFFFFF;           /* Crisp White Card Base */
+  --geo-dark-obsidian: #0F172A;     /* Deep Slate Text/Header */
+  --geo-text-main: #1E293B;         /* High-Contrast Body Text */
+  --geo-text-muted: #64748B;       /* Muted Subtitles */
+  --geo-border: #E2E8F0;           /* Soft Border Divider */
+
+  /* Shadows & Motion Effects */
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+  --shadow-hover: 0 16px 32px rgba(20, 160, 150, 0.12);
+  --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* BASE RESET */
+body {
+  background-color: var(--geo-bg);
+  color: var(--geo-text-main);
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.geodatis-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   1. HERO SECTION (BRIGHT GRADIENT WITH CYBER GLOW)
+   ========================================================= */
+.geodatis-hero {
+  background: radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.12), transparent 40%),
+              radial-gradient(circle at 10% 80%, rgba(20, 160, 150, 0.15), transparent 50%),
+              linear-gradient(135deg, #FFFFFF 0%, var(--geo-teal-light) 60%, var(--kb-cyan-soft) 100%);
+  color: var(--geo-dark-obsidian);
+  padding: 72px 0;
+  border-bottom: 2px solid rgba(20, 160, 150, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin: 12px 0 6px 0;
+  letter-spacing: -1px;
+  color: var(--geo-dark-obsidian);
+}
+
+.accent-dot {
+  color: var(--geo-teal);
+  text-shadow: 0 0 12px var(--geo-teal-glow);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--geo-teal);
+  margin: 0 0 16px 0;
+  letter-spacing: 0.2px;
+}
+
+.hero-deskripsi {
+  font-size: 0.98rem;
+  color: var(--geo-text-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.hero-visual-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-teal);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(20, 160, 150, 0.15);
+  position: relative;
+}
+
+.stat-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--geo-teal-light);
+  border-radius: var(--radius-lg);
+  margin-bottom: 14px;
+  border-left: 4px solid var(--kb-cyan);
+}
+
+.stat-badge:last-child {
+  margin-bottom: 0;
+}
+
+.stat-num {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--geo-teal);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--geo-dark-obsidian);
+}
+
+/* BADGES */
+.badge-emerald {
+  background: var(--geo-teal-light);
+  color: var(--geo-teal-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(20, 160, 150, 0.3);
+  display: inline-block;
+  box-shadow: 0 0 10px var(--geo-teal-glow);
+}
+
+.badge-dark {
+  background: var(--geo-dark-obsidian);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.badge-accent {
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px var(--kb-cyan-glow);
+}
+
+/* =========================================================
+   2. SECTION GENERAL STYLING
+   ========================================================= */
+.geodatis-section {
+  padding: 64px 0;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 10px 0;
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  color: var(--geo-text-muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+.dark-accent-bg {
+  background: linear-gradient(135deg, var(--geo-dark-obsidian) 0%, #152238 100%);
+  color: #FFFFFF;
+}
+
+.light-accent-bg {
+  background: var(--geo-teal-light);
+  border-top: 1px solid rgba(20, 160, 150, 0.15);
+  border-bottom: 1px solid rgba(20, 160, 150, 0.15);
+}
+
+.section-header.light-text h2 {
+  color: #FFFFFF;
+}
+
+.section-header.light-text p {
+  color: #94A3B8;
+}
+
+/* =========================================================
+   3. PILAR METODE PEMBELAJARAN (TABS & GLASS CARDS)
+   ========================================================= */
+.tab-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  color: var(--geo-dark-obsidian);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 6px 18px var(--geo-teal-glow);
+}
+
+.pilar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.pilar-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-bounce);
+  position: relative;
+}
+
+.pilar-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--geo-teal);
+  box-shadow: var(--shadow-hover);
+}
+
+.pilar-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.pilar-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--geo-teal-dark);
+  background: var(--geo-teal-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.pilar-code {
+  font-size: 0.88rem;
+  font-weight: 900;
+  color: var(--kb-cyan-dark);
+}
+
+.pilar-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 16px 0;
+}
+
+/* =========================================================
+   4. BULLET LIST SYSTEM (CYAN & TEAL CHECKMARKS)
+   ========================================================= */
+.pilar-list,
+.geodatis-card ul,
+.geodatis-section ul:not(.subnav-menu) {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.pilar-list li,
+.geodatis-card ul li,
+.geodatis-section ul:not(.subnav-menu) li {
+  position: relative !important;
+  padding-left: 28px !important;
+  margin-bottom: 10px !important;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--geo-text-main);
+  list-style: none !important;
+}
+
+.pilar-list li::before,
+.geodatis-card ul li::before,
+.geodatis-section ul:not(.subnav-menu) li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px var(--geo-teal-glow);
+  font-family: sans-serif;
+}
+
+/* =========================================================
+   5. TARGET PENGGUNA GRID
+   ========================================================= */
+.target-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.target-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: var(--transition-bounce);
+}
+
+.target-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--kb-cyan);
+  transform: translateY(-4px);
+}
+
+.target-icon {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--kb-cyan);
+  margin-bottom: 8px;
+}
+
+.target-cat {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 8px 0;
+}
+
+.target-desc {
+  font-size: 0.85rem;
+  color: #94A3B8;
+  margin: 0;
+}
+
+/* =========================================================
+   6. DOMAIN KEILMUAN & SKILL EXPLORER
+   ========================================================= */
+.domain-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.domain-col {
+  background: #FFFFFF;
+  border: 1.5px solid var(--geo-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.col-header h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 4px 0;
+}
+
+.col-header p {
+  font-size: 0.85rem;
+  color: var(--geo-text-muted);
+  margin: 0 0 20px 0;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--geo-border);
+  font-size: 0.88rem;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-box input:focus {
+  border-color: var(--geo-teal);
+  box-shadow: 0 0 10px var(--geo-teal-glow);
+}
+
+.skill-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-card {
+  background: var(--geo-bg);
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--geo-border);
+}
+
+.skill-cat {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--geo-dark-obsidian);
+  margin: 0 0 8px 0;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tool-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #FFFFFF;
+  color: var(--geo-teal-dark);
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid rgba(20, 160, 150, 0.3);
+}
+
+/* =========================================================
+   7. KONTAK & FOOTER CARD
+   ========================================================= */
+.contact-card-modern {
+  background: #FFFFFF;
+  border: 2px solid var(--geo-teal);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-hover);
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 12px 0 8px 0;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn-wa-action {
+  background: linear-gradient(135deg, #25D366 0%, #059669 100%);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
+}
+
+.btn-maps-action {
+  background: var(--geo-dark-obsidian);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .hero-wrapper,
+  .domain-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
