@@ -119,7 +119,7 @@
     {
       "id": "skripsi-proposal",
       "nama_kategori": "ARPA – Skripsi Bagian Proposal",
-      "deskripsi": "Pendampingan intensif dari ide awal, perumusan metodologi, penulisan draft proposal, hingga pembekalan dan simulasi sidang proposal[cite: 5].",
+      "deskripsi": "Pendampingan intensif dari ide awal, perumusan metodologi, penulisan draft proposal, hingga pembekalan dan simulasi sidang proposal.",
       "tier_list": ["KETAL", "PLATO", "PLATO+", "PLATIPUS+", "PLATINUM EXTRA"],
       "fitur_penulisan_dan_teknik": [
         {
