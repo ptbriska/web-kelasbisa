@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "ARPA Knowledge & Research Skills Ecosystem",
+    "subtitle": "Article Research & Publication Assistance",
+    "brand_affiliation": "Kelas Bisa Juara & Lulus, Brand Kelas Bisa, PT Brimo Swarnindo Karyavara",
+    "abstract": "ARPA is designed as an integrated ecosystem for research competency, scientific writing, and academic publication development. The framework combines structured learning, mentoring systems, and practical academic experience to support students, researchers, and academic communities in developing measurable scientific competencies."
+  },
+  "core_domains": [
+    {
+      "id": "domain-research",
+      "code": "1.1",
+      "name": "Research Domain",
+      "description": "Focused on research methodology, literature exploration, research analysis, and research ethics.",
+      "sub_items": [
+        "Research Methodology",
+        "Problem Formulation",
+        "Literature Exploration",
+        "Research Analysis",
+        "Research Ethics"
+      ]
+    },
+    {
+      "id": "domain-writing",
+      "code": "1.2",
+      "name": "Scientific Writing Domain",
+      "description": "Focused on academic writing and scientific communication competency.",
+      "sub_items": [
+        "Academic Writing",
+        "Citation & Referencing",
+        "Scientific Communication",
+        "Academic Language Development"
+      ]
+    },
+    {
+      "id": "domain-publication",
+      "code": "1.3",
+      "name": "Publication & Presentation Domain",
+      "description": "Focused on scientific publication and academic presentation competency.",
+      "sub_items": [
+        "Scientific Publication",
+        "Research Presentation",
+        "Publication Strategy"
+      ]
+    }
+  ],
+  "tools_ecosystem": [
+    {
+      "category_id": "tools-literature",
+      "code": "2.1",
+      "category_name": "Literature & Reference Tools",
+      "tools_list": [
+        "Mendeley & Zotero",
+        "VOS Viewer & Connected Papers",
+        "Research Rabbit & Google Scholar"
+      ]
+    },
+    {
+      "category_id": "tools-analysis",
+      "code": "2.2",
+      "category_name": "Research Analysis Tools",
+      "tools_list": [
+        "Statistical Analysis Non-Coding: PSPP, Jamovi, Minitab",
+        "Machine Learning Non-Coding: Orange, JASP",
+        "GIS Spatial Analysis & Mapping: QGIS, PyGIS, SAGA GIS",
+        "Data Analyst & Data Science via Python: Python, Spyder, Statistics, Machine Learning/Deep Learning, Computer Vision",
+        "Google Earth Engine via Python: Remote Sensing, Numerical Processing",
+        "Environment & Hydro Modelling: HEC-RAS, Delft3D, WRF, QSWAT/SWAT, RAS Mapper"
+      ]
+    },
+    {
+      "category_id": "tools-writing",
+      "code": "2.3",
+      "category_name": "Scientific Writing Tools",
+      "tools_list": [
+        "Grammarly",
+        "Turnitin",
+        "Google Docs & Microsoft Word"
+      ]
+    },
+    {
+      "category_id": "tools-presentation",
+      "code": "2.4",
+      "category_name": "Publication & Presentation Tools",
+      "tools_list": [
+        "Canva",
+        "Microsoft PowerPoint",
+        "LaTeX"
+      ]
+    }
+  ],
+  "expected_outcomes": {
+    "title": "3. Results & Discussion",
+    "description": "Through the integration of research competency domains and academic skill tools, participants are expected to develop comprehensive academic capabilities.",
+    "capabilities": [
+      "Research Competency",
+      "Academic Writing Proficiency",
+      "Scientific Communication Ability",
+      "Publication Readiness",
+      "Academic Presentation Skills"
+    ]
+  },
+  "conclusion": {
+    "title": "4. Conclusion",
+    "text": "ARPA is positioned as a research and scientific publication ecosystem that combines structured competency development, mentoring systems, and practical academic experience to support sustainable academic and scientific growth."
+  }
+}
