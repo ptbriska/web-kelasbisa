@@ -19,8 +19,13 @@ function injectGeodatisSubnav() {
   const container = document.getElementById("geodatis-subnav-app");
   if (!container) return;
 
-  // Cek apakah lokasi halaman saat ini berada di dalam subfolder (02-08)
-  const isSubfolder = /\/(0[2-8]-[^\/]+)\//.test(window.location.pathname);
+  // Normalisasi path URL agar kompatibel di Windows (file:///) maupun Web Server
+  const currentPath = window.location.pathname.replace(/\\/g, '/');
+
+  // Deteksi apakah lokasi file berada di dalam subfolder modul (02 - 08)
+  const isSubfolder = /\/0[2-8]-[^\/]+\//.test(currentPath) || 
+                      /0[2-8]-[^\/]+\/index\.html/.test(currentPath);
+
   const basePath = isSubfolder ? "../" : "./";
 
   const subnavHTML = `
@@ -53,23 +58,23 @@ function injectGeodatisSubnav() {
  * dan memberikan class .active pada link sub-header internal GEODATIS.
  */
 function highlightActiveSubnav() {
-  const currentPath = window.location.pathname;
+  const currentPath = window.location.pathname.replace(/\\/g, '/');
 
   // Pemetaan ID nav berdasarkan fragmen folder di URL
   const navMap = [
-    { key: "/02-tentang/", id: "nav-tentang" },
-    { key: "/03-program-reguler/", id: "nav-reguler" },
-    { key: "/04-program-mitra/", id: "nav-mitra" },
-    { key: "/05-program-khusus/", id: "nav-khusus" },
-    { key: "/06-portofolio/", id: "nav-portofolio" },
-    { key: "/07-tentor/", id: "nav-tentor" },
-    { key: "/08-bank-data/", id: "nav-bankdata" }
+    { key: "02-tentang", id: "nav-tentang" },
+    { key: "03-program-reguler", id: "nav-reguler" },
+    { key: "04-program-mitra", id: "nav-mitra" },
+    { key: "05-program-khusus", id: "nav-khusus" },
+    { key: "06-portofolio", id: "nav-portofolio" },
+    { key: "07-tentor", id: "nav-tentor" },
+    { key: "08-bank-data", id: "nav-bankdata" }
   ];
 
   // Bersihkan semua class active terlebih dahulu
   document.querySelectorAll(".subnav-menu a").forEach(a => a.classList.remove("active"));
 
-  // Cari match path atau fallback ke Beranda (nav-home)
+  // Cari match key folder atau fallback ke Beranda (nav-home)
   const activeItem = navMap.find(item => currentPath.includes(item.key));
   const activeId = activeItem ? activeItem.id : "nav-home";
 
