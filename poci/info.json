@@ -4,37 +4,38 @@
   "platform": "CBT (Computer Based Test) via regis.briska.co.id",
   "kode_event": "PLR-POCI-001",
   "deskripsi_singkat": "Uji kemampuan akademikmu di tingkat nasional dengan sistem CBT yang dilengkapi Rapor Analisa Statistik Peserta.",
+  "master_link_drive": "https://drive.google.com/drive/folders/1CyMmK9W9EAwQZZDiEXut8RFPcU9H39Ff?usp=sharing",
   "kategori_peserta": [
     {
       "tingkat": "SMA/MA/Sederajat",
       "bidang": [
-        {"mapel": "Kimia", "pdf": "Silabus-Kimia-IChO-SMA.pdf"},
-        {"mapel": "Biologi", "pdf": "Silabus-Biologi-IBO-SMA.pdf"},
-        {"mapel": "Informatika", "pdf": "Silabus-Informatika-IOI-SMA.pdf"},
-        {"mapel": "Fisika", "pdf": "Silabus-Fisika-IPhO-SMA.pdf"},
-        {"mapel": "Kebumian", "pdf": "Silabus-Kebumian-IESO-SMA.pdf"},
-        {"mapel": "Astronomi", "pdf": "Silabus-Astronomi-IOAA-SMA.pdf"},
-        {"mapel": "Geografi", "pdf": "Silabus-Geografi-IGeO-SMA.pdf"},
-        {"mapel": "Ekonomi", "pdf": "Silabus-Ekonomi-IEO-SMA.pdf"},
-        {"mapel": "AI", "pdf": "Silabus-AI-IOAI-SMA.pdf"},
-        {"mapel": "Matematika", "pdf": "Silabus-Matematika-SMA.pdf"},
-        {"mapel": "Nuklir", "pdf": "Silabus-Nuklir-INSO-SMA.pdf"},
-        {"mapel": "Linguistik", "pdf": "Silabus-Linguistik-IOL-SMA.pdf"},
-        {"mapel": "Sejarah", "pdf": "Silabus-Sejarah-IHO-SMA.pdf"}
+        {"mapel": "Kimia", "icon": "🧪", "tag": "IChO / OSN", "ringkasan": "Struktur Atom, Termokimia, Ikatan Kimia, Stoikiometri, Kesetimbangan, & Kimia Organik Dasar."},
+        {"mapel": "Biologi", "icon": "🧬", "tag": "IBO / OSN", "ringkasan": "Biologi Sel, Genetika, Ekologi, Anatomi Tumbuhan/Hewan, Etologi, & Bioteknologi."},
+        {"mapel": "Informatika", "icon": "💻", "tag": "IOI / OSN", "ringkasan": "Logika Matematika, Pemrograman Dasar, Algoritma, Kombinatorika, & Struktur Data."},
+        {"mapel": "Fisika", "icon": "🧲", "tag": "IPhO / OSN", "ringkasan": "Mekanika Klasik, Termodinamika, Gelombang & Optik, Listrik Magnet, & Fisika Modern."},
+        {"mapel": "Kebumian", "icon": "🌋", "tag": "IESO / OSN", "ringkasan": "Geologi, Meteorologi, Hidrologi, Oseanografi, & Astronomi Kebumian."},
+        {"mapel": "Astronomi", "icon": "🔭", "tag": "IOAA / OSN", "ringkasan": "Mekanika Benda Langit, Astrofisika, Tata Surya, Kosmologi, & Instrumentasi Astronomi."},
+        {"mapel": "Geografi", "icon": "🌍", "tag": "IGeO / OSN", "ringkasan": "Geografi Fisik, Kebencanaan, Kependudukan, Tata Ruang, & Penginderaan Jauh (SIG)."},
+        {"mapel": "Ekonomi", "icon": "📊", "tag": "IEO / OSN", "ringkasan": "Mikroekonomi, Makroekonomi, Akuntansi Dasar, Manajemen, & Lembaga Keuangan."},
+        {"mapel": "AI", "icon": "🤖", "tag": "IOAI", "ringkasan": "Konsep dasar AI, Machine Learning Dasar, Etika AI, Logika Komputasi, & Pemrosesan Data."},
+        {"mapel": "Matematika", "icon": "📐", "tag": "IMO / OSN", "ringkasan": "Aljabar, Teori Bilangan, Geometri, Kombinatorika, & Logika Matematika Ujian."},
+        {"mapel": "Nuklir", "icon": "⚛️", "tag": "INSO", "ringkasan": "Fisika Inti, Reaksi Fisi & Fusi, Radiasi, Peluruhan Radioaktif, & Aplikasi Energi Nuklir."},
+        {"mapel": "Linguistik", "icon": "🗣️", "tag": "IOL", "ringkasan": "Analisis Bahasa, Fonologi, Morfologi, Sintaksis, Kriptografi Bahasa, & Sistem Penulisan."},
+        {"mapel": "Sejarah", "icon": "🏛️", "tag": "IHO", "ringkasan": "Sejarah Indonesia, Peradaban Dunia, Perang Dunia I & II, serta Historiografi Modern."}
       ]
     },
     {
       "tingkat": "SMP/Sederajat",
       "bidang": [
-        {"mapel": "IPA", "pdf": "Silabus-IPA-SMP.pdf"},
-        {"mapel": "IPS", "pdf": "Silabus-IPS-SMP.pdf"},
-        {"mapel": "Matematika", "pdf": "Silabus-Matematika-SMP.pdf"}
+        {"mapel": "IPA", "icon": "🔬", "tag": "OSN SMP", "ringkasan": "Pengukuran, MIPA Terpadu, Biologi Lingkungan, Gerak & Gaya, Energi, & Sistem Organ."},
+        {"mapel": "IPS", "icon": "🗺️", "tag": "OSN SMP", "ringkasan": "Interaksi Antarruang, Keragaman Sosial Budaya, Kegiatan Ekonomi, & Sejarah Nusantara."},
+        {"mapel": "Matematika", "icon": "🧮", "tag": "OSN SMP", "ringkasan": "Bilangan, Aljabar, Geometri Bangun Datar/Ruang, Statistika, & Peluang."}
       ]
     },
     {
       "tingkat": "Mahasiswa S1",
       "bidang": [
-        {"mapel": "Metodologi & Statistik Penelitian", "pdf": "Silabus-Metode-Penelitian-Mahasiswa.pdf"}
+        {"mapel": "Metodologi & Statistik Penelitian", "icon": "📈", "tag": "Riset S1", "ringkasan": "Desain Penelitian, Uji Hipotesis, Validitas/Reliabilitas, Analisis Data SPSS/R, & Etika Riset."}
       ]
     }
   ],
