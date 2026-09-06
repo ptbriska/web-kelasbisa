@@ -10,6 +10,7 @@
     {
       "id": "alm-001",
       "nama": "Bana Rahmat",
+      "jenis_program": "Sekolah Kedinasan",
       "instansi_lulus": "Politeknik Keuangan Negara STAN (PKN STAN)",
       "formasi": "Diploma IV Akuntansi Sektor Publik",
       "tahun": "2025",
@@ -20,6 +21,7 @@
     {
       "id": "alm-002",
       "nama": "Banu Prasetyo",
+      "jenis_program": "Sekolah Kedinasan",
       "instansi_lulus": "IPDN (Institut Pemerintahan Dalam Negeri)",
       "formasi": "Calon Praja IPDN",
       "tahun": "2025",
@@ -30,6 +32,7 @@
     {
       "id": "alm-003",
       "nama": "Bimo Setiawan",
+      "jenis_program": "CPNS",
       "instansi_lulus": "Kementerian Hukum dan HAM (CPNS Kemenkumham)",
       "formasi": "Penjaga Tahanan / Poltekip",
       "tahun": "2025",
@@ -40,6 +43,7 @@
     {
       "id": "alm-004",
       "nama": "Andi Nurul Fitri",
+      "jenis_program": "Sekolah Kedinasan",
       "instansi_lulus": "Politeknik Statistika STIS",
       "formasi": "D-IV Komputasi Statistik",
       "tahun": "2025",
