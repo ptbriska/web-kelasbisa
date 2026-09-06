@@ -1,0 +1,398 @@
+/* =========================================================
+   ARPA MICROSITE — MONOCHROME SLATE & ACADEMIC GREY THEME
+   Primary Color: Slate Gray (#475569, #334155, #1E293B)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* ARPA Slate Gray Palette */
+  --arpa-slate-dark: #0F172A;      /* Deep Slate Obsidian */
+  --arpa-slate-main: #334155;      /* Main Accent Gray */
+  --arpa-slate-medium: #475569;    /* Secondary Gray */
+  --arpa-slate-light: #F1F5F9;     /* Light Gray Background Tint */
+  --arpa-slate-border: #E2E8F0;    /* Soft Gray Divider */
+  
+  /* Text Colors */
+  --arpa-text-dark: #0F172A;
+  --arpa-text-muted: #64748B;
+  
+  /* Radius & Transitions */
+  --radius-xl: 20px;
+  --radius-lg: 14px;
+  --radius-md: 10px;
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.05);
+  --shadow-hover: 0 16px 32px rgba(51, 65, 85, 0.12);
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* BASE RESET */
+body {
+  background-color: #F8FAFC;
+  color: var(--arpa-text-dark);
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.arpa-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* BADGES */
+.badge-slate {
+  background: var(--arpa-slate-light);
+  color: var(--arpa-slate-main);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 30px;
+  border: 1px solid var(--arpa-slate-border);
+  display: inline-block;
+}
+
+/* 1. HERO STAGE */
+.arpa-hero {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--arpa-slate-light) 100%);
+  padding: 72px 0;
+  text-align: center;
+  border-bottom: 2px solid var(--arpa-slate-border);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--arpa-slate-dark);
+  margin: 12px 0 0 0;
+  letter-spacing: -1.5px;
+}
+
+.accent-text {
+  color: var(--arpa-slate-medium);
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--arpa-slate-main);
+  margin: 4px 0 16px 0;
+}
+
+.hero-desc {
+  font-size: 0.98rem;
+  color: var(--arpa-text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary-slate {
+  background: var(--arpa-slate-dark);
+  color: #FFFFFF !important;
+  font-weight: 800;
+  font-size: 0.92rem;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.btn-primary-slate:hover {
+  background: var(--arpa-slate-main);
+  transform: translateY(-2px);
+}
+
+.btn-secondary-slate {
+  background: #FFFFFF;
+  color: var(--arpa-slate-dark) !important;
+  border: 1.5px solid var(--arpa-slate-border);
+  font-weight: 800;
+  font-size: 0.92rem;
+  padding: 14px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary-slate:hover {
+  background: var(--arpa-slate-light);
+  border-color: var(--arpa-slate-medium);
+}
+
+/* 2. SECTION GENERAL */
+.arpa-section {
+  padding: 64px 0;
+}
+
+.light-slate-bg {
+  background: var(--arpa-slate-light);
+  border-top: 1px solid var(--arpa-slate-border);
+  border-bottom: 1px solid var(--arpa-slate-border);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px auto;
+}
+
+.section-header h2 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--arpa-slate-dark);
+  margin: 10px 0 8px 0;
+  letter-spacing: -0.6px;
+}
+
+.section-header p {
+  color: var(--arpa-text-muted);
+  font-size: 0.96rem;
+  margin: 0;
+}
+
+/* 3. PROGRAM SPESIAL GRID */
+.special-program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+.special-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-slate-border);
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.special-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--arpa-slate-main);
+  box-shadow: var(--shadow-hover);
+}
+
+.special-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--arpa-slate-main);
+  background: var(--arpa-slate-light);
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.special-card h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--arpa-slate-dark);
+  margin: 0;
+}
+
+.special-sub {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--arpa-slate-medium);
+  margin: 2px 0 14px 0;
+}
+
+.special-desc {
+  font-size: 0.9rem;
+  color: var(--arpa-text-muted);
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.btn-link-slate {
+  color: var(--arpa-slate-dark);
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.btn-link-slate:hover {
+  color: var(--arpa-slate-medium);
+  padding-left: 4px;
+}
+
+/* 4. SEGMENTATION GRID */
+.segment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.segment-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-slate-border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+}
+
+.segment-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--arpa-slate-main);
+}
+
+.segment-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.segment-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--arpa-slate-dark);
+  margin: 0 0 8px 0;
+}
+
+.segment-card p {
+  font-size: 0.88rem;
+  color: var(--arpa-text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 5. GATEWAY CARDS */
+.gateway-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.gateway-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--arpa-slate-border);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gateway-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--arpa-slate-dark);
+  box-shadow: var(--shadow-hover);
+}
+
+.gateway-card h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--arpa-slate-dark);
+  margin: 0 0 8px 0;
+}
+
+.gateway-card p {
+  font-size: 0.88rem;
+  color: var(--arpa-text-muted);
+  line-height: 1.5;
+  margin: 0 0 18px 0;
+}
+
+.gateway-arrow {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--arpa-slate-medium);
+}
+
+/* 6. SUB-HEADER INTERNAL ARPA (BARIS 2) */
+.arpa-subnav-bar {
+  background: #FFFFFF;
+  border-bottom: 2px solid var(--arpa-slate-border);
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.subnav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 24px;
+}
+
+.subnav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.subnav-brand .brand-text {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--arpa-slate-dark);
+  letter-spacing: -0.5px;
+}
+
+.subnav-brand .brand-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--arpa-slate-main);
+  background: var(--arpa-slate-light);
+  padding: 2px 8px;
+  border-radius: 20px;
+  border: 1px solid var(--arpa-slate-border);
+}
+
+.subnav-menu {
+  display: flex;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 4px;
+}
+
+.subnav-menu a {
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--arpa-text-muted);
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: var(--transition-smooth);
+}
+
+.subnav-menu a:hover,
+.subnav-menu a.active {
+  color: #FFFFFF !important;
+  background: var(--arpa-slate-dark);
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+  .subnav-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
