@@ -1,0 +1,376 @@
+{
+  "kategori_produk": [
+    {
+      "id": "jurnal-sinta",
+      "nama_kategori": "ARPA – Jurnal Sinta",
+      "deskripsi": "Pendampingan penulisan karya ilmiah, penyusunan paper, dan strategi publikasi ke Jurnal Terakreditasi Sinta.",
+      "tier_list": ["KETAL", "PLATO", "PLATIPUS", "EXTRA (PLATO / PLATIPUS)"][cite: 5],
+      "fitur_penulisan_dan_teknik": [
+        {
+          "fitur": "Materi Dasar Metodologi Penelitian (Kuantitatif, Kualitatif, Mix Method)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Materi Struktur Karya Ilmiah (IMRAD) dan analisa struktur Skripsi/Paper Journal",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Critical Thinking & Problem Analysis berbasis Data & Feasibility Ilmiah",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "SLR dalam Mengidentifikasi Novelty & Gap Research",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Menganalisa Paper Rujukan dengan Template Analisa Resume Paper Rujukan",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penentuan Topik & Judul Riset",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Prompt AI-Assisted Research Guideline (etis & terkontrol)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Latar Belakang & Rumusan Masalah",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Kajian Pustaka & Sitasi Ilmiah",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Metodologi Penelitian",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Analisis Data Tingkat Dasar-Menengah (Standar Statistika Deskriptif dan Inferensi dengan JAMOVI)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Pemrograman Python Untuk Visualisasi Data",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penarikan Kesimpulan & Rekomendasi",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Daftar Pustaka",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Tools Referensi Automasi (Mendeley/Zotero Guide)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penulisan Abstrak & Executive Summary",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Penulisan Full Paper",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Sistem OJS Jurnal dan Teknik Submit Karya",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATIPUS": "Teori + Praktik", "EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Review & Feedback Paper sesuai standar OJS Jurnal",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATIPUS": "-", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Cek Turnitin dan AI Similarity Test",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATIPUS": "-", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan dari Ide hingga Paper Siap Submit di Jurnal tujuan",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATIPUS": "-", "EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan Revisi Reviewer & Editor (Jika Ada) hingga ACC Publish di Jurnal",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATIPUS": "-", "EXTRA": "V" }
+        }
+      ],
+      "operasional_dasar": [
+        { "fitur": "Jumlah Peserta", "detail": { "KETAL": "Mandiri di LMS", "PLATO": "Tidak Terbatas", "PLATIPUS": "Terbatas 8 Orang", "EXTRA": "Privat 1 Org" } },
+        { "fitur": "Jurusan", "detail": { "KETAL": "Semua", "PLATO": "Semua", "PLATIPUS": "Semua", "EXTRA": "Semua" } },
+        { "fitur": "Akses LMS (Materi + Rekaman)", "detail": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" } },
+        { "fitur": "Akses Mobile App", "detail": { "KETAL": "V", "PLATO": "-", "PLATIPUS": "-", "EXTRA": "V" } },
+        { "fitur": "Live Teaching", "detail": { "KETAL": "-", "PLATO": "V", "PLATIPUS": "Offline", "EXTRA": "V" } },
+        { "fitur": "Rekaman Live Session", "detail": { "KETAL": "-", "PLATO": "V", "PLATIPUS": "-", "EXTRA": "V" } },
+        { "fitur": "Mentor Dosen Berpengalaman", "detail": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" } },
+        { "fitur": "Sertifikat Standar Riset", "detail": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" } },
+        { "fitur": "Grup Diskusi (WA/Telegram)", "detail": { "KETAL": "V", "PLATO": "V", "PLATIPUS": "V", "EXTRA": "V" } },
+        { "fitur": "Total Jam Belajar", "detail": { "KETAL": "±30 Jam (fleksibel)", "PLATO": "±30 Jam", "PLATIPUS": "±30 Jam (intensif)", "EXTRA": "Request" } },
+        { "fitur": "Hari Pelaksanaan", "detail": { "KETAL": "Bebas (self-paced)", "PLATO": "Terjadwal", "PLATIPUS": "Senin–Kamis", "EXTRA": "Kesepakatan" } },
+        { "fitur": "Periode/Jadwal Pelatihan", "detail": { "KETAL": "Jan–Des (fleksibel)", "PLATO": "Jan–Des", "PLATIPUS": "Jan–Des", "EXTRA": "Request" } }
+      ],
+      "harga_per_orang": {
+        "KETAL": "149k",
+        "PLATO": "299k",
+        "PLATIPUS": "499k",
+        "EXTRA": "EXTRA PLATO 899k / EXTRA PLATIPUS 999k"
+      }
+    },
+    {
+      "id": "skripsi-proposal",
+      "nama_kategori": "ARPA – Skripsi Bagian Proposal",
+      "deskripsi": "Pendampingan intensif dari ide awal, perumusan metodologi, penulisan draft proposal, hingga pembekalan dan simulasi sidang proposal[cite: 5].",
+      "tier_list": ["KETAL", "PLATO", "PLATO+", "PLATIPUS+", "PLATINUM EXTRA"],
+      "fitur_penulisan_dan_teknik": [
+        {
+          "fitur": "Materi Dasar Metodologi Penelitian (Kuantitatif, Kualitatif, Mix Method)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Materi Struktur Karya Ilmiah (IMRAD) dan analisa struktur Skripsi",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Critical Thinking & Problem Analysis berbasis Data & Feasibility Ilmiah",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "SLR dalam Mengidentifikasi Novelty & Gap Research",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Menganalisa Paper Rujukan dengan Template Analisa Resume Paper Rujukan",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penentuan Topik & Judul Riset",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Prompt AI-Assisted Research Guideline (etis & terkontrol)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Latar Belakang & Rumusan Masalah",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Kajian Pustaka & Sitasi Ilmiah",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Metodologi Penelitian",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Daftar Pustaka",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Tools Referensi Automasi (Mendeley/Zotero Guide)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Penulisan Draft Proposal Skripsi",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Review & Feedback Proposal",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Cek Turnitin dan AI Similarity Test",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan dari Ide hingga Sidang Proposal Selesai",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan Revisi Dosen Pembimbing (Jika Ada)",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        }
+      ],
+      "presentasi_ilmiah": [
+        {
+          "fitur": "Struktur PPT Sidang Proposal",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyederhanaan Proposal ke Slide Presentasi",
+          "akses": { "KETAL": "Teori+Praktik", "PLATO": "Teori+Praktik", "PLATO+": "Praktik + Coaching", "PLATIPUS+": "Praktik + Coaching", "PLATINUM_EXTRA": "Praktik + Coaching" }
+        },
+        {
+          "fitur": "Teknik Presentasi Ilmiah 12 Menit (Problem–Method)",
+          "akses": { "KETAL": "Teori+Praktik", "PLATO": "Teori+Praktik", "PLATO+": "Praktik + Coaching", "PLATIPUS+": "Praktik + Coaching", "PLATINUM_EXTRA": "Praktik + Coaching" }
+        },
+        {
+          "fitur": "Teknik Menjawab Pertanyaan Juri (Defense Argument)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Simulasi Presentasi (Time-based) dan Coaching Final",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Simulasi Tanya Jawab Juri",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Review Slide Presentasi Proposal",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        }
+      ],
+      "operasional_dasar": [
+        { "fitur": "Jumlah Peserta", "detail": { "KETAL": "Mandiri di LMS", "PLATO": "Tidak Terbatas", "PLATO+": "Terbatas 8 Orang", "PLATIPUS+": "Terbatas 8 Orang", "PLATINUM_EXTRA": "Privat 1 Org" } },
+        { "fitur": "Jurusan", "detail": { "KETAL": "Semua", "PLATO": "Semua", "PLATO+": "Semua", "PLATIPUS+": "Semua", "PLATINUM_EXTRA": "Semua" } },
+        { "fitur": "Akses LMS (Materi + Rekaman)", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Akses Mobile App", "detail": { "KETAL": "V", "PLATO": "-", "PLATO+": "-", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Live Teaching", "detail": { "KETAL": "-", "PLATO": "Zoom", "PLATO+": "Zoom", "PLATIPUS+": "Offline", "PLATINUM_EXTRA": "Online/Offline" } },
+        { "fitur": "Rekaman Live Session", "detail": { "KETAL": "-", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "-", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Mentor Dosen Berpengalaman", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Sertifikat Standar Riset", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Grup Diskusi (WA/Telegram)", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Total Jam Belajar", "detail": { "KETAL": "±30 Jam (fleksibel)", "PLATO": "±30 Jam", "PLATO+": "±30 Jam (intensif)", "PLATIPUS+": "±30 Jam (intensif)", "PLATINUM_EXTRA": "±30 Jam (intensif)" } },
+        { "fitur": "Durasi Periode Belajar", "detail": { "KETAL": "Fleksibel", "PLATO": "2 Bulan", "PLATO+": "3 Bulan", "PLATIPUS+": "3 Bulan", "PLATINUM_EXTRA": "6 Bulan" } },
+        { "fitur": "Hari Pelaksanaan", "detail": { "KETAL": "Bebas (self-paced)", "PLATO": "Terjadwal Sabtu/Minggu", "PLATO+": "Terjadwal Sabtu/Minggu", "PLATIPUS+": "Terjadwal Sabtu/Minggu", "PLATINUM_EXTRA": "Terjadwal Sabtu/Minggu" } },
+        { "fitur": "Periode/Jadwal Pelatihan", "detail": { "KETAL": "Jan–Des (fleksibel)", "PLATO": "Jan–Des", "PLATO+": "Jan–Des", "PLATIPUS+": "Jan–Des", "PLATINUM_EXTRA": "Jan–Des" } }
+      ],
+      "harga_per_orang": {
+        "KETAL": "149k",
+        "PLATO": "299k",
+        "PLATO+": "800k",
+        "PLATIPUS+": "1000k",
+        "PLATINUM_EXTRA": "EXTRA PLATO 1200k / EXTRA PLATIPUS 1500k"
+      }
+    },
+    {
+      "id": "skripsi-sidang-hasil",
+      "nama_kategori": "ARPA – Skripsi Bagian Sidang Hasil",
+      "deskripsi": "Pendampingan penyelesaian Bab 4 (analisis data & visualisasi Python/GEODATIS/Briska), penulisan full skripsi, konversi ke jurnal, hingga coaching simulasi sidang[cite: 5].",
+      "tier_list": ["KETAL", "PLATO", "PLATO+", "PLATIPUS+", "PLATINUM EXTRA"],
+      "fitur_penulisan_dan_teknik": [
+        {
+          "fitur": "Materi Struktur Karya Ilmiah (IMRAD) dan analisa struktur Skripsi",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Prompt AI-Assisted Research Guideline (etis & terkontrol)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Penyesuaian & Review Komponen BAB 1 - BAB 3 Terhadap Hasil Penelitian",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Analisis Data Tingkat Dasar-Menengah (Standar Statistika Deskriptif dan Inferensi dengan JAMOVI)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Pemrograman Python Untuk Visualisasi Data",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Akses Gratis ke Layanan GEODATIS dan Lab Briska (jika risetnya berhubungan ke Statistika, AI dan Geospasial Kebumian)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penarikan Kesimpulan & Rekomendasi",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyusunan Daftar Pustaka Final",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Tools Referensi Automasi (Mendeley/Zotero Guide)",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Penulisan Abstrak & Executive Summary",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Penulisan Full Skripsi",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Teknik Konversi Skripsi ke Jurnal Format",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Sistem OJS Jurnal dan Teknik Submit Karya",
+          "akses": { "KETAL": "Teori + Praktik", "PLATO": "Teori + Praktik", "PLATO+": "Teori + Praktik + Pendampingan Peserta", "PLATIPUS+": "Teori + Praktik + Pendampingan Peserta", "PLATINUM_EXTRA": "Teori + Praktik + Pendampingan Peserta" }
+        },
+        {
+          "fitur": "Review & Feedback Skripsi dan Jurnal konversi",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Cek Turnitin dan AI Similarity Test",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan Analisa Data BAB 4 hingga Sidang Hasil selesai",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Pendampingan Revisi Dosen (Jika Ada) hingga ACC",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        }
+      ],
+      "presentasi_ilmiah": [
+        {
+          "fitur": "Struktur PPT Presentasi Ilmiah",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Teknik Penyederhanaan Paper ke Slide Presentasi",
+          "akses": { "KETAL": "Teori+Praktik", "PLATO": "Teori+Praktik", "PLATO+": "Praktik + Coaching", "PLATIPUS+": "Praktik + Coaching", "PLATINUM_EXTRA": "Praktik + Coaching" }
+        },
+        {
+          "fitur": "Teknik Presentasi Ilmiah 12 Menit (Problem–Method–Result–Conclusion)",
+          "akses": { "KETAL": "Teori+Praktik", "PLATO": "Teori+Praktik", "PLATO+": "Praktik + Coaching", "PLATIPUS+": "Praktik + Coaching", "PLATINUM_EXTRA": "Praktik + Coaching" }
+        },
+        {
+          "fitur": "Teknik Menjawab Pertanyaan Juri (Defense Argument)",
+          "akses": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Simulasi Presentasi (Time-based) dan Coaching Final",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Simulasi Tanya Jawab Juri",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        },
+        {
+          "fitur": "Review Slide Presentasi",
+          "akses": { "KETAL": "-", "PLATO": "-", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" }
+        }
+      ],
+      "operasional_dasar": [
+        { "fitur": "Jumlah Peserta", "detail": { "KETAL": "Mandiri di LMS", "PLATO": "Tidak Terbatas", "PLATO+": "Terbatas 8 Orang", "PLATIPUS+": "Terbatas 8 Orang", "PLATINUM_EXTRA": "Privat 1 Org" } },
+        { "fitur": "Jurusan", "detail": { "KETAL": "Semua", "PLATO": "Semua", "PLATO+": "Semua", "PLATIPUS+": "Semua", "PLATINUM_EXTRA": "Semua" } },
+        { "fitur": "Akses LMS (Materi + Rekaman)", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Akses Mobile App", "detail": { "KETAL": "V", "PLATO": "-", "PLATO+": "-", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Live Teaching", "detail": { "KETAL": "-", "PLATO": "Zoom", "PLATO+": "Zoom", "PLATIPUS+": "Offline", "PLATINUM_EXTRA": "Online/Offline" } },
+        { "fitur": "Rekaman Live Session", "detail": { "KETAL": "-", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "-", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Mentor Dosen Berpengalaman", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Sertifikat Standar Riset", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Grup Diskusi (WA/Telegram)", "detail": { "KETAL": "V", "PLATO": "V", "PLATO+": "V", "PLATIPUS+": "V", "PLATINUM_EXTRA": "V" } },
+        { "fitur": "Total Jam Belajar", "detail": { "KETAL": "±30 Jam (fleksibel)", "PLATO": "±30 Jam", "PLATO+": "±30 Jam (intensif)", "PLATIPUS+": "±30 Jam (intensif)", "PLATINUM_EXTRA": "±30 Jam (intensif)" } },
+        { "fitur": "Durasi Periode Belajar", "detail": { "KETAL": "Fleksibel", "PLATO": "2 Bulan", "PLATO+": "3 Bulan", "PLATIPUS+": "3 Bulan", "PLATINUM_EXTRA": "6 Bulan" } },
+        { "fitur": "Hari Pelaksanaan", "detail": { "KETAL": "Bebas (self-paced)", "PLATO": "Terjadwal Sabtu/Minggu", "PLATO+": "Terjadwal Sabtu/Minggu", "PLATIPUS+": "Terjadwal Sabtu/Minggu", "PLATINUM_EXTRA": "Terjadwal Sabtu/Minggu" } },
+        { "fitur": "Periode/Jadwal Pelatihan", "detail": { "KETAL": "Jan–Des (fleksibel)", "PLATO": "Jan–Des", "PLATO+": "Jan–Des", "PLATIPUS+": "Jan–Des", "PLATINUM_EXTRA": "Jan–Des" } }
+      ],
+      "harga_per_orang": {
+        "KETAL": "149k",
+        "PLATO": "349k",
+        "PLATO+": "849k",
+        "PLATIPUS+": "1000k",
+        "PLATINUM_EXTRA": "EXTRA PLATO 1200k / EXTRA PLATIPUS 1500k"
+      }
+    }
+  ]
+}
