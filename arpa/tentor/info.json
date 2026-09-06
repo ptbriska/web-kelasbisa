@@ -1,0 +1,70 @@
+{
+  "page_meta": {
+    "title": "Profil Mentor Riset & Peer Reviewer — ARPA",
+    "subtitle": "Tim Pengajar, Dosen, dan Peneliti Berpengalaman dalam Pendampingan Publikasi Ilmiah Sinta & Scopus",
+    "wa_consult_url": "https://wa.me/6282268118842?text=Halo%20Admin%20ARPA,%20saya%20ingin%20konsultasi%20mengenai%20kesesuaian%20mentor%20untuk%20topik%20riset%20saya"
+  },
+  "daftar_tentor": [
+    {
+      "id": "tentor-01",
+      "nama": "Bagus Primohadi Syahputra",
+      "instansi": "School of Meteorology Climatology & Geophysics (STMKG)",
+      "sitasi": 21,
+      "index_h": 2,
+      "index_i10": 1,
+      "bidang_riset": [
+        "Atmospheric Science",
+        "Oceanic Science",
+        "GIS",
+        "Statistics",
+        "Agriculture Science"
+      ],
+      "foto": "bagus.jpg"
+    },
+    {
+      "id": "tentor-02",
+      "nama": "Dr. Eng. Hendra Prasetya, M.T.",
+      "instansi": "Briska Laboratory & Research Center",
+      "sitasi": 245,
+      "index_h": 8,
+      "index_i10": 7,
+      "bidang_riset": [
+        "Spatial Machine Learning",
+        "Geospatial Data Science",
+        "Remote Sensing",
+        "Environmental Modeling"
+      ],
+      "foto": "tentor-1.jpg"
+    },
+    {
+      "id": "tentor-03",
+      "nama": "Siti Nurhaliza, S.Si., M.Sc.",
+      "instansi": "PT Brimo Swarnindo Karyavara",
+      "sitasi": 112,
+      "index_h": 5,
+      "index_i10": 4,
+      "bidang_riset": [
+        "Systematic Literature Review (SLR)",
+        "Bibliometric Analysis",
+        "Environmental Science",
+        "Academic Writing & OJS Handling"
+      ],
+      "foto": "tentor-2.jpg"
+    },
+    {
+      "id": "tentor-04",
+      "nama": "Rahmat Hidayat, M.Stat.",
+      "instansi": "Kelas Bisa Research Team",
+      "sitasi": 86,
+      "index_h": 4,
+      "index_i10": 3,
+      "bidang_riset": [
+        "Applied Statistics",
+        "Inferential Data Analysis",
+        "Jamovi & PSPP Modeling",
+        "Quantitative Methodology"
+      ],
+      "foto": "tentor-3.jpg"
+    }
+  ]
+}
