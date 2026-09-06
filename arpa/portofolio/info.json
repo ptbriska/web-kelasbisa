@@ -1,0 +1,104 @@
+{
+  "page_meta": {
+    "title": "Portofolio & Showcase Alumni — ARPA",
+    "subtitle": "Jejak Rekam Publikasi Ilmiah dan Testimoni Peserta Bimbingan ARPA x GEODATIS",
+    "external_portfolio_url": "https://www.porto.kelasbisa.com",
+    "wa_consult_url": "https://wa.me/6282268118842?text=Halo%20Admin%20ARPA,%20saya%20ingin%20konsultasi%20bimbingan%20riset%20dan%20melihat%20portofolio"
+  },
+  "dashboard_statistik": [
+    {
+      "kategori": "Scopus Q1 – Q3",
+      "jumlah": 14,
+      "label": "Paper Terbit"
+    },
+    {
+      "kategori": "Sinta 1 & 2",
+      "jumlah": 28,
+      "label": "Jurnal Nasional"
+    },
+    {
+      "kategori": "Sinta 3 & 4",
+      "jumlah": 45,
+      "label": "Jurnal Nasional"
+    },
+    {
+      "kategori": "Sinta 5 & 6",
+      "jumlah": 62,
+      "label": "Jurnal Terakreditasi"
+    },
+    {
+      "kategori": "Prosiding Internasional",
+      "jumlah": 19,
+      "label": "Indexed Conference"
+    },
+    {
+      "kategori": "Prosiding Nasional",
+      "jumlah": 37,
+      "label": "Semnas & Conference"
+    }
+  ],
+  "alumni_terpilih": [
+    {
+      "id": "alumni-01",
+      "nama": "Aris Kurniawan, M.Sc.",
+      "instansi": "Universitas Gadjah Mada",
+      "program": "International Scopus Accelerator (Q2)",
+      "judul_riset": "Spatial Machine Learning Modeling for Flood Vulnerability Assessment in Urban Watersheds",
+      "testimoni": "Pendampingan dari ARPA sangat terstruktur. Metodologi geospasial dan masukan perbaikan manuskripnya membuat paper saya tembus di jurnal Scopus Q2 hanya dalam satu kali revisi.",
+      "foto_alumni": "alumni-1.jpg"
+    },
+    {
+      "id": "alumni-02",
+      "nama": "Nabila Syafiqah, S.T.",
+      "instansi": "Institut Teknologi Bandung",
+      "program": "Pendampingan Publikasi Sinta 2",
+      "judul_riset": "Analisis Perubahan Penutupan Lahan Menggunakan Google Earth Engine dan Algoritma Random Forest",
+      "testimoni": "Awalnya bingung konversi skripsi jadi paper jurnal. Di ARPA dibimbing dari penataan IMRAD, pengecekan Turnitin, sampai trik menjawab komentar reviewer OJS hingga ACC Publish.",
+      "foto_alumni": "alumni-2.jpg"
+    },
+    {
+      "id": "alumni-03",
+      "nama": "Rian Hidayat",
+      "instansi": "SMA Negeri 1 Semarang",
+      "program": "SINTERA (Sinta for High School)",
+      "judul_riset": "Identifikasi Potensi Mikroplastik pada Sedimen Pesisir Pantai Menggunakan Analisis Citra Satelit",
+      "testimoni": "Sebagai siswa SMA, lulus bimbingan dan punya artikel terbit di Jurnal Sinta 4 jadi modal luar biasa buat portofolio masuk PTN lewat jalur prestasi.",
+      "foto_alumni": "alumni-3.jpg"
+    },
+    {
+      "id": "alumni-04",
+      "nama": "Fitri Handayani, S.Pd., M.Si.",
+      "instansi": "Universitas Negeri Makassar",
+      "program": "Bimbingan Skripsi & Sidang Hasil Extra",
+      "judul_riset": "Penerapan Model Geographically Weighted Regression (GWR) dalam Pemetaan Distribusi Kemiskinan Regional",
+      "testimoni": "Olah data statistik dan visualisasi Python-nya dijelaskan dengan sangat sabar. Bimbingannya komprehensif dari Bab 4 sampai persiapan slide presentasi sidang.",
+      "foto_alumni": "alumni-4.jpg"
+    }
+  ],
+  "dokumentasi_kelas": [
+    {
+      "id": "foto-01",
+      "judul": "Sesi Mentoring Intensif Draft Manuskrip",
+      "deskripsi": "Review langsung struktur IMRAD dan novelty riset peserta bersama mentor dosen.",
+      "file_foto": "kelas-1.jpg"
+    },
+    {
+      "id": "foto-02",
+      "judul": "Coaching Clinic Olah Data & Python",
+      "deskripsi": "Praktik langsung analisis statistik inferensial dan visualisasi data geospasial.",
+      "file_foto": "kelas-2.jpg"
+    },
+    {
+      "id": "foto-03",
+      "judul": "Simulasi Defense Argument Sidang Proposal",
+      "deskripsi": "Pelatihan presentasi 12 menit dan teknik menjawab pertanyaan penguji.",
+      "file_foto": "kelas-3.jpg"
+    },
+    {
+      "id": "foto-04",
+      "judul": "Workshop Submission & Handling OJS Jurnal",
+      "deskripsi": "Pendampingan teknis mengunggah paper dan menyusun response to reviewer.",
+      "file_foto": "kelas-4.jpg"
+    }
+  ]
+}
