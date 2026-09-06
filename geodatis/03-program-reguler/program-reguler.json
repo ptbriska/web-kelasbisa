@@ -9,7 +9,7 @@
       "id": "prog-01",
       "kode": "WebGRIDS",
       "nama": "WebGRIDS (Zoominar)",
-      "format": "Zoominar | Gratis",
+      "format": "Zoominar Gratis",
       "frekuensi": "1x / Bulan (Awal Bulan)",
       "deskripsi": "Program Webinar on Geospatial Research, Intelligence & Data Series yang diadakan sekali per bulan di awal bulan."
     },
@@ -17,23 +17,23 @@
       "id": "prog-02",
       "kode": "REGULER",
       "nama": "Reguler Short Course",
-      "format": "Short Course | Plato/Platipus/Ketal",
+      "format": "Short Course (Plato/Platipus/Ketal)",
       "frekuensi": "4x / Bulan",
       "deskripsi": "Program yang diadakan 4x per bulan yang membahas pengolahan data di berbagai sektor dengan berbagai software."
     },
     {
       "id": "prog-03",
       "kode": "GUIDED",
-      "nama": "Guided Medium Course",
-      "format": "Medium Course | Plato/Platipus/Ketal",
+      "nama": "Guided Long Course",
+      "format": "Medium Course (Plato/Platipus/Ketal)",
       "frekuensi": "1x / Bulan",
       "deskripsi": "Program yang diadakan sekali per bulan yang membahas pengolahan data di berbagai sektor dengan berbagai software."
     },
     {
       "id": "prog-04",
-      "kode": "GUIDED_PLUS",
+      "kode": "GUIDED+",
       "nama": "Guided+ Bootcamp",
-      "format": "Bootcamp | Plato/Platipus/Ketal",
+      "format": "Bootcamp (Plato/Platipus/Ketal)",
       "frekuensi": "1x / Semester",
       "deskripsi": "Program yang diadakan sekali per semester yang membahas pengolahan data di berbagai sektor dengan berbagai software."
     },
@@ -41,7 +41,7 @@
       "id": "prog-05",
       "kode": "CONSUL",
       "nama": "Consul (Private & Group Request)",
-      "format": "Flexible Duration | EXTRA",
+      "format": "Exclusive Training (Extra Plato/Platipus)",
       "frekuensi": "On-Demand (By Request)",
       "deskripsi": "Program yang diadakan khusus jika ada yang request ke GEODATIS untuk tutorial analisa dan pengolahan data secara individu dan kelompok."
     }
@@ -86,7 +86,7 @@
     {
       "id": "post-03",
       "judul_poster": "Poster Guided Medium Course",
-      "kategori": "Medium Course",
+      "kategori": "Long Course",
       "file_gambar": "poster-reguler-3.jpg",
       "caption": "Penyelaman materi terstruktur bulanan dengan pendampingan praktik."
     },
