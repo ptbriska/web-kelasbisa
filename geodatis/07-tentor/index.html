@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Tentor — GEODATIS</title>
+
+  <!-- Favicon & Shared CSS -->
+  <link rel="icon" href="../../assets/images/logo-kelasbisa.png" type="image/png">
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* =========================================================
+       MODULE 07 TENTOR — ISOLATED MODERN EDTECH STYLING
+       Geodatis Teal (#14A096), Cyan (#06B6D4) & Crisp Light Theme
+       ========================================================= */
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
+
+    :root {
+      --geo-teal: #14A096;
+      --geo-teal-dark: #0E726B;
+      --geo-teal-light: #E6F6F5;
+      --geo-teal-glow: rgba(20, 160, 150, 0.3);
+      --kb-cyan: #06B6D4;
+      --kb-cyan-glow: rgba(6, 182, 212, 0.35);
+      --geo-bg: #F8FAFC;
+      --geo-dark-obsidian: #0F172A;
+      --geo-text-main: #1E293B;
+      --geo-text-muted: #64748B;
+      --geo-border: #E2E8F0;
+      --radius-xl: 20px;
+      --radius-lg: 14px;
+      --radius-md: 10px;
+      --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.04);
+      --shadow-hover: 0 16px 36px rgba(20, 160, 150, 0.15);
+      --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    body {
+      background-color: var(--geo-bg);
+      color: var(--geo-text-main);
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .geodatis-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      box-sizing: border-box;
+    }
+
+    /* HERO SECTION */
+    .tentor-hero {
+      background: radial-gradient(circle at 85% 15%, rgba(6, 182, 212, 0.15), transparent 45%),
+                  radial-gradient(circle at 15% 85%, rgba(20, 160, 150, 0.12), transparent 50%),
+                  linear-gradient(135deg, #FFFFFF 0%, var(--geo-teal-light) 100%);
+      padding: 72px 0 80px 0;
+      border-bottom: 2px solid rgba(20, 160, 150, 0.15);
+      text-align: center;
+    }
+
+    .tentor-hero-content {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .badge-emerald {
+      background: var(--geo-teal-light);
+      color: var(--geo-teal-dark);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(20, 160, 150, 0.3);
+      display: inline-block;
+      box-shadow: 0 0 10px var(--geo-teal-glow);
+    }
+
+    .hero-title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--geo-dark-obsidian);
+      margin: 14px 0 8px 0;
+      letter-spacing: -0.8px;
+    }
+
+    .hero-desc {
+      font-size: 1.05rem;
+      color: var(--geo-text-muted);
+      margin: 0;
+    }
+
+    /* SECTION TENTOR GRID */
+    .geodatis-section {
+      padding: 64px 0;
+    }
+
+    .tentor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+      gap: 32px;
+    }
+
+    .tentor-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--geo-border);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-bounce);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .tentor-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--geo-teal);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .tentor-head {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .tentor-avatar {
+      width: 90px;
+      height: 90px;
+      min-width: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--geo-teal);
+      box-shadow: 0 6px 16px var(--geo-teal-glow);
+    }
+
+    .tentor-info h3 {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--geo-dark-obsidian);
+      margin: 0 0 2px 0;
+    }
+
+    .tentor-role {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--geo-teal);
+      margin: 0 0 6px 0;
+    }
+
+    .tentor-instansi {
+      font-size: 0.8rem;
+      color: var(--geo-text-muted);
+      margin: 0;
+    }
+
+    .spec-badge {
+      background: var(--geo-teal-light);
+      color: var(--geo-teal-dark);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 16px;
+      border: 1px solid rgba(20, 160, 150, 0.2);
+    }
+
+    .tentor-exp {
+      font-size: 0.9rem;
+      color: var(--geo-text-muted);
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+    }
+
+    .skills-box h4 {
+      font-size: 0.88rem;
+      font-weight: 800;
+      color: var(--geo-dark-obsidian);
+      margin: 0 0 10px 0;
+    }
+
+    .skill-list {
+      list-style: none !important;
+      padding-left: 0 !important;
+      margin: 0 !important;
+    }
+
+    .skill-list li {
+      position: relative !important;
+      padding-left: 26px !important;
+      margin-bottom: 8px !important;
+      font-size: 0.85rem;
+      color: var(--geo-text-main);
+    }
+
+    .skill-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 16px;
+      height: 16px;
+      background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 900;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* CAREER LOWKER BANNER */
+    .career-banner-card {
+      background: linear-gradient(135deg, var(--geo-dark-obsidian) 0%, #1E293B 100%);
+      border-radius: var(--radius-xl);
+      padding: 48px 40px;
+      text-align: center;
+      color: #FFFFFF;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+    }
+
+    .career-banner-card h2 {
+      font-size: 2.1rem;
+      font-weight: 900;
+      margin: 12px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .career-banner-card p {
+      color: #94A3B8;
+      font-size: 0.98rem;
+      max-width: 640px;
+      margin: 0 auto 28px auto;
+    }
+
+    .btn-briska-career {
+      background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+      color: #FFFFFF !important;
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 16px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 6px 20px var(--kb-cyan-glow);
+      transition: var(--transition-bounce);
+    }
+
+    .btn-briska-career:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 28px rgba(6, 182, 212, 0.4);
+    }
+
+    @media (max-width: 768px) {
+      .tentor-grid {
+        grid-template-columns: 1fr;
+      }
+      .tentor-head {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-title {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body id="geodatisTentorPage">
+
+  <!-- Header Global Kelas Bisa (Baris 1) -->
+  <div id="app-header"></div>
+
+  <!-- Sub-Header Internal GEODATIS (Baris 2) Injected by script.js -->
+  <div id="geodatis-subnav-app"></div>
+
+  <!-- HERO TITLE SECTION -->
+  <section class="tentor-hero">
+    <div class="geodatis-container">
+      <div class="tentor-hero-content">
+        <span class="badge-emerald">🎓 Instructional & Research Team</span>
+        <h1 class="hero-title" id="pageTitle">Tim Tentor & Mentor Expert</h1>
+        <p class="hero-desc" id="pageSubtitle">
+          Praktisi & Akademisi Berpengalaman di Bidang Geospatial Data Science & Statistics.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTOR CARDS GRID SECTION -->
+  <section class="geodatis-section">
+    <div class="geodatis-container">
+      <div class="tentor-grid" id="tentorGridContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER LOWKER BANNER (CTA KE CAREER.BRISKA.CO.ID) -->
+  <section class="geodatis-section" style="padding-top: 0;">
+    <div class="geodatis-container">
+      <div class="career-banner-card">
+        <span class="badge-emerald" style="background: rgba(20, 160, 150, 0.2); color: #38BDF8;">💼 Join Our Educator Network</span>
+        <h2 id="careerJudul">Tertarik Bergabung Menjadi Tentor GEODATIS?</h2>
+        <p id="careerSub">Kami selalu terbuka untuk berkolaborasi dengan akademisi, peneliti, dan praktisi data geospasial yang ingin berbagi wawasan melalui ekosistem Briska Group.</p>
+        <a href="https://career.briska.co.id" target="_blank" rel="noopener" id="btnBriskaCareer" class="btn-briska-career">
+          🚀 Kunjungi Portal Karir career.briska.co.id ➔
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Global Kelas Bisa -->
+  <div id="app-footer"></div>
+
+  <!-- Shared Engine & Module Scripts -->
+  <script src="../../assets/js/components.js"></script>
+  <script src="script.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
