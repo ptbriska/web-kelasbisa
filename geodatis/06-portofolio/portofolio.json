@@ -1,0 +1,50 @@
+{
+  "page_meta": {
+    "title": "Portofolio & Showcase Karya Peserta",
+    "subtitle": "Bukti Nyata Kompetensi Pengolahan Data Geospasial & Statistik dari Alumni GEODATIS",
+    "porto_external_url": "https://www.porto.kelasbisa.com",
+    "whatsapp_cta_url": "https://wa.me/6282268118842?text=Halo%20Admin%20GEODATIS,%20saya%20ingin%20konsultasi%20mengenai%20portofolio%20karya%20dan%20program%20pelatihan"
+  },
+  "featured_portofolio": [
+    {
+      "id": "porto-01",
+      "nama_peserta": "Aditya Pratama",
+      "instansi": "Universitas Gadjah Mada",
+      "program_diikuti": "Guided+ Bootcamp Geospatial Data Science",
+      "foto_peserta": "alumni-1.jpg",
+      "peta_karya": "map-sample-1.jpg",
+      "judul_karya": "Pemodelan Spasial Kerentanan Banjir Bandang Berbasis GIS & Machine Learning",
+      "testimoni": "Materi di GEODATIS sangat komprehensif. Dari yang awalnya bingung olah data spasial, sekarang bisa bikin pemodelan kerentanan banjir sendiri sampai publish portofolio."
+    },
+    {
+      "id": "porto-02",
+      "nama_peserta": "Siti Nurhaliza",
+      "instansi": "Dinas Lingkungan Hidup & Kehutanan",
+      "program_diikuti": "Consul+ Exclusive Training (B2G)",
+      "foto_peserta": "alumni-1.jpg",
+      "peta_karya": "map-sample-1.jpg",
+      "judul_karya": "Analisis Deforestasi & Tutupan Lahan Menggunakan Google Earth Engine",
+      "testimoni": "Pendampingan privatnya sangat membimbing. Workflow pemetaan tutupan lahan instansi kami jadi jauh lebih efisien berkat teknik analisis dari mentor GEODATIS."
+    },
+    {
+      "id": "porto-03",
+      "nama_peserta": "Rian Hidayat",
+      "instansi": "PT Energi Terbarukan Nusantara",
+      "program_diikuti": "Corporate Training (B2B)",
+      "foto_peserta": "alumni-1.jpg",
+      "peta_karya": "map-sample-1.jpg",
+      "judul_karya": "Peta Analisis Kesesuaian Lahan untuk Site Selection Panel Surya",
+      "testimoni": "Pelatihan B2B paling terstruktur yang pernah tim kami ikuti. Penjelasan statistik spasialnya sangat aplikatif untuk kebutuhan eksekusi proyek lapangan."
+    },
+    {
+      "id": "porto-04",
+      "nama_peserta": "Budi Santoso",
+      "instansi": "Institut Teknologi Bandung",
+      "program_diikuti": "ARPA x GEODATIS Bimbingan Riset Skripsi",
+      "foto_peserta": "alumni-1.jpg",
+      "peta_karya": "map-sample-1.jpg",
+      "judul_karya": "Peta Interaktif Spatio-Temporal Sebaran Emisi Karbon Perkotaan",
+      "testimoni": "Bimbingan riset langsung dengan Kak Bimo bikin olah data skripsi saya selesai tepat waktu. Diberikan solusi hands-on ketika ketemu error pada dataset."
+    }
+  ]
+}
