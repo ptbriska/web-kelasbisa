@@ -409,18 +409,99 @@ body {
   max-width: 600px;
 }
 
+/* =========================================================
+   5. SUB-HEADER INTERNAL GEODATIS (BARIS 2 NAV STYLING)
+   ========================================================= */
+.geodatis-subnav-bar {
+  background: #FFFFFF;
+  border-bottom: 2px solid rgba(20, 160, 150, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+.subnav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+.subnav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.subnav-brand .brand-text {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--geo-dark-obsidian);
+  letter-spacing: -0.5px;
+}
+
+.subnav-brand .brand-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--geo-teal-dark);
+  background: var(--geo-teal-light);
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(20, 160, 150, 0.3);
+}
+
+.subnav-menu {
+  display: flex;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.subnav-menu li {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.subnav-menu li::before {
+  display: none !important; /* Mencegah centang checklist di area navbar */
+}
+
+.subnav-menu a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--geo-text-muted);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: var(--transition-smooth);
+}
+
+.subnav-menu a:hover,
+.subnav-menu a.active {
+  color: #FFFFFF !important;
+  background: linear-gradient(135deg, var(--geo-teal) 0%, var(--kb-cyan) 100%);
+  box-shadow: 0 4px 12px var(--geo-teal-glow);
+}
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 992px) {
   .hero-grid,
-  .ceo-banner-card {
+  .ceo-banner-card,
+  .subnav-container {
     grid-template-columns: 1fr;
     flex-direction: column;
     text-align: center;
   }
 
   .hero-actions,
-  .hero-meta-badge {
+  .hero-meta-badge,
+  .subnav-menu {
     margin: 0 auto 20px auto;
+    justify-content: center;
   }
 
   .hero-main-title {
